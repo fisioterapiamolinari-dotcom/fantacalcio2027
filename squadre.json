@@ -1,0 +1,21 @@
+{
+ "crediti": 1000,
+ "rosa": {
+  "POR": 3,
+  "DC": 8,
+  "CC": 8,
+  "ATT": 6
+ },
+ "squadre": [
+  "Fantasquadra 1",
+  "Fantasquadra 2",
+  "Fantasquadra 3",
+  "Fantasquadra 4",
+  "Fantasquadra 5",
+  "Fantasquadra 6",
+  "Fantasquadra 7",
+  "Fantasquadra 8",
+  "Fantasquadra 9",
+  "Fantasquadra 10"
+ ]
+}
