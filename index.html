@@ -72,15 +72,16 @@ select option{background:#0A1730}
 .live .who{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:12px;min-height:26px}
 .live .who .n{font-size:19px;font-weight:700;letter-spacing:-.02em}
 .live .who .m{font-family:var(--mono);font-size:11.5px;color:var(--mute)}
-.bidrow{display:grid;grid-template-columns:auto 1fr auto auto auto;gap:9px;align-items:end}
+.bidrow{display:grid;grid-template-columns:150px repeat(4,1fr);gap:9px;align-items:stretch}
 .bidnum{font-family:var(--mono);font-size:34px;font-weight:600;line-height:1;color:var(--accent);
-  min-width:96px;text-align:center;background:rgba(255,255,255,.04);border:1px solid var(--line);
-  border-radius:11px;padding:11px 8px}
+  text-align:center;background:rgba(255,255,255,.04);border:1px solid var(--line);
+  border-radius:11px;padding:0 8px;display:flex;align-items:center;justify-content:center;min-height:62px}
 .bidnum input{background:none;border:none;text-align:center;font-family:var(--mono);font-size:34px;
   font-weight:600;color:var(--accent);padding:0;width:100%}
 .bidnum input:focus{outline:none;background:none}
 .bid{background:rgba(255,255,255,.05);border:1px solid var(--line);color:var(--ink);font-family:var(--mono);
-  font-size:15px;font-weight:600;padding:14px 15px;border-radius:10px;cursor:pointer;transition:.15s}
+  font-size:16px;font-weight:600;padding:0;border-radius:11px;cursor:pointer;transition:.15s;
+  display:flex;align-items:center;justify-content:center;min-height:62px}
 .bid:hover{border-color:var(--accent);background:rgba(255,255,255,.09)}
 .bid:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
 .bid.minus{color:var(--mute)}
@@ -195,6 +196,20 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
 .gcard h3{margin:0 0 3px;font-size:16px;font-weight:700;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
 .gcard h3 em{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--brass);font-weight:500}
 .gnote{font-size:13px;line-height:1.6;color:var(--mute);margin:9px 0 0;padding-left:13px;border-left:2px solid var(--line)}
+.inc{font-family:var(--mono);font-size:12.5px;line-height:1.9;color:var(--mute)}
+.inc b{color:var(--ink);font-weight:500}
+.inc i{font-style:normal;color:var(--brass)}
+.trip{margin:0;padding:0;list-style:none;counter-reset:t}
+.trip li{counter-increment:t;display:flex;align-items:baseline;gap:10px;padding:6px 0;font-size:14px;
+  border-bottom:1px dotted rgba(255,255,255,.07)}
+.trip li:last-child{border-bottom:none}
+.trip li::before{content:counter(t);font-family:var(--mono);font-size:11px;color:var(--brass);
+  min-width:16px;font-weight:600}
+.trip li .nm{flex:1}
+.trip li .mt{font-family:var(--mono);font-size:11px;color:var(--faint);white-space:nowrap}
+.trip li.fuori{color:var(--faint)}
+.gsec{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.07)}
+.gsec .lbl2{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint);margin-bottom:9px}
 
 .mkt{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:9px;margin-top:14px}
 .mk{background:rgba(255,255,255,.035);border-radius:9px;padding:9px 11px;text-align:center}
@@ -244,7 +259,7 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
 @media(max-width:1080px){ .main{grid-template-columns:1fr} .dossier{position:static;order:-1} }
 @media(max-width:700px){
   .roles{grid-template-columns:repeat(2,1fr)}
-  .bidrow{grid-template-columns:1fr 1fr 1fr;grid-template-areas:"n n n" "a b c"}
+  .bidrow{grid-template-columns:repeat(4,1fr);grid-template-areas:"n n n n" "a b c d"}
   .bidnum{grid-area:n;margin-bottom:4px}
   .closerow{grid-template-columns:1fr}
   header{align-items:flex-start}.src{text-align:left}
@@ -299,10 +314,10 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
 
         <div class="bidrow">
           <div class="bidnum"><input type="number" id="price" min="1" value="1" aria-label="Prezzo attuale"></div>
+          <button class="bid minus" id="bm" type="button">−1</button>
           <button class="bid" id="b1" type="button">+1</button>
           <button class="bid" id="b5" type="button">+5</button>
           <button class="bid" id="b10" type="button">+10</button>
-          <button class="bid minus" id="bm" type="button">−1</button>
         </div>
 
         <div class="closerow">
@@ -344,11 +359,11 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
 
 <!-- ============ SQUADRE ============ -->
 <section class="page" id="p-squadre">
+  <div class="teamgrid" id="teamGrid"></div>
   <div class="panel">
     <h2>Riepilogo crediti <em id="teamCount"></em></h2>
     <div id="teams"></div>
   </div>
-  <div class="teamgrid" id="teamGrid"></div>
 </section>
 
 <!-- ============ STRATEGIA ============ -->
@@ -382,13 +397,13 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
 <!-- ============ GRIGLIA ============ -->
 <section class="page" id="p-griglia">
   <div class="panel">
-    <h2>Griglia portieri <em>costo della coppia per squadra</em></h2>
-    <p style="font-size:13.5px;line-height:1.7;color:var(--mute);margin:0 0 4px">
-      Il modificatore difesa usa il <b style="color:var(--ink)">voto puro</b> del portiere, il malus dei gol subiti
-      colpisce solo il suo punteggio personale. Prendere entrambi i portieri della stessa squadra
-      chiude il ruolo e garantisce il voto qualunque sia il titolare.
+    <h2>Griglia portieri <em>incroci di calendario e triplette</em></h2>
+    <p style="font-size:13.5px;line-height:1.7;color:var(--mute);margin:0">
+      Gli <b style="color:var(--ink)">incroci</b> sono le giornate in cui due squadre si affrontano.
+      Se prendi i portieri di due squadre diverse, in quelle giornate uno dei due subisce per forza:
+      sono i turni in cui la griglia non ti copre. Prendere la tripletta di una sola squadra elimina il problema.
     </p>
-    <input type="text" id="gfilter" placeholder="Filtra squadra…" style="margin-top:12px">
+    <input type="text" id="gfilter" placeholder="Filtra squadra…" style="margin-top:14px">
   </div>
   <div id="griglia"></div>
 </section>
@@ -403,7 +418,7 @@ var MANTRA={Por:'Portiere',Dc:'Difensore centrale',Ds:'Terzino sinistro',Dd:'Ter
   E:'Esterno',M:'Mediano',C:'Mezzala',T:'Trequartista',W:'Ala',A:'Attaccante',Pc:'Punta centrale',B:'Braccetto'};
 
 var CFG={crediti:1000,rosa:{POR:3,DC:8,CC:8,ATT:6},squadre:[],mia:''};
-var PLAYERS=[],BY={},STRAT=null,GRID=null;
+var PLAYERS=[],BY={},BYC={},STRAT=null,GRID=null;
 var state={role:'POR',picks:[]};
 var sel=null,memory=null;
 
@@ -426,8 +441,12 @@ function loadData(){
   .then(function(){ return fetch('./giocatori.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}); })
   .then(function(d){
     if(d){ PLAYERS=(d.giocatori||[]).map(function(p){var o=Object.assign({},p);
-      o.ruolo=(p.ruolo||'').toUpperCase(); o._k=nrm(p.nome); return o;});
-      PLAYERS.forEach(function(p){BY[p._k]=p;});
+      o.ruolo=(p.ruolo||'').toUpperCase();
+      o._k=nrm(p.nome);
+      o._kc=p.nome_completo?nrm(p.nome_completo):'';
+      o._disp=p.nome_completo||p.nome;
+      return o;});
+      PLAYERS.forEach(function(p){BY[p._k]=p; if(p._kc)BYC[p._kc]=p;});
       var f=PLAYERS.filter(function(p){return p.fm!=null;}).length;
       notes.push('<b>'+PLAYERS.length+'</b> giocatori · <b>'+f+'</b> con FM'); }
     else notes.push('giocatori.json non caricato');
@@ -500,7 +519,7 @@ function dossier(p){
   var qH=p.quotazione==null?null:(p.quotazione+(p.qt25!=null?' <span style="color:'+(p.quotazione>p.qt25?'var(--pos)':p.quotazione<p.qt25?'var(--neg)':'var(--faint)')+'">('+(p.quotazione-p.qt25>0?'+':'')+(p.quotazione-p.qt25)+')</span>':''));
 
   box.innerHTML=
-   '<div class="dh"><div class="nm">'+esc(p.nome)+'</div><div class="sub">'+
+   '<div class="dh"><div class="nm">'+esc(p._disp||p.nome)+'</div><div class="sub">'+
      (p.ruolo?'<span class="pill">'+esc(p.ruolo)+'</span>':'')+
      (mant?'<span class="pill ghost">'+esc(mant)+'</span>':'')+
      '<span>'+esc(p.squadra||'—')+'</span>'+
@@ -538,14 +557,20 @@ function dossier(p){
 var acIdx=-1,acList=[];
 $('name').addEventListener('input',function(e){
   var q=nrm(e.target.value.trim()),box=$('ac');
-  if(BY[q]) select(BY[q],true);
+  if(BY[q]) select(BY[q],true); else if(BYC[q]) select(BYC[q],true);
   if(q.length<2||!PLAYERS.length){box.classList.remove('open');return;}
   var taken={}; state.picks.forEach(function(p){taken[nrm(p.name)]=1;});
   var hasR=PLAYERS.some(function(p){return !!p.ruolo;});
-  acList=PLAYERS.filter(function(p){return p._k.indexOf(q)>=0&&!taken[p._k];}).sort(function(a,b){
+  function pos(p){
+    var i=p._kc?p._kc.indexOf(q):-1, j=p._k.indexOf(q);
+    if(i<0) return j; if(j<0) return i; return Math.min(i,j);
+  }
+  acList=PLAYERS.filter(function(p){
+    return (p._k.indexOf(q)>=0||(p._kc&&p._kc.indexOf(q)>=0))&&!taken[p._k];
+  }).sort(function(a,b){
     if(hasR){var ra=a.ruolo===state.role?0:1,rb=b.ruolo===state.role?0:1; if(ra!==rb)return ra-rb;}
-    return a._k.indexOf(q)-b._k.indexOf(q);
-  }).slice(0,8);
+    return pos(a)-pos(b);
+  }).slice(0,9);
   if(!acList.length){box.classList.remove('open');return;}
   select(acList[0],true);
   acIdx=-1;
@@ -553,7 +578,7 @@ $('name').addEventListener('input',function(e){
     var meta=[p.ruolo,p.squadra].filter(Boolean).join(' · ');
     var ex=(p.rigorista===1?' <i>⚽rig</i>':'')+
       (p.fm!=null?' <i>FM '+n2(p.fm)+'</i>':(p.quotazione!=null?' <i>Q'+p.quotazione+'</i>':''));
-    return '<div data-i="'+i+'"><span>'+esc(p.nome)+'</span><small>'+esc(meta)+ex+'</small></div>';
+    return '<div data-i="'+i+'"><span>'+esc(p._disp)+'</span><small>'+esc(meta)+ex+'</small></div>';
   }).join('');
   box.classList.add('open');
 });
@@ -572,7 +597,7 @@ $('name').addEventListener('keydown',function(e){
   if(acIdx>=0) select(acList[acIdx],true);
 });
 $('name').addEventListener('blur',function(){setTimeout(function(){$('ac').classList.remove('open');},120);});
-function choose(i){ var p=acList[i]; $('name').value=p.nome; select(p); $('ac').classList.remove('open'); $('price').focus(); $('price').select(); }
+function choose(i){ var p=acList[i]; $('name').value=p._disp; select(p); $('ac').classList.remove('open'); $('price').focus(); $('price').select(); }
 
 function select(p,soft){
   sel=p; dossier(p);
@@ -583,7 +608,7 @@ function select(p,soft){
   if(p.fvm!=null) bits.push('FVM '+p.fvm);
   if(p.pagato25!=null) bits.push('l\'anno scorso '+p.pagato25+' cr');
   if(p.rigorista===1) bits.push('RIGORISTA');
-  w.innerHTML='<span class="n">'+esc(p.nome)+'</span><span class="m">'+esc(p.squadra||'')+
+  w.innerHTML='<span class="n">'+esc(p._disp||p.nome)+'</span><span class="m">'+esc(p.squadra||'')+
     (p.ruolo?' · '+p.ruolo:'')+(bits.length?' · '+bits.join(' · '):'')+'</span>';
   if(!soft&&(!$('price').value||$('price').value==='1')) $('price').value=Math.max(1,p.quotazione||1);
   hint();
@@ -807,7 +832,7 @@ function wire(box){
     b.addEventListener('click',function(e){e.stopPropagation();remove(+b.dataset.id);});
   });
   box.querySelectorAll('tr.clickable').forEach(function(tr){
-    tr.addEventListener('click',function(){var p=BY[nrm(tr.dataset.n)]; if(p){select(p);}});
+    tr.addEventListener('click',function(){var kk=nrm(tr.dataset.n),p=BY[kk]||BYC[kk]; if(p){select(p);}});
   });
 }
 
@@ -922,23 +947,36 @@ function showSec(id){
 function renderGrid(){
   if(!GRID){ $('griglia').innerHTML='<div class="empty"><b>griglia-portieri.json non caricato</b></div>'; return; }
   var q=nrm($('gfilter').value.trim());
-  var sq=(GRID.squadre||[]).filter(function(s){return !q||nrm(s.squadra).indexOf(q)>=0;})
-    .sort(function(a,b){return a.coppia-b.coppia;});
-  $('griglia').innerHTML=sq.map(function(s){
-    var rows=s.portieri.map(function(p){
-      var taken=state.picks.filter(function(x){return nrm(x.name)===nrm(p.nome);})[0];
-      return '<tr><td>'+esc(p.nome)+(taken?' <span style="color:var(--neg);font-size:11px">preso</span>':'')+'</td>'+
-        '<td class="num">'+p.q+'</td><td class="num">'+(p.fvm!=null?p.fvm:'—')+'</td>'+
-        '<td class="num">'+(p.mv!=null?n2(p.mv):'—')+'</td><td class="num">'+(p.fm!=null?n2(p.fm):'—')+'</td>'+
-        '<td class="num">'+(p.gs!=null?p.gs:'—')+'</td>'+
-        '<td class="num" style="color:var(--brass)">'+(p.tot!=null?n2(p.tot):'—')+'</td></tr>';
-    }).join('');
-    return '<div class="gcard"><h3>'+esc(s.squadra)+'<em>coppia '+s.coppia+' cr</em></h3>'+
-      '<table><thead><tr><th>Portiere</th><th class="num">Q</th><th class="num">FVM</th>'+
-      '<th class="num">MV</th><th class="num">FM</th><th class="num">Gs</th><th class="num">Totale</th></tr></thead>'+
-      '<tbody>'+rows+'</tbody></table>'+
-      (s.note||[]).map(function(n){return '<p class="gnote">'+esc(n)+'</p>';}).join('')+'</div>';
+  var sq=(GRID.squadre||[]).filter(function(s){return !q||nrm(s.squadra).indexOf(q)>=0;});
+
+  var inc=sq.slice().sort(function(a,b){return a.squadra.localeCompare(b.squadra);}).map(function(s){
+    var righe=Object.keys(s.incroci||{}).map(function(av){
+      var g=s.incroci[av];
+      return '<b>'+esc(av)+'</b> <i>'+g.join(', ')+'</i>';
+    }).join(' · ');
+    return '<div class="gcard"><h3>'+esc(s.squadra)+'</h3><div class="inc">'+righe+'</div></div>';
   }).join('');
+
+  var trip=sq.slice().sort(function(a,b){return a.tripletta-b.tripletta;}).map(function(s){
+    var li=s.portieri.slice(0,3).map(function(p){
+      var taken=state.picks.filter(function(x){return nrm(x.name)===nrm(p.nome);})[0];
+      var mt=[];
+      if(p.q!=null) mt.push('Q'+p.q);
+      if(p.pv) mt.push(p.pv+' pres');
+      if(p.mv!=null) mt.push('MV '+n2(p.mv));
+      return '<li class="'+(taken?'fuori':'')+'"><span class="nm">'+esc(p.nome)+
+        (taken?' <span style="color:var(--neg);font-size:11px">preso</span>':'')+
+        '</span><span class="mt">'+mt.join(' · ')+'</span></li>';
+    }).join('');
+    return '<div class="gcard"><h3>'+esc(s.squadra)+'<em>tripletta '+s.tripletta+' cr · coppia '+s.coppia+'</em></h3>'+
+      '<ul class="trip">'+li+'</ul></div>';
+  }).join('');
+
+  $('griglia').innerHTML =
+    '<div class="gsec"><div class="lbl2">Incroci di calendario — giornate in cui le squadre si affrontano</div></div>'+
+    inc +
+    '<div class="gsec"><div class="lbl2">Triplette per squadra, in ordine di titolarità — ordinate per costo</div></div>'+
+    trip;
 }
 $('gfilter').addEventListener('input',renderGrid);
 

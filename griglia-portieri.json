@@ -1,20 +1,29 @@
 {
  "aggiornato": "2026-08-12",
+ "fonte": "Calendario Serie A 2026/27 (sorteggio 5 giugno 2026). Portieri dal listone ufficiale, ordinati per presenze 2025/26.",
  "squadre": [
   {
    "squadra": "Atalanta",
    "coppia": 17,
-   "tutti": 19,
+   "tripletta": 18,
    "portieri": [
     {
-     "nome": "Carnesecchi",
+     "nome": "Marco Carnesecchi",
      "q": 16,
      "fvm": 52,
      "pv": 37,
      "mv": 6.36,
      "fm": 5.58,
-     "gs": 35,
-     "tot": 5.89
+     "gs": 35
+    },
+    {
+     "nome": "Marco Sportiello",
+     "q": 1,
+     "fvm": 1,
+     "pv": 1,
+     "mv": 5.5,
+     "fm": 4.5,
+     "gs": 1
     },
     {
      "nome": "Vismara",
@@ -23,48 +32,119 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     },
     {
      "nome": "Rossi F.",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
-    },
-    {
-     "nome": "Sportiello",
-     "q": 1,
-     "fvm": 1,
-     "pv": 1,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     }
    ],
-   "note": [
-    "Carnesecchi è il miglior valore totale assoluto (5,89). Riserve a 1 credito: la coppia costa 17."
-   ]
+   "incroci": {
+    "Bologna": [
+     2,
+     21
+    ],
+    "Cagliari": [
+     4,
+     31
+    ],
+    "Como": [
+     18,
+     36
+    ],
+    "Fiorentina": [
+     9,
+     22
+    ],
+    "Frosinone": [
+     8,
+     35
+    ],
+    "Genoa": [
+     15,
+     24
+    ],
+    "Inter": [
+     12,
+     26
+    ],
+    "Juventus": [
+     5,
+     34
+    ],
+    "Lazio": [
+     14,
+     23
+    ],
+    "Lecce": [
+     13,
+     37
+    ],
+    "Milan": [
+     7,
+     29
+    ],
+    "Monza": [
+     11,
+     25
+    ],
+    "Napoli": [
+     16,
+     38
+    ],
+    "Parma": [
+     10,
+     33
+    ],
+    "Roma": [
+     3,
+     20
+    ],
+    "Sassuolo": [
+     1,
+     30
+    ],
+    "Torino": [
+     19,
+     27
+    ],
+    "Udinese": [
+     17,
+     32
+    ],
+    "Venezia": [
+     6,
+     28
+    ]
+   }
   },
   {
    "squadra": "Bologna",
    "coppia": 11,
-   "tutti": 12,
+   "tripletta": 12,
    "portieri": [
     {
-     "nome": "Skorupski",
+     "nome": "Lukasz Skorupski",
      "q": 10,
      "fvm": 37,
      "pv": 18,
      "mv": 6.19,
      "fm": 5.28,
-     "gs": 15,
-     "tot": 5.41
+     "gs": 15
+    },
+    {
+     "nome": "Pessina Mas.",
+     "q": 1,
+     "fvm": 1,
+     "pv": 4,
+     "mv": 6.12,
+     "fm": 5.62,
+     "gs": 2
     },
     {
      "nome": "Happonen",
@@ -73,146 +153,428 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
-    },
-    {
-     "nome": "Pessina Mas.",
-     "q": 1,
-     "fvm": 1,
-     "pv": 4,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     }
    ],
-   "note": [
-    "Skorupski MV 6,19 a Q10: rapporto onesto, coppia a 12 crediti."
-   ]
+   "incroci": {
+    "Atalanta": [
+     2,
+     21
+    ],
+    "Cagliari": [
+     8,
+     32
+    ],
+    "Como": [
+     15,
+     24
+    ],
+    "Fiorentina": [
+     16,
+     34
+    ],
+    "Frosinone": [
+     18,
+     36
+    ],
+    "Genoa": [
+     19,
+     37
+    ],
+    "Inter": [
+     7,
+     33
+    ],
+    "Juventus": [
+     17,
+     25
+    ],
+    "Lazio": [
+     1,
+     20
+    ],
+    "Lecce": [
+     6,
+     26
+    ],
+    "Milan": [
+     9,
+     23
+    ],
+    "Monza": [
+     10,
+     29
+    ],
+    "Napoli": [
+     4,
+     28
+    ],
+    "Parma": [
+     11,
+     38
+    ],
+    "Roma": [
+     14,
+     30
+    ],
+    "Sassuolo": [
+     3,
+     27
+    ],
+    "Torino": [
+     5,
+     35
+    ],
+    "Udinese": [
+     12,
+     22
+    ],
+    "Venezia": [
+     13,
+     31
+    ]
+   }
   },
   {
    "squadra": "Cagliari",
    "coppia": 10,
-   "tutti": 11,
+   "tripletta": 11,
    "portieri": [
     {
-     "nome": "Caprile",
+     "nome": "Elia Caprile",
      "q": 9,
      "fvm": 27,
      "pv": 38,
      "mv": 6.29,
      "fm": 4.87,
-     "gs": 53,
-     "tot": 5.11
+     "gs": 53
     },
     {
      "nome": "Sherri",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     },
     {
      "nome": "Ciocci",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     }
    ],
-   "note": [
-    "Caprile MV 6,29 ma 53 gol subiti: il peggior valore totale tra i portieri di alta MV."
-   ]
+   "incroci": {
+    "Atalanta": [
+     4,
+     31
+    ],
+    "Bologna": [
+     8,
+     32
+    ],
+    "Como": [
+     12,
+     20
+    ],
+    "Fiorentina": [
+     14,
+     28
+    ],
+    "Frosinone": [
+     11,
+     37
+    ],
+    "Genoa": [
+     17,
+     35
+    ],
+    "Inter": [
+     2,
+     23
+    ],
+    "Juventus": [
+     6,
+     21
+    ],
+    "Lazio": [
+     10,
+     24
+    ],
+    "Lecce": [
+     3,
+     34
+    ],
+    "Milan": [
+     13,
+     27
+    ],
+    "Monza": [
+     7,
+     33
+    ],
+    "Napoli": [
+     18,
+     30
+    ],
+    "Parma": [
+     1,
+     22
+    ],
+    "Roma": [
+     9,
+     38
+    ],
+    "Sassuolo": [
+     19,
+     29
+    ],
+    "Torino": [
+     16,
+     36
+    ],
+    "Udinese": [
+     5,
+     26
+    ],
+    "Venezia": [
+     15,
+     25
+    ]
+   }
   },
   {
    "squadra": "Como",
    "coppia": 17,
-   "tutti": 18,
+   "tripletta": 18,
    "portieri": [
     {
-     "nome": "Butez",
+     "nome": "Jean Butez",
      "q": 16,
      "fvm": 56,
      "pv": 38,
      "mv": 6.07,
      "fm": 5.37,
-     "gs": 29,
-     "tot": 5.38
+     "gs": 29
     },
     {
      "nome": "Tornqvist",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     },
     {
      "nome": "Vigorito",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     }
    ],
-   "note": [
-    "Butez 38 presenze e solo 29 gol subiti, ma MV 6,07: zero modificatore. Q16 è caro."
-   ]
+   "incroci": {
+    "Atalanta": [
+     18,
+     36
+    ],
+    "Bologna": [
+     15,
+     24
+    ],
+    "Cagliari": [
+     12,
+     20
+    ],
+    "Fiorentina": [
+     7,
+     30
+    ],
+    "Frosinone": [
+     5,
+     32
+    ],
+    "Genoa": [
+     3,
+     38
+    ],
+    "Inter": [
+     11,
+     34
+    ],
+    "Juventus": [
+     13,
+     29
+    ],
+    "Lazio": [
+     19,
+     33
+    ],
+    "Lecce": [
+     17,
+     27
+    ],
+    "Milan": [
+     16,
+     26
+    ],
+    "Monza": [
+     14,
+     23
+    ],
+    "Napoli": [
+     2,
+     21
+    ],
+    "Parma": [
+     4,
+     31
+    ],
+    "Roma": [
+     6,
+     37
+    ],
+    "Sassuolo": [
+     8,
+     22
+    ],
+    "Torino": [
+     9,
+     25
+    ],
+    "Udinese": [
+     1,
+     28
+    ],
+    "Venezia": [
+     10,
+     35
+    ]
+   }
   },
   {
    "squadra": "Fiorentina",
    "coppia": 14,
-   "tutti": 15,
+   "tripletta": 15,
    "portieri": [
     {
-     "nome": "De Gea",
+     "nome": "David de Gea",
      "q": 13,
      "fvm": 45,
      "pv": 37,
      "mv": 6.24,
      "fm": 5.0,
-     "gs": 49,
-     "tot": 5.19
+     "gs": 49
     },
     {
-     "nome": "Christensen O.",
+     "nome": "Oliver Christensen",
      "q": 1,
      "fvm": 1,
      "pv": 1,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 7.5,
+     "fm": 6.5,
+     "gs": 1
     },
     {
-     "nome": "Lezzerini",
+     "nome": "Luca Lezzerini",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     }
    ],
-   "note": []
+   "incroci": {
+    "Atalanta": [
+     9,
+     22
+    ],
+    "Bologna": [
+     16,
+     34
+    ],
+    "Cagliari": [
+     14,
+     28
+    ],
+    "Como": [
+     7,
+     30
+    ],
+    "Frosinone": [
+     2,
+     24
+    ],
+    "Genoa": [
+     6,
+     29
+    ],
+    "Inter": [
+     8,
+     25
+    ],
+    "Juventus": [
+     11,
+     33
+    ],
+    "Lazio": [
+     17,
+     38
+    ],
+    "Lecce": [
+     19,
+     36
+    ],
+    "Milan": [
+     18,
+     31
+    ],
+    "Monza": [
+     12,
+     37
+    ],
+    "Napoli": [
+     5,
+     20
+    ],
+    "Parma": [
+     15,
+     32
+    ],
+    "Roma": [
+     1,
+     35
+    ],
+    "Sassuolo": [
+     10,
+     21
+    ],
+    "Torino": [
+     3,
+     26
+    ],
+    "Udinese": [
+     13,
+     23
+    ],
+    "Venezia": [
+     4,
+     27
+    ]
+   }
   },
   {
    "squadra": "Frosinone",
    "coppia": 6,
-   "tutti": 7,
+   "tripletta": 7,
    "portieri": [
     {
      "nome": "Palmisani",
@@ -221,8 +583,7 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     },
     {
      "nome": "Desplanches",
@@ -231,8 +592,7 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     },
     {
      "nome": "Lolic",
@@ -241,28 +601,110 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     }
    ],
-   "note": [
-    "Neopromossa, nessun dato. Palmisani/Desplanches in ballottaggio: coppia a 6 crediti."
-   ]
+   "incroci": {
+    "Atalanta": [
+     8,
+     35
+    ],
+    "Bologna": [
+     18,
+     36
+    ],
+    "Cagliari": [
+     11,
+     37
+    ],
+    "Como": [
+     5,
+     32
+    ],
+    "Fiorentina": [
+     2,
+     24
+    ],
+    "Genoa": [
+     4,
+     31
+    ],
+    "Inter": [
+     14,
+     29
+    ],
+    "Juventus": [
+     1,
+     38
+    ],
+    "Lazio": [
+     16,
+     27
+    ],
+    "Lecce": [
+     9,
+     25
+    ],
+    "Milan": [
+     12,
+     21
+    ],
+    "Monza": [
+     19,
+     28
+    ],
+    "Napoli": [
+     6,
+     26
+    ],
+    "Parma": [
+     13,
+     23
+    ],
+    "Roma": [
+     17,
+     33
+    ],
+    "Sassuolo": [
+     7,
+     34
+    ],
+    "Torino": [
+     10,
+     22
+    ],
+    "Udinese": [
+     15,
+     30
+    ],
+    "Venezia": [
+     3,
+     20
+    ]
+   }
   },
   {
    "squadra": "Genoa",
    "coppia": 9,
-   "tutti": 10,
+   "tripletta": 10,
    "portieri": [
     {
-     "nome": "Bijlow",
+     "nome": "Justin Bijlow",
      "q": 8,
      "fvm": 18,
      "pv": 16,
      "mv": 6.06,
      "fm": 4.78,
-     "gs": 20,
-     "tot": 4.77
+     "gs": 20
+    },
+    {
+     "nome": "Daniele Sommariva",
+     "q": 1,
+     "fvm": 1,
+     "pv": 2,
+     "mv": 5.75,
+     "fm": 3.75,
+     "gs": 4
     },
     {
      "nome": "Stolz",
@@ -271,116 +713,334 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
-    },
-    {
-     "nome": "Sommariva",
-     "q": 1,
-     "fvm": 1,
-     "pv": 2,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     }
    ],
-   "note": []
+   "incroci": {
+    "Atalanta": [
+     15,
+     24
+    ],
+    "Bologna": [
+     19,
+     37
+    ],
+    "Cagliari": [
+     17,
+     35
+    ],
+    "Como": [
+     3,
+     38
+    ],
+    "Fiorentina": [
+     6,
+     29
+    ],
+    "Frosinone": [
+     4,
+     31
+    ],
+    "Inter": [
+     13,
+     30
+    ],
+    "Juventus": [
+     9,
+     20
+    ],
+    "Lazio": [
+     2,
+     26
+    ],
+    "Lecce": [
+     10,
+     22
+    ],
+    "Milan": [
+     11,
+     25
+    ],
+    "Monza": [
+     18,
+     27
+    ],
+    "Napoli": [
+     1,
+     36
+    ],
+    "Parma": [
+     5,
+     21
+    ],
+    "Roma": [
+     7,
+     28
+    ],
+    "Sassuolo": [
+     12,
+     33
+    ],
+    "Torino": [
+     14,
+     32
+    ],
+    "Udinese": [
+     16,
+     34
+    ],
+    "Venezia": [
+     8,
+     23
+    ]
+   }
   },
   {
    "squadra": "Inter",
    "coppia": 19,
-   "tutti": 20,
+   "tripletta": 20,
    "portieri": [
     {
-     "nome": "Martinez Jo.",
-     "q": 17,
-     "fvm": 63,
-     "pv": 5,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
-    },
-    {
-     "nome": "Provedel",
+     "nome": "Ivan Provedel",
      "q": 2,
      "fvm": 5,
      "pv": 27,
      "mv": 6.26,
      "fm": 5.35,
-     "gs": 27,
-     "tot": 5.54
+     "gs": 27
     },
     {
-     "nome": "Di Gennaro",
+     "nome": "Josep Martínez",
+     "q": 17,
+     "fvm": 63,
+     "pv": 5,
+     "mv": 6.0,
+     "fm": 5.2,
+     "gs": 4
+    },
+    {
+     "nome": "Raffaele Di Gennaro",
      "q": 1,
      "fvm": 1,
      "pv": 1,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 6.0,
+     "fm": 5.0,
+     "gs": 1
     }
    ],
-   "note": [
-    "Jo. Martinez nuovo titolare, nessun dato in Serie A: incognita. Provedel a Q2 con MV 6,26 è la copertura più economica del campionato."
-   ]
+   "incroci": {
+    "Atalanta": [
+     12,
+     26
+    ],
+    "Bologna": [
+     7,
+     33
+    ],
+    "Cagliari": [
+     2,
+     23
+    ],
+    "Como": [
+     11,
+     34
+    ],
+    "Fiorentina": [
+     8,
+     25
+    ],
+    "Frosinone": [
+     14,
+     29
+    ],
+    "Genoa": [
+     13,
+     30
+    ],
+    "Juventus": [
+     19,
+     36
+    ],
+    "Lazio": [
+     18,
+     37
+    ],
+    "Lecce": [
+     16,
+     35
+    ],
+    "Milan": [
+     10,
+     24
+    ],
+    "Monza": [
+     1,
+     32
+    ],
+    "Napoli": [
+     3,
+     22
+    ],
+    "Parma": [
+     6,
+     20
+    ],
+    "Roma": [
+     5,
+     31
+    ],
+    "Sassuolo": [
+     17,
+     38
+    ],
+    "Torino": [
+     15,
+     28
+    ],
+    "Udinese": [
+     4,
+     27
+    ],
+    "Venezia": [
+     9,
+     21
+    ]
+   }
   },
   {
    "squadra": "Juventus",
    "coppia": 15,
-   "tutti": 16,
+   "tripletta": 16,
    "portieri": [
     {
-     "nome": "Di Gregorio",
+     "nome": "Michele Di Gregorio",
      "q": 9,
      "fvm": 40,
      "pv": 30,
      "mv": 6.08,
      "fm": 5.33,
-     "gs": 25,
-     "tot": 5.36
+     "gs": 25
     },
     {
-     "nome": "Perin",
+     "nome": "Mattia Perin",
      "q": 6,
      "fvm": 10,
      "pv": 9,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 6.11,
+     "fm": 5.11,
+     "gs": 9
     },
     {
      "nome": "Pinsoglio",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     }
    ],
-   "note": [
-    "Di Gregorio MV 6,08: contributo nullo al modificatore. Perin a Q6 rende la coppia cara (16) per quello che rende."
-   ]
+   "incroci": {
+    "Atalanta": [
+     5,
+     34
+    ],
+    "Bologna": [
+     17,
+     25
+    ],
+    "Cagliari": [
+     6,
+     21
+    ],
+    "Como": [
+     13,
+     29
+    ],
+    "Fiorentina": [
+     11,
+     33
+    ],
+    "Frosinone": [
+     1,
+     38
+    ],
+    "Genoa": [
+     9,
+     20
+    ],
+    "Inter": [
+     19,
+     36
+    ],
+    "Lazio": [
+     7,
+     28
+    ],
+    "Lecce": [
+     8,
+     31
+    ],
+    "Milan": [
+     3,
+     22
+    ],
+    "Monza": [
+     15,
+     26
+    ],
+    "Napoli": [
+     10,
+     24
+    ],
+    "Parma": [
+     2,
+     37
+    ],
+    "Roma": [
+     16,
+     27
+    ],
+    "Sassuolo": [
+     4,
+     23
+    ],
+    "Torino": [
+     18,
+     30
+    ],
+    "Udinese": [
+     14,
+     35
+    ],
+    "Venezia": [
+     12,
+     32
+    ]
+   }
   },
   {
    "squadra": "Lazio",
    "coppia": 10,
-   "tutti": 11,
+   "tripletta": 11,
    "portieri": [
+    {
+     "nome": "Edoardo Motta",
+     "q": 1,
+     "fvm": 1,
+     "pv": 9,
+     "mv": 6.0,
+     "fm": 5.17,
+     "gs": 10
+    },
     {
      "nome": "Mandas",
      "q": 9,
      "fvm": 30,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     },
     {
      "nome": "Renzetti",
@@ -389,106 +1049,316 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
-    },
-    {
-     "nome": "Motta",
-     "q": 1,
-     "fvm": 1,
-     "pv": 9,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     }
    ],
-   "note": []
+   "incroci": {
+    "Atalanta": [
+     14,
+     23
+    ],
+    "Bologna": [
+     1,
+     20
+    ],
+    "Cagliari": [
+     10,
+     24
+    ],
+    "Como": [
+     19,
+     33
+    ],
+    "Fiorentina": [
+     17,
+     38
+    ],
+    "Frosinone": [
+     16,
+     27
+    ],
+    "Genoa": [
+     2,
+     26
+    ],
+    "Inter": [
+     18,
+     37
+    ],
+    "Juventus": [
+     7,
+     28
+    ],
+    "Lecce": [
+     12,
+     30
+    ],
+    "Milan": [
+     4,
+     34
+    ],
+    "Monza": [
+     6,
+     21
+    ],
+    "Napoli": [
+     11,
+     25
+    ],
+    "Parma": [
+     8,
+     29
+    ],
+    "Roma": [
+     15,
+     32
+    ],
+    "Sassuolo": [
+     9,
+     35
+    ],
+    "Torino": [
+     13,
+     31
+    ],
+    "Udinese": [
+     3,
+     36
+    ],
+    "Venezia": [
+     5,
+     22
+    ]
+   }
   },
   {
    "squadra": "Lecce",
    "coppia": 9,
-   "tutti": 10,
+   "tripletta": 10,
    "portieri": [
     {
-     "nome": "Falcone",
+     "nome": "Wladimiro Falcone",
      "q": 8,
      "fvm": 25,
      "pv": 38,
      "mv": 6.41,
      "fm": 5.22,
-     "gs": 50,
-     "tot": 5.58
+     "gs": 50
     },
     {
      "nome": "Samooja",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     },
     {
      "nome": "Fruchtl",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     }
    ],
-   "note": [
-    "Falcone ha la MV più alta della Serie A (6,41) ma 50 gol subiti: ottimo per il modificatore, mediocre come punteggio personale."
-   ]
+   "incroci": {
+    "Atalanta": [
+     13,
+     37
+    ],
+    "Bologna": [
+     6,
+     26
+    ],
+    "Cagliari": [
+     3,
+     34
+    ],
+    "Como": [
+     17,
+     27
+    ],
+    "Fiorentina": [
+     19,
+     36
+    ],
+    "Frosinone": [
+     9,
+     25
+    ],
+    "Genoa": [
+     10,
+     22
+    ],
+    "Inter": [
+     16,
+     35
+    ],
+    "Juventus": [
+     8,
+     31
+    ],
+    "Lazio": [
+     12,
+     30
+    ],
+    "Milan": [
+     5,
+     33
+    ],
+    "Monza": [
+     4,
+     24
+    ],
+    "Napoli": [
+     14,
+     23
+    ],
+    "Parma": [
+     18,
+     28
+    ],
+    "Roma": [
+     2,
+     29
+    ],
+    "Sassuolo": [
+     15,
+     32
+    ],
+    "Torino": [
+     11,
+     21
+    ],
+    "Udinese": [
+     7,
+     20
+    ],
+    "Venezia": [
+     1,
+     38
+    ]
+   }
   },
   {
    "squadra": "Milan",
    "coppia": 16,
-   "tutti": 17,
+   "tripletta": 17,
    "portieri": [
     {
-     "nome": "Maignan",
+     "nome": "Mike Maignan",
      "q": 15,
      "fvm": 50,
      "pv": 37,
      "mv": 6.26,
      "fm": 5.42,
-     "gs": 35,
-     "tot": 5.63
+     "gs": 35
+    },
+    {
+     "nome": "Filippo Terracciano",
+     "q": 1,
+     "fvm": 1,
+     "pv": 2,
+     "mv": 6.0,
+     "fm": 6.0,
+     "gs": 0
     },
     {
      "nome": "Torriani",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
-    },
-    {
-     "nome": "Terracciano",
-     "q": 1,
-     "fvm": 1,
-     "pv": 2,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     }
    ],
-   "note": [
-    "Maignan 37 presenze, ma rientro posticipato per infortunio. Coppia a 17."
-   ]
+   "incroci": {
+    "Atalanta": [
+     7,
+     29
+    ],
+    "Bologna": [
+     9,
+     23
+    ],
+    "Cagliari": [
+     13,
+     27
+    ],
+    "Como": [
+     16,
+     26
+    ],
+    "Fiorentina": [
+     18,
+     31
+    ],
+    "Frosinone": [
+     12,
+     21
+    ],
+    "Genoa": [
+     11,
+     25
+    ],
+    "Inter": [
+     10,
+     24
+    ],
+    "Juventus": [
+     3,
+     22
+    ],
+    "Lazio": [
+     4,
+     34
+    ],
+    "Lecce": [
+     5,
+     33
+    ],
+    "Monza": [
+     17,
+     30
+    ],
+    "Napoli": [
+     15,
+     32
+    ],
+    "Parma": [
+     14,
+     35
+    ],
+    "Roma": [
+     19,
+     36
+    ],
+    "Sassuolo": [
+     6,
+     28
+    ],
+    "Torino": [
+     1,
+     20
+    ],
+    "Udinese": [
+     8,
+     38
+    ],
+    "Venezia": [
+     2,
+     37
+    ]
+   }
   },
   {
    "squadra": "Monza",
    "coppia": 6,
-   "tutti": 7,
+   "tripletta": 7,
    "portieri": [
     {
      "nome": "Thiam",
@@ -497,8 +1367,7 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     },
     {
      "nome": "Strajnar",
@@ -507,8 +1376,7 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     },
     {
      "nome": "Pizzignacco",
@@ -517,69 +1385,222 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     }
    ],
-   "note": [
-    "Neopromossa. Thiam Q5, nessun dato Serie A."
-   ]
+   "incroci": {
+    "Atalanta": [
+     11,
+     25
+    ],
+    "Bologna": [
+     10,
+     29
+    ],
+    "Cagliari": [
+     7,
+     33
+    ],
+    "Como": [
+     14,
+     23
+    ],
+    "Fiorentina": [
+     12,
+     37
+    ],
+    "Frosinone": [
+     19,
+     28
+    ],
+    "Genoa": [
+     18,
+     27
+    ],
+    "Inter": [
+     1,
+     32
+    ],
+    "Juventus": [
+     15,
+     26
+    ],
+    "Lazio": [
+     6,
+     21
+    ],
+    "Lecce": [
+     4,
+     24
+    ],
+    "Milan": [
+     17,
+     30
+    ],
+    "Napoli": [
+     9,
+     35
+    ],
+    "Parma": [
+     3,
+     36
+    ],
+    "Roma": [
+     13,
+     22
+    ],
+    "Sassuolo": [
+     5,
+     20
+    ],
+    "Torino": [
+     8,
+     38
+    ],
+    "Udinese": [
+     2,
+     31
+    ],
+    "Venezia": [
+     16,
+     34
+    ]
+   }
   },
   {
    "squadra": "Napoli",
    "coppia": 16,
-   "tutti": 17,
+   "tripletta": 17,
    "portieri": [
     {
-     "nome": "Meret",
-     "q": 11,
-     "fvm": 45,
-     "pv": 11,
-     "mv": 6.23,
-     "fm": 5.18,
-     "gs": 12,
-     "tot": 5.36
-    },
-    {
-     "nome": "Milinkovic-Savic V.",
+     "nome": "Vanja Milinkovic-Savic",
      "q": 5,
      "fvm": 10,
      "pv": 27,
      "mv": 6.2,
      "fm": 5.65,
-     "gs": 24,
-     "tot": 5.79
+     "gs": 24
     },
     {
-     "nome": "Contini",
+     "nome": "Alex Meret",
+     "q": 11,
+     "fvm": 45,
+     "pv": 11,
+     "mv": 6.23,
+     "fm": 5.18,
+     "gs": 12
+    },
+    {
+     "nome": "Nikita Contini",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     }
    ],
-   "note": [
-    "Ballottaggio vero Meret / Milinkovic-Savic. Prendere ENTRAMBI costa 16 crediti e chiude il ruolo: qualunque sia il titolare hai il voto.",
-    "Milinkovic-Savic è il 2° portiere della Serie A per valore totale (5,79) a quotazione 5."
-   ]
+   "incroci": {
+    "Atalanta": [
+     16,
+     38
+    ],
+    "Bologna": [
+     4,
+     28
+    ],
+    "Cagliari": [
+     18,
+     30
+    ],
+    "Como": [
+     2,
+     21
+    ],
+    "Fiorentina": [
+     5,
+     20
+    ],
+    "Frosinone": [
+     6,
+     26
+    ],
+    "Genoa": [
+     1,
+     36
+    ],
+    "Inter": [
+     3,
+     22
+    ],
+    "Juventus": [
+     10,
+     24
+    ],
+    "Lazio": [
+     11,
+     25
+    ],
+    "Lecce": [
+     14,
+     23
+    ],
+    "Milan": [
+     15,
+     32
+    ],
+    "Monza": [
+     9,
+     35
+    ],
+    "Parma": [
+     17,
+     27
+    ],
+    "Roma": [
+     8,
+     34
+    ],
+    "Sassuolo": [
+     13,
+     31
+    ],
+    "Torino": [
+     12,
+     37
+    ],
+    "Udinese": [
+     19,
+     33
+    ],
+    "Venezia": [
+     7,
+     29
+    ]
+   }
   },
   {
    "squadra": "Parma",
-   "coppia": 14,
-   "tutti": 15,
+   "coppia": 8,
+   "tripletta": 15,
    "portieri": [
     {
-     "nome": "Suzuki",
+     "nome": "Zion Suzuki",
      "q": 7,
      "fvm": 20,
      "pv": 20,
      "mv": 6.02,
      "fm": 4.75,
-     "gs": 28,
-     "tot": 4.71
+     "gs": 28
+    },
+    {
+     "nome": "Edoardo Corvi",
+     "q": 1,
+     "fvm": 1,
+     "pv": 17,
+     "mv": 6.18,
+     "fm": 5.09,
+     "gs": 18
     },
     {
      "nome": "Daffara",
@@ -588,36 +1609,101 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
-    },
-    {
-     "nome": "Corvi",
-     "q": 1,
-     "fvm": 1,
-     "pv": 17,
-     "mv": 6.18,
-     "fm": 5.09,
-     "gs": 18,
-     "tot": null
+     "gs": null
     }
    ],
-   "note": []
+   "incroci": {
+    "Atalanta": [
+     10,
+     33
+    ],
+    "Bologna": [
+     11,
+     38
+    ],
+    "Cagliari": [
+     1,
+     22
+    ],
+    "Como": [
+     4,
+     31
+    ],
+    "Fiorentina": [
+     15,
+     32
+    ],
+    "Frosinone": [
+     13,
+     23
+    ],
+    "Genoa": [
+     5,
+     21
+    ],
+    "Inter": [
+     6,
+     20
+    ],
+    "Juventus": [
+     2,
+     37
+    ],
+    "Lazio": [
+     8,
+     29
+    ],
+    "Lecce": [
+     18,
+     28
+    ],
+    "Milan": [
+     14,
+     35
+    ],
+    "Monza": [
+     3,
+     36
+    ],
+    "Napoli": [
+     17,
+     27
+    ],
+    "Roma": [
+     12,
+     24
+    ],
+    "Sassuolo": [
+     16,
+     26
+    ],
+    "Torino": [
+     7,
+     34
+    ],
+    "Udinese": [
+     9,
+     25
+    ],
+    "Venezia": [
+     19,
+     30
+    ]
+   }
   },
   {
    "squadra": "Roma",
    "coppia": 19,
-   "tutti": 20,
+   "tripletta": 20,
    "portieri": [
     {
-     "nome": "Svilar",
+     "nome": "Mile Svilar",
      "q": 18,
      "fvm": 65,
      "pv": 38,
      "mv": 6.26,
      "fm": 5.45,
-     "gs": 31,
-     "tot": 5.65
+     "gs": 31
     },
     {
      "nome": "De Marzi",
@@ -626,77 +1712,232 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     },
     {
      "nome": "Gollini",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     }
    ],
-   "note": [
-    "Svilar titolare inamovibile, 38 presenze. Coppia a 20 crediti. Solo 1 rigore concesso in stagione."
-   ]
+   "incroci": {
+    "Atalanta": [
+     3,
+     20
+    ],
+    "Bologna": [
+     14,
+     30
+    ],
+    "Cagliari": [
+     9,
+     38
+    ],
+    "Como": [
+     6,
+     37
+    ],
+    "Fiorentina": [
+     1,
+     35
+    ],
+    "Frosinone": [
+     17,
+     33
+    ],
+    "Genoa": [
+     7,
+     28
+    ],
+    "Inter": [
+     5,
+     31
+    ],
+    "Juventus": [
+     16,
+     27
+    ],
+    "Lazio": [
+     15,
+     32
+    ],
+    "Lecce": [
+     2,
+     29
+    ],
+    "Milan": [
+     19,
+     36
+    ],
+    "Monza": [
+     13,
+     22
+    ],
+    "Napoli": [
+     8,
+     34
+    ],
+    "Parma": [
+     12,
+     24
+    ],
+    "Sassuolo": [
+     11,
+     25
+    ],
+    "Torino": [
+     4,
+     23
+    ],
+    "Udinese": [
+     10,
+     21
+    ],
+    "Venezia": [
+     18,
+     26
+    ]
+   }
   },
   {
    "squadra": "Sassuolo",
    "coppia": 8,
-   "tutti": 10,
+   "tripletta": 9,
    "portieri": [
     {
-     "nome": "Muric",
+     "nome": "Arijanet Muric",
      "q": 7,
      "fvm": 15,
      "pv": 32,
      "mv": 6.08,
      "fm": 4.77,
-     "gs": 43,
-     "tot": 4.78
+     "gs": 43
     },
     {
-     "nome": "Turati",
+     "nome": "Stefano Turati",
      "q": 1,
      "fvm": 3,
      "pv": 6,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 6.17,
+     "fm": 5.0,
+     "gs": 7
     },
     {
      "nome": "Russo A.",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     },
     {
      "nome": "Satalino",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     }
    ],
-   "note": []
+   "incroci": {
+    "Atalanta": [
+     1,
+     30
+    ],
+    "Bologna": [
+     3,
+     27
+    ],
+    "Cagliari": [
+     19,
+     29
+    ],
+    "Como": [
+     8,
+     22
+    ],
+    "Fiorentina": [
+     10,
+     21
+    ],
+    "Frosinone": [
+     7,
+     34
+    ],
+    "Genoa": [
+     12,
+     33
+    ],
+    "Inter": [
+     17,
+     38
+    ],
+    "Juventus": [
+     4,
+     23
+    ],
+    "Lazio": [
+     9,
+     35
+    ],
+    "Lecce": [
+     15,
+     32
+    ],
+    "Milan": [
+     6,
+     28
+    ],
+    "Monza": [
+     5,
+     20
+    ],
+    "Napoli": [
+     13,
+     31
+    ],
+    "Parma": [
+     16,
+     26
+    ],
+    "Roma": [
+     11,
+     25
+    ],
+    "Torino": [
+     2,
+     24
+    ],
+    "Udinese": [
+     18,
+     37
+    ],
+    "Venezia": [
+     14,
+     36
+    ]
+   }
   },
   {
    "squadra": "Torino",
    "coppia": 2,
-   "tutti": 3,
+   "tripletta": 3,
    "portieri": [
+    {
+     "nome": "Alberto Paleari",
+     "q": 1,
+     "fvm": 1,
+     "pv": 29,
+     "mv": 6.09,
+     "fm": 4.52,
+     "gs": 45
+    },
     {
      "nome": "Mascardi",
      "q": 1,
@@ -704,48 +1945,119 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     },
     {
      "nome": "Siviero",
      "q": 1,
      "fvm": 1,
      "pv": 0,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
-    },
-    {
-     "nome": "Paleari",
-     "q": 1,
-     "fvm": 1,
-     "pv": 29,
-     "mv": 6.09,
-     "fm": 4.52,
-     "gs": 45,
-     "tot": 4.55
+     "mv": 0.0,
+     "fm": 0.0,
+     "gs": 0
     }
    ],
-   "note": [
-    "Perri in attesa di ufficialità. Paleari Q1 con MV 6,09: se diventa titolare è il colpo a costo zero."
-   ]
+   "incroci": {
+    "Atalanta": [
+     19,
+     27
+    ],
+    "Bologna": [
+     5,
+     35
+    ],
+    "Cagliari": [
+     16,
+     36
+    ],
+    "Como": [
+     9,
+     25
+    ],
+    "Fiorentina": [
+     3,
+     26
+    ],
+    "Frosinone": [
+     10,
+     22
+    ],
+    "Genoa": [
+     14,
+     32
+    ],
+    "Inter": [
+     15,
+     28
+    ],
+    "Juventus": [
+     18,
+     30
+    ],
+    "Lazio": [
+     13,
+     31
+    ],
+    "Lecce": [
+     11,
+     21
+    ],
+    "Milan": [
+     1,
+     20
+    ],
+    "Monza": [
+     8,
+     38
+    ],
+    "Napoli": [
+     12,
+     37
+    ],
+    "Parma": [
+     7,
+     34
+    ],
+    "Roma": [
+     4,
+     23
+    ],
+    "Sassuolo": [
+     2,
+     24
+    ],
+    "Udinese": [
+     6,
+     29
+    ],
+    "Venezia": [
+     17,
+     33
+    ]
+   }
   },
   {
    "squadra": "Udinese",
    "coppia": 10,
-   "tutti": 11,
+   "tripletta": 11,
    "portieri": [
     {
-     "nome": "Okoye",
+     "nome": "Maduka Okoye",
      "q": 9,
      "fvm": 29,
      "pv": 30,
      "mv": 6.07,
      "fm": 5.08,
-     "gs": 32,
-     "tot": 5.1
+     "gs": 32
+    },
+    {
+     "nome": "Daniele Padelli",
+     "q": 1,
+     "fvm": 1,
+     "pv": 2,
+     "mv": 6.25,
+     "fm": 5.25,
+     "gs": 2
     },
     {
      "nome": "Piana",
@@ -754,26 +2066,92 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
-    },
-    {
-     "nome": "Padelli",
-     "q": 1,
-     "fvm": 1,
-     "pv": 2,
-     "mv": null,
-     "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     }
    ],
-   "note": []
+   "incroci": {
+    "Atalanta": [
+     17,
+     32
+    ],
+    "Bologna": [
+     12,
+     22
+    ],
+    "Cagliari": [
+     5,
+     26
+    ],
+    "Como": [
+     1,
+     28
+    ],
+    "Fiorentina": [
+     13,
+     23
+    ],
+    "Frosinone": [
+     15,
+     30
+    ],
+    "Genoa": [
+     16,
+     34
+    ],
+    "Inter": [
+     4,
+     27
+    ],
+    "Juventus": [
+     14,
+     35
+    ],
+    "Lazio": [
+     3,
+     36
+    ],
+    "Lecce": [
+     7,
+     20
+    ],
+    "Milan": [
+     8,
+     38
+    ],
+    "Monza": [
+     2,
+     31
+    ],
+    "Napoli": [
+     19,
+     33
+    ],
+    "Parma": [
+     9,
+     25
+    ],
+    "Roma": [
+     10,
+     21
+    ],
+    "Sassuolo": [
+     18,
+     37
+    ],
+    "Torino": [
+     6,
+     29
+    ],
+    "Venezia": [
+     11,
+     24
+    ]
+   }
   },
   {
    "squadra": "Venezia",
    "coppia": 7,
-   "tutti": 8,
+   "tripletta": 8,
    "portieri": [
     {
      "nome": "Stankovic F.",
@@ -782,8 +2160,7 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     },
     {
      "nome": "Pozzi",
@@ -792,8 +2169,7 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     },
     {
      "nome": "Grandi",
@@ -802,13 +2178,87 @@
      "pv": null,
      "mv": null,
      "fm": null,
-     "gs": null,
-     "tot": null
+     "gs": null
     }
    ],
-   "note": [
-    "Neopromossa. Stankovic Q6, nessun dato."
-   ]
+   "incroci": {
+    "Atalanta": [
+     6,
+     28
+    ],
+    "Bologna": [
+     13,
+     31
+    ],
+    "Cagliari": [
+     15,
+     25
+    ],
+    "Como": [
+     10,
+     35
+    ],
+    "Fiorentina": [
+     4,
+     27
+    ],
+    "Frosinone": [
+     3,
+     20
+    ],
+    "Genoa": [
+     8,
+     23
+    ],
+    "Inter": [
+     9,
+     21
+    ],
+    "Juventus": [
+     12,
+     32
+    ],
+    "Lazio": [
+     5,
+     22
+    ],
+    "Lecce": [
+     1,
+     38
+    ],
+    "Milan": [
+     2,
+     37
+    ],
+    "Monza": [
+     16,
+     34
+    ],
+    "Napoli": [
+     7,
+     29
+    ],
+    "Parma": [
+     19,
+     30
+    ],
+    "Roma": [
+     18,
+     26
+    ],
+    "Sassuolo": [
+     14,
+     36
+    ],
+    "Torino": [
+     17,
+     33
+    ],
+    "Udinese": [
+     11,
+     24
+    ]
+   }
   }
  ]
 }
