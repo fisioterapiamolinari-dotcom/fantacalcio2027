@@ -1,0 +1,143 @@
+{
+ "aggiornato": "2026-08-12",
+ "budget": 1000,
+ "ripartizione": [
+  { "ruolo": "Portieri", "loro25": 108, "obiettivo": "150-180", "quota": "16%" },
+  { "ruolo": "Difensori", "loro25": 145, "obiettivo": "280-320", "quota": "30%" },
+  { "ruolo": "Centrocampisti", "loro25": 293, "obiettivo": "220-250", "quota": "23%" },
+  { "ruolo": "Attaccanti", "loro25": 431, "obiettivo": "270-300", "quota": "29%" }
+ ],
+ "sezioni": [
+  {
+   "id": "generale",
+   "titolo": "Generale",
+   "punti": [
+    {
+     "t": "Il modificatore difesa è il vantaggio strutturale",
+     "d": "Tra una difesa media e una top ci sono 55 punti a stagione. La lega spende in media 145 crediti sull'intero reparto: il reparto è sistematicamente sottovalutato (0,74 rispetto ai valori di listino, contro 1,14 dei centrocampisti)."
+    },
+    {
+     "t": "Scrivi il tetto massimo prima di iniziare",
+     "d": "Per ogni giocatore in lista, un prezzo oltre il quale lasci. Non superarlo mai di più del 10%. È la regola che protegge dalle aste emotive."
+    },
+    {
+     "t": "Lancia per primo chi NON vuoi",
+     "d": "Aprendo su un top fuori dal tuo piano bruci i crediti degli altri mentre resti liquido. I primi tre big pagano un sovrapprezzo del 15-20%."
+    },
+    {
+     "t": "Chiudi con zero crediti residui",
+     "d": "L'anno scorso la lega ha lasciato 236 crediti sul tavolo, FCMN da solo 91. Sono attaccanti di prima fascia regalati."
+    },
+    {
+     "t": "Paga la titolarità, non il nome",
+     "d": "Nessun attaccante sopra i 130 crediti è andato sotto il livello di rimpiazzo. Nella fascia 1-15 crediti il 62% è stato inutile. La differenza sta nei minuti: 2.088 contro 1.242 di media."
+    },
+    {
+     "t": "Schiera sempre 5 difensori",
+     "d": "Il modificatore prende i 3 migliori tra quelli schierati. Con 5 invece di 4 guadagni 13 punti a stagione senza spendere un credito. Moduli: 5-3-2 e 5-4-1."
+    }
+   ]
+  },
+  {
+   "id": "por",
+   "titolo": "Portieri",
+   "punti": [
+    {
+     "t": "Il portiere conta doppio",
+     "d": "Entra sempre nel modificatore, senza dover superare la selezione dei tre migliori. Alzare la sua MV da 6,10 a 6,50 vale +0,39 a giornata, praticamente uno a uno. Il voto del portiere pesa il doppio di quello di un centrocampista."
+    },
+    {
+     "t": "Ma i gol subiti restano un malus",
+     "d": "Il modificatore usa il voto puro; il -1 per gol subito colpisce solo il punteggio personale. Vanno sommate le due cose: Falcone ha la MV più alta della Serie A (6,41) ma 50 gol subiti lo fanno scendere al quinto posto per valore totale."
+    },
+    {
+     "t": "Il target: Milinkovic-Savic",
+     "d": "Quotazione 5, secondo per valore totale (5,79 a giornata) dietro al solo Carnesecchi. L'anno scorso in lega è andato a 27 crediti. Rischio: ballottaggio con Meret. Tetto: 40 crediti."
+    },
+    {
+     "t": "Alternativa solida: Carnesecchi",
+     "d": "Miglior valore totale assoluto (5,89). Quotazione 16, pagato 97 l'anno scorso. Vale fino a 90-100 crediti, ma solo se non riesci a prendere Milinkovic-Savic."
+    },
+    {
+     "t": "Da evitare",
+     "d": "Svilar e Maignan a 110+ crediti: valgono 5,65 e 5,63, cioè 0,15 in meno di Carnesecchi a prezzo doppio. Di Gregorio: MV 6,08, contributo nullo al modificatore, l'anno scorso pagato 112."
+    }
+   ]
+  },
+  {
+   "id": "dc",
+   "titolo": "Difensori",
+   "punti": [
+    {
+     "t": "Dimarco non ha sostituti",
+     "d": "MV 6,60 e FM 7,64, entrambe le migliori del reparto, più 17 punti di modificatore a stagione. Valore totale 7,95 a giornata contro i 6,90 del secondo. Quotazione 32, pagato 105 l'anno scorso. Tetto: 200-220 crediti."
+    },
+    {
+     "t": "La BASE: tre nomi intercambiabili",
+     "d": "MV sopra 6,05 e pochi bonus, quindi il mercato non li paga. Akanji 6,28 (Q16), Rrahmani 6,24 (Q14), Solet 6,18 (Q13), Celik 6,17 (Q8), Kalulu 6,14 (Q13), Carlos Augusto 6,12 (Q7), Vasquez 6,08 (Q9), N'Dicka 6,08 (Q13), Zappacosta 6,06 (Q8), Valle 6,06 (Q6), Valeri 6,06 (Q8). Tra il primo e l'ultimo ballano 4 punti a stagione: non rilanciare mai, se sale uno passa al successivo. Tetto: 40-50 crediti l'uno."
+    },
+    {
+     "t": "Le difese su cui puntare",
+     "d": "Roma di Gasperini (MV reparto 6,13, un solo rigore concesso in stagione): Celik a Q8 e N'Dicka a Q13 sono il miglior rapporto della BASE. Inter (MV reparto 6,22, la migliore): Akanji e Carlos Augusto. Napoli di Allegri: reparto a 5,99 ma il tecnico più pragmatico del lotto, Rrahmani e Di Lorenzo sono scommesse al rialzo."
+    },
+    {
+     "t": "Da evitare",
+     "d": "Bastoni: stessa MV della BASE ma pagato 63 crediti per il nome. Ramon: 11 ammonizioni in 32 presenze, cioè 5,5 punti buttati. Atalanta e Milan: cambio di modulo (difesa a 4 con Sarri, 3-4-2-1 con Amorim) rende i dati 25/26 inutilizzabili."
+    },
+    {
+     "t": "I terzini da bonus sono un reparto a parte",
+     "d": "Wesley (MV 6,12, FM 6,47, Q17) e gli altri E/W producono valore coi bonus, non col voto: il modificatore usa il voto puro. Vanno presi, ma non sono il motore del modificatore."
+    }
+   ]
+  },
+  {
+   "id": "cc",
+   "titolo": "Centrocampisti",
+   "punti": [
+    {
+     "t": "Non entrare nella guerra",
+     "d": "La lega paga il centrocampo il 14% sopra i valori di listino (1,14), il reparto più sopravvalutato. È lì che gli avversari bruciano i budget: media 293 crediti."
+    },
+    {
+     "t": "Il Mantra distingue i due mestieri",
+     "d": "T e W sono trequartisti e ali, cioè bonus. M e C sono mediani e mezzale, cioè voto. Per il fantacalcio classic servono i primi, a meno che non costino niente."
+    },
+    {
+     "t": "Attenzione a Calhanoglu",
+     "d": "Quotazione 27 e FVM 230, il più caro dei centrocampisti difensivi, ma scarto +4,4 sugli attesi: ha segnato più di quanto le occasioni valessero. Tipico giocatore che l'anno dopo delude chi lo paga caro."
+    },
+    {
+     "t": "I candidati affare",
+     "d": "Zaccagni (Q16, FVM 91): pagato 190 l'anno scorso, 3 bonus prodotti, ma scarto -6,17, il terzo peggiore del campionato, ed è rigorista. Conceicao (Q12): pagato 87, scarto -4,7. Mkhitaryan (Q5): scarto -4,3."
+    }
+   ]
+  },
+  {
+   "id": "att",
+   "titolo": "Attaccanti",
+   "punti": [
+    {
+     "t": "Il livello di rimpiazzo è 6,77",
+     "d": "È la FM media dei titolari costati 15 crediti o meno. Tutto quello che spendi sopra serve a comprare i decimali oltre quella soglia."
+    },
+    {
+     "t": "La fascia 131-230 è la trappola",
+     "d": "Costava 511 crediti per punto di FM, contro i 217 della fascia 61-130. Yildiz a 153 ne è costati 429 per punto, Kean a 226 ben 681, David a 291 ben 856."
+    },
+    {
+     "t": "Ma il tasso di successo cresce col prezzo",
+     "d": "Nessun attaccante sopra i 130 crediti è andato sotto il rimpiazzo. Nella fascia 1-15 il 62% è stato un flop. Il prezzo alto compra soprattutto la certezza di giocare."
+    },
+    {
+     "t": "Il piano",
+     "d": "Un solo big vero se lo prendi sotto i 250. Due nella fascia 60-120, dove sta il valore reale. Tre riempitivi da 10-25 crediti ma solo con titolarità sicura, non scommesse."
+    },
+    {
+     "t": "I candidati affare",
+     "d": "De Ketelaere (Q17, FVM 106): pagato 53, scarto -7,2, il peggiore del campionato, quasi tutto da assist sprecati dai compagni. Kean (Q25): pagato 226, scarto -6,4. Dybala (Q14): pagato 159, scarto -4,7."
+    }
+   ]
+  }
+ ],
+ "note_personali": []
+}

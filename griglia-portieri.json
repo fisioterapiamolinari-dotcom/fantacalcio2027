@@ -1,0 +1,814 @@
+{
+ "aggiornato": "2026-08-12",
+ "squadre": [
+  {
+   "squadra": "Atalanta",
+   "coppia": 17,
+   "tutti": 19,
+   "portieri": [
+    {
+     "nome": "Carnesecchi",
+     "q": 16,
+     "fvm": 52,
+     "pv": 37,
+     "mv": 6.36,
+     "fm": 5.58,
+     "gs": 35,
+     "tot": 5.89
+    },
+    {
+     "nome": "Vismara",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Rossi F.",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Sportiello",
+     "q": 1,
+     "fvm": 1,
+     "pv": 1,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Carnesecchi è il miglior valore totale assoluto (5,89). Riserve a 1 credito: la coppia costa 17."
+   ]
+  },
+  {
+   "squadra": "Bologna",
+   "coppia": 11,
+   "tutti": 12,
+   "portieri": [
+    {
+     "nome": "Skorupski",
+     "q": 10,
+     "fvm": 37,
+     "pv": 18,
+     "mv": 6.19,
+     "fm": 5.28,
+     "gs": 15,
+     "tot": 5.41
+    },
+    {
+     "nome": "Happonen",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Pessina Mas.",
+     "q": 1,
+     "fvm": 1,
+     "pv": 4,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Skorupski MV 6,19 a Q10: rapporto onesto, coppia a 12 crediti."
+   ]
+  },
+  {
+   "squadra": "Cagliari",
+   "coppia": 10,
+   "tutti": 11,
+   "portieri": [
+    {
+     "nome": "Caprile",
+     "q": 9,
+     "fvm": 27,
+     "pv": 38,
+     "mv": 6.29,
+     "fm": 4.87,
+     "gs": 53,
+     "tot": 5.11
+    },
+    {
+     "nome": "Sherri",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Ciocci",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Caprile MV 6,29 ma 53 gol subiti: il peggior valore totale tra i portieri di alta MV."
+   ]
+  },
+  {
+   "squadra": "Como",
+   "coppia": 17,
+   "tutti": 18,
+   "portieri": [
+    {
+     "nome": "Butez",
+     "q": 16,
+     "fvm": 56,
+     "pv": 38,
+     "mv": 6.07,
+     "fm": 5.37,
+     "gs": 29,
+     "tot": 5.38
+    },
+    {
+     "nome": "Tornqvist",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Vigorito",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Butez 38 presenze e solo 29 gol subiti, ma MV 6,07: zero modificatore. Q16 è caro."
+   ]
+  },
+  {
+   "squadra": "Fiorentina",
+   "coppia": 14,
+   "tutti": 15,
+   "portieri": [
+    {
+     "nome": "De Gea",
+     "q": 13,
+     "fvm": 45,
+     "pv": 37,
+     "mv": 6.24,
+     "fm": 5.0,
+     "gs": 49,
+     "tot": 5.19
+    },
+    {
+     "nome": "Christensen O.",
+     "q": 1,
+     "fvm": 1,
+     "pv": 1,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Lezzerini",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": []
+  },
+  {
+   "squadra": "Frosinone",
+   "coppia": 6,
+   "tutti": 7,
+   "portieri": [
+    {
+     "nome": "Palmisani",
+     "q": 4,
+     "fvm": 8,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Desplanches",
+     "q": 2,
+     "fvm": 8,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Lolic",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Neopromossa, nessun dato. Palmisani/Desplanches in ballottaggio: coppia a 6 crediti."
+   ]
+  },
+  {
+   "squadra": "Genoa",
+   "coppia": 9,
+   "tutti": 10,
+   "portieri": [
+    {
+     "nome": "Bijlow",
+     "q": 8,
+     "fvm": 18,
+     "pv": 16,
+     "mv": 6.06,
+     "fm": 4.78,
+     "gs": 20,
+     "tot": 4.77
+    },
+    {
+     "nome": "Stolz",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Sommariva",
+     "q": 1,
+     "fvm": 1,
+     "pv": 2,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": []
+  },
+  {
+   "squadra": "Inter",
+   "coppia": 19,
+   "tutti": 20,
+   "portieri": [
+    {
+     "nome": "Martinez Jo.",
+     "q": 17,
+     "fvm": 63,
+     "pv": 5,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Provedel",
+     "q": 2,
+     "fvm": 5,
+     "pv": 27,
+     "mv": 6.26,
+     "fm": 5.35,
+     "gs": 27,
+     "tot": 5.54
+    },
+    {
+     "nome": "Di Gennaro",
+     "q": 1,
+     "fvm": 1,
+     "pv": 1,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Jo. Martinez nuovo titolare, nessun dato in Serie A: incognita. Provedel a Q2 con MV 6,26 è la copertura più economica del campionato."
+   ]
+  },
+  {
+   "squadra": "Juventus",
+   "coppia": 15,
+   "tutti": 16,
+   "portieri": [
+    {
+     "nome": "Di Gregorio",
+     "q": 9,
+     "fvm": 40,
+     "pv": 30,
+     "mv": 6.08,
+     "fm": 5.33,
+     "gs": 25,
+     "tot": 5.36
+    },
+    {
+     "nome": "Perin",
+     "q": 6,
+     "fvm": 10,
+     "pv": 9,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Pinsoglio",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Di Gregorio MV 6,08: contributo nullo al modificatore. Perin a Q6 rende la coppia cara (16) per quello che rende."
+   ]
+  },
+  {
+   "squadra": "Lazio",
+   "coppia": 10,
+   "tutti": 11,
+   "portieri": [
+    {
+     "nome": "Mandas",
+     "q": 9,
+     "fvm": 30,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Renzetti",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Motta",
+     "q": 1,
+     "fvm": 1,
+     "pv": 9,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": []
+  },
+  {
+   "squadra": "Lecce",
+   "coppia": 9,
+   "tutti": 10,
+   "portieri": [
+    {
+     "nome": "Falcone",
+     "q": 8,
+     "fvm": 25,
+     "pv": 38,
+     "mv": 6.41,
+     "fm": 5.22,
+     "gs": 50,
+     "tot": 5.58
+    },
+    {
+     "nome": "Samooja",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Fruchtl",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Falcone ha la MV più alta della Serie A (6,41) ma 50 gol subiti: ottimo per il modificatore, mediocre come punteggio personale."
+   ]
+  },
+  {
+   "squadra": "Milan",
+   "coppia": 16,
+   "tutti": 17,
+   "portieri": [
+    {
+     "nome": "Maignan",
+     "q": 15,
+     "fvm": 50,
+     "pv": 37,
+     "mv": 6.26,
+     "fm": 5.42,
+     "gs": 35,
+     "tot": 5.63
+    },
+    {
+     "nome": "Torriani",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Terracciano",
+     "q": 1,
+     "fvm": 1,
+     "pv": 2,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Maignan 37 presenze, ma rientro posticipato per infortunio. Coppia a 17."
+   ]
+  },
+  {
+   "squadra": "Monza",
+   "coppia": 6,
+   "tutti": 7,
+   "portieri": [
+    {
+     "nome": "Thiam",
+     "q": 5,
+     "fvm": 12,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Strajnar",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Pizzignacco",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Neopromossa. Thiam Q5, nessun dato Serie A."
+   ]
+  },
+  {
+   "squadra": "Napoli",
+   "coppia": 16,
+   "tutti": 17,
+   "portieri": [
+    {
+     "nome": "Meret",
+     "q": 11,
+     "fvm": 45,
+     "pv": 11,
+     "mv": 6.23,
+     "fm": 5.18,
+     "gs": 12,
+     "tot": 5.36
+    },
+    {
+     "nome": "Milinkovic-Savic V.",
+     "q": 5,
+     "fvm": 10,
+     "pv": 27,
+     "mv": 6.2,
+     "fm": 5.65,
+     "gs": 24,
+     "tot": 5.79
+    },
+    {
+     "nome": "Contini",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Ballottaggio vero Meret / Milinkovic-Savic. Prendere ENTRAMBI costa 16 crediti e chiude il ruolo: qualunque sia il titolare hai il voto.",
+    "Milinkovic-Savic è il 2° portiere della Serie A per valore totale (5,79) a quotazione 5."
+   ]
+  },
+  {
+   "squadra": "Parma",
+   "coppia": 14,
+   "tutti": 15,
+   "portieri": [
+    {
+     "nome": "Suzuki",
+     "q": 7,
+     "fvm": 20,
+     "pv": 20,
+     "mv": 6.02,
+     "fm": 4.75,
+     "gs": 28,
+     "tot": 4.71
+    },
+    {
+     "nome": "Daffara",
+     "q": 7,
+     "fvm": 5,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Corvi",
+     "q": 1,
+     "fvm": 1,
+     "pv": 17,
+     "mv": 6.18,
+     "fm": 5.09,
+     "gs": 18,
+     "tot": null
+    }
+   ],
+   "note": []
+  },
+  {
+   "squadra": "Roma",
+   "coppia": 19,
+   "tutti": 20,
+   "portieri": [
+    {
+     "nome": "Svilar",
+     "q": 18,
+     "fvm": 65,
+     "pv": 38,
+     "mv": 6.26,
+     "fm": 5.45,
+     "gs": 31,
+     "tot": 5.65
+    },
+    {
+     "nome": "De Marzi",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Gollini",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Svilar titolare inamovibile, 38 presenze. Coppia a 20 crediti. Solo 1 rigore concesso in stagione."
+   ]
+  },
+  {
+   "squadra": "Sassuolo",
+   "coppia": 8,
+   "tutti": 10,
+   "portieri": [
+    {
+     "nome": "Muric",
+     "q": 7,
+     "fvm": 15,
+     "pv": 32,
+     "mv": 6.08,
+     "fm": 4.77,
+     "gs": 43,
+     "tot": 4.78
+    },
+    {
+     "nome": "Turati",
+     "q": 1,
+     "fvm": 3,
+     "pv": 6,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Russo A.",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Satalino",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": []
+  },
+  {
+   "squadra": "Torino",
+   "coppia": 2,
+   "tutti": 3,
+   "portieri": [
+    {
+     "nome": "Mascardi",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Siviero",
+     "q": 1,
+     "fvm": 1,
+     "pv": 0,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Paleari",
+     "q": 1,
+     "fvm": 1,
+     "pv": 29,
+     "mv": 6.09,
+     "fm": 4.52,
+     "gs": 45,
+     "tot": 4.55
+    }
+   ],
+   "note": [
+    "Perri in attesa di ufficialità. Paleari Q1 con MV 6,09: se diventa titolare è il colpo a costo zero."
+   ]
+  },
+  {
+   "squadra": "Udinese",
+   "coppia": 10,
+   "tutti": 11,
+   "portieri": [
+    {
+     "nome": "Okoye",
+     "q": 9,
+     "fvm": 29,
+     "pv": 30,
+     "mv": 6.07,
+     "fm": 5.08,
+     "gs": 32,
+     "tot": 5.1
+    },
+    {
+     "nome": "Piana",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Padelli",
+     "q": 1,
+     "fvm": 1,
+     "pv": 2,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": []
+  },
+  {
+   "squadra": "Venezia",
+   "coppia": 7,
+   "tutti": 8,
+   "portieri": [
+    {
+     "nome": "Stankovic F.",
+     "q": 6,
+     "fvm": 14,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Pozzi",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    },
+    {
+     "nome": "Grandi",
+     "q": 1,
+     "fvm": 1,
+     "pv": null,
+     "mv": null,
+     "fm": null,
+     "gs": null,
+     "tot": null
+    }
+   ],
+   "note": [
+    "Neopromossa. Stankovic Q6, nessun dato."
+   ]
+  }
+ ]
+}
