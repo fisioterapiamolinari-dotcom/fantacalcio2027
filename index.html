@@ -196,9 +196,13 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
 .gcard h3{margin:0 0 3px;font-size:16px;font-weight:700;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
 .gcard h3 em{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--brass);font-weight:500}
 .gnote{font-size:13px;line-height:1.6;color:var(--mute);margin:9px 0 0;padding-left:13px;border-left:2px solid var(--line)}
-.inc{font-family:var(--mono);font-size:12.5px;line-height:1.9;color:var(--mute)}
-.inc b{color:var(--ink);font-weight:500}
-.inc i{font-style:normal;color:var(--brass)}
+.acc{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.acc span{font-size:12.5px;background:rgba(255,255,255,.04);border-radius:6px;padding:4px 9px;
+  color:var(--mute);white-space:nowrap}
+.acc span b{font-family:var(--mono);font-weight:600;margin-left:5px;color:var(--faint)}
+.acc span.v0{background:rgba(111,181,138,.22);color:#DFF3E6} .acc span.v0 b{color:#8FE0AC}
+.acc span.v1{background:rgba(79,163,199,.22);color:#DCEEF7} .acc span.v1 b{color:#7FCDEB}
+.acc span.v2{background:rgba(217,164,65,.20);color:#F6EAD2} .acc span.v2 b{color:#E8BD6A}
 .trip{margin:0;padding:0;list-style:none;counter-reset:t}
 .trip li{counter-increment:t;display:flex;align-items:baseline;gap:10px;padding:6px 0;font-size:14px;
   border-bottom:1px dotted rgba(255,255,255,.07)}
@@ -397,11 +401,11 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
 <!-- ============ GRIGLIA ============ -->
 <section class="page" id="p-griglia">
   <div class="panel">
-    <h2>Griglia portieri <em>incroci di calendario e triplette</em></h2>
+    <h2>Griglia portieri <em>accoppiamenti e triplette</em></h2>
     <p style="font-size:13.5px;line-height:1.7;color:var(--mute);margin:0">
-      Gli <b style="color:var(--ink)">incroci</b> sono le giornate in cui due squadre si affrontano.
-      Se prendi i portieri di due squadre diverse, in quelle giornate uno dei due subisce per forza:
-      sono i turni in cui la griglia non ti copre. Prendere la tripletta di una sola squadra elimina il problema.
+      Il numero conta le giornate in cui le due squadre giocano <b style="color:var(--ink)">entrambe in casa</b>
+      (e quindi anche entrambe fuori). Più è basso, meglio i due calendari si alternano e più spesso puoi
+      schierare il portiere che gioca in casa. Verde è perfetto, celeste ottimo, arancione buono.
     </p>
     <input type="text" id="gfilter" placeholder="Filtra squadra…" style="margin-top:14px">
   </div>
@@ -949,12 +953,12 @@ function renderGrid(){
   var q=nrm($('gfilter').value.trim());
   var sq=(GRID.squadre||[]).filter(function(s){return !q||nrm(s.squadra).indexOf(q)>=0;});
 
-  var inc=sq.slice().sort(function(a,b){return a.squadra.localeCompare(b.squadra);}).map(function(s){
-    var righe=Object.keys(s.incroci||{}).map(function(av){
-      var g=s.incroci[av];
-      return '<b>'+esc(av)+'</b> <i>'+g.join(', ')+'</i>';
-    }).join(' · ');
-    return '<div class="gcard"><h3>'+esc(s.squadra)+'</h3><div class="inc">'+righe+'</div></div>';
+  var acc=sq.slice().sort(function(a,b){return a.squadra.localeCompare(b.squadra);}).map(function(s){
+    var items=(s.accoppiamenti||[]).slice(0,3).map(function(a){
+      var c = a.v<1 ? 'v0' : (a.v<4 ? 'v1' : (a.v<6 ? 'v2' : ''));
+      return '<span class="'+c+'">'+esc(a.sq)+'<b>'+a.v+'</b></span>';
+    }).join('');
+    return '<div class="gcard"><h3>'+esc(s.squadra)+'</h3><div class="acc">'+items+'</div></div>';
   }).join('');
 
   var trip=sq.slice().sort(function(a,b){return a.tripletta-b.tripletta;}).map(function(s){
@@ -973,10 +977,8 @@ function renderGrid(){
   }).join('');
 
   $('griglia').innerHTML =
-    '<div class="gsec"><div class="lbl2">Incroci di calendario — giornate in cui le squadre si affrontano</div></div>'+
-    inc +
-    '<div class="gsec"><div class="lbl2">Triplette per squadra, in ordine di titolarità — ordinate per costo</div></div>'+
-    trip;
+    '<div class="gsec"><div class="lbl2">Migliori accoppiamenti — i tre calendari che si alternano meglio</div></div>'+acc+
+    '<div class="gsec"><div class="lbl2">Triplette per squadra, in ordine di titolarità — ordinate per costo</div></div>'+trip;
 }
 $('gfilter').addEventListener('input',renderGrid);
 
