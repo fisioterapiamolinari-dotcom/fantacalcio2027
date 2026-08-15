@@ -165,6 +165,32 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
 .slots{font-family:var(--mono);font-size:10px;color:var(--mute);margin-top:4px}
 .slots b{color:var(--ink);font-weight:500} .slots b.ok{color:var(--brass)}
 .empty{color:var(--mute);font-size:13px;padding:20px 4px;line-height:1.65}
+
+/* squadre di Serie A */
+.clubgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:8px}
+.clubbtn{background:rgba(255,255,255,.03);border:1px solid var(--line);color:var(--mute);
+  border-radius:10px;padding:10px 11px;text-align:left;cursor:pointer;font-family:var(--sans);font-size:13.5px;line-height:1.25}
+.clubbtn span{display:block;font-family:var(--mono);font-size:10px;opacity:.7;margin-top:3px}
+.clubbtn:hover{color:var(--ink);border-color:var(--brass)}
+.clubbtn.on{background:var(--brass);color:#08152C;border-color:transparent;font-weight:700}
+.clubbtn.top{border-color:var(--dc);color:var(--ink)}
+.cbox{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:820px){.cbox{grid-template-columns:1fr}}
+.cfield label{display:block;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--faint);margin:0 0 5px}
+.cfield textarea{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:9px;
+  color:var(--ink);padding:9px 11px;font-family:var(--sans);font-size:13px;line-height:1.5;resize:vertical;min-height:62px}
+.cfield textarea:focus{outline:none;border-color:var(--brass)}
+.cfield{margin-bottom:12px}
+.crosa{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:14px;margin-top:6px}
+.crosa .rl{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);
+  padding-bottom:4px;border-bottom:1px solid rgba(255,255,255,.07)}
+.crosa table{margin-top:4px}
+.crosa td{padding:5px 3px;border-top:1px solid rgba(255,255,255,.05);font-size:13px;vertical-align:top}
+.crosa button.nm{background:none;border:none;color:var(--ink);font-family:var(--sans);font-size:13px;
+  padding:0;cursor:pointer;text-align:left}
+.crosa button.nm:hover{text-decoration:underline;color:var(--brass)}
+.cnota{font-size:11.5px;line-height:1.45;color:var(--brass);opacity:.85;margin-top:2px;max-width:230px}
+.ctetto{color:var(--dc);font-weight:600}
 .empty b{color:var(--ink);font-weight:600;display:block;margin-bottom:5px}
 
 /* squadre live */
@@ -288,6 +314,7 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
   <button data-p="strategia" type="button">Strategia</button>
   <button data-p="modificatore" type="button">Modificatore</button>
   <button data-p="griglia" type="button">Griglia portieri</button>
+  <button data-p="club" type="button">Squadre</button>
 </nav>
 
 <!-- ============ ASTA LIVE ============ -->
@@ -412,6 +439,20 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
   <div id="griglia"></div>
 </section>
 
+
+<!-- ============ SQUADRE DI SERIE A ============ -->
+<section class="page" id="p-club">
+  <div class="panel">
+    <h2>Squadre di Serie A <em id="clubLab"></em></h2>
+    <p style="font-size:13px;line-height:1.7;color:var(--mute);margin:0 0 14px">
+      Scegli un club: dentro trovi formazione probabile, panchina, titolarissimi e scommesse, più la rosa
+      completa con i tuoi appunti e i tetti che ti sei dato. I quattro campi sono modificabili e si salvano.
+    </p>
+    <div class="clubgrid" id="clubGrid"></div>
+  </div>
+  <div id="clubBody"></div>
+</section>
+
 </div>
 <div class="toast" id="toast"></div>
 
@@ -420,6 +461,14 @@ var ROLES=['POR','DC','CC','ATT'];
 var KEY='fantahydra-asta-2027';
 var MANTRA={Por:'Portiere',Dc:'Difensore centrale',Ds:'Terzino sinistro',Dd:'Terzino destro',
   E:'Esterno',M:'Mediano',C:'Mezzala',T:'Trequartista',W:'Ala',A:'Attaccante',Pc:'Punta centrale',B:'Braccetto'};
+
+/* Appunti scritti prima dell'asta. Le percentuali sono diventate crediti su 1000:
+   1% = 10. Il tetto qui dentro vince su qualunque stima, è un tuo giudizio. */
+var CONSIGLI={"carnesecchi": {"t": "Top portiere insieme a Svilar."},"kristensen t.": {"t": "Top difesa, ma massimo 4%.","max": 40},"scalvini": {"t": "Un po' fragile."},"zappacosta": {"t": "Ottimo l'anno scorso ma ora l'Atalanta è passata alla difesa a 4."},"samardzic": {"t": "3-4%.","min": 30,"max": 40},"gaetano": {"t": "Probabile trappola perché molto difensivo. Però titolare fisso: da prendere a 1%.","max": 10},"ederson d.s.": {"t": "Sotto il 4%. Rendimento da media voto, 4-5 gol secondo il Profeta.","max": 40},"de ketelaere": {"t": "Probabile trappola."},"krstovic": {"t": "10%.","max": 100},"scamacca": {"t": "13% e per me è top, anche 15-17%. Non prendere la coppia con Krstovic.","min": 130,"max": 170},"butez": {"t": "Top portiere, 10%.","max": 100},"kempf": {"t": "In ballottaggio ma ottimo."},"kaiki": {"t": "Coppia economica con Valle, 2-3%.","min": 20,"max": 30},"valle": {"t": "Coppia economica con Kaiki, 2-3%.","min": 20,"max": 30},"ramon": {"t": "5%, massimo 6%.","min": 50,"max": 60},"da cunha": {"t": "7-8% è il prezzo giusto. Oltre il 10% è troppo.","min": 70,"max": 100},"paz n.": {"t": "Sotto il 18%: con la Champions avrà anche turnover.","max": 180},"baturina": {"t": "9-11%, buono.","min": 90,"max": 110},"caqueret": {"t": "A poco è ottimo, ma non sempre titolare."},"douvikas": {"t": "15-18% da attaccante titolare top, ma potrebbe arrivare un altro attaccante.","min": 150,"max": 180},"perrone": {"t": "3-4%.","min": 30,"max": 40},"hojlund": {"t": "Doppia cifra di gol sicura."},"santos a.": {"t": "Meglio di Neres perché non ha Politano davanti."},"vergara": {"t": "1%, jolly.","max": 10},"mctominay": {"t": "16-17%: rapporto qualità prezzo non ottimo.","min": 160,"max": 170},"rrahmani": {"t": "Dovrebbe essere il centrale che fa bene con Allegri."},"di lorenzo": {"t": "Sotto il 4% è ottimo.","max": 40},"zambo anguissa": {"t": "2%, ottimo ma non titolare.","max": 20},"lucca": {"t": "A 1 credito se cambia squadra."},"solet": {"t": "5% massimo. Meglio i centrali di altre squadre: l'Udinese potrebbe prendere qualche gol in più.","max": 50},"vojvoda": {"t": "Interessante."},"ekkelenkamp": {"t": "5%, sopra è forse troppo. 5-7 gol.","max": 50},"zaniolo": {"t": "9-10 gol, fino al 10%.","max": 100},"davis k.": {"t": "12-13 gol, 12-13%, ma non sopra il 15%: piuttosto rischio Douvikas o Kean.","min": 120,"max": 150},"kelly l.": {"t": "Ottimissimo a pochissimi crediti.","max": 30},"bremer": {"t": "Da prendere."},"locatelli": {"t": "Pochi crediti, titolare, da prendere."},"calo": {"t": "3-4%.","min": 30,"max": 40},"raimondo": {"t": "2-3%.","min": 20,"max": 30},"kone m.": {"t": "3-4%, ottimo.","min": 30,"max": 40},"gudmundsson a.": {"t": "Certezza dei rigori, all'8% è ottimo.","max": 80},"zaccagni": {"t": "Anche 8%, forse rigorista.","max": 80},"kolasinac": {"t": "1%, scommessa.","max": 10},"zalewski": {"t": "1%, scommessa.","max": 10},"lucumi": {"t": "1%.","max": 10},"zortea": {"t": "1%, forse un po' di più.","max": 20},"miranda j.": {"t": "1%.","max": 10},"vitik": {"t": "1%.","max": 10},"viery": {"t": "1%.","max": 10},"valdepenas": {"t": "1%.","max": 10},"ndour": {"t": "1%, da verificare.","max": 10},"monterisi": {"t": "1%, titolare e forte di testa.","max": 10},"marusic": {"t": "1%.","max": 10},"cancellieri": {"t": "1%, listato centrocampista.","max": 10},"gabbia": {"t": "1%, dovrebbe essere titolare.","max": 10},"tomori": {"t": "1%.","max": 10},"pessina": {"t": "3-4%.","min": 30,"max": 40},"birindelli": {"t": "1%.","max": 10},"colpani": {"t": "1%?","max": 10},"cutrone": {"t": "1-2%, titolare.","min": 10,"max": 20},"lobotka": {"t": "1%.","max": 10},"valenti": {"t": "1%.","max": 10},"circati": {"t": "1%.","max": 10},"troilo": {"t": "1%.","max": 10},"coco": {"t": "1%.","max": 10},"ismajli": {"t": "1%.","max": 10},"comuzzo": {"t": "1%, titolare buono per il modificatore.","max": 10},"basic": {"t": "1%.","max": 10},"busio": {"t": "1%.","max": 10},"adopo": {"t": "1%.","max": 10},"frendrup": {"t": "1%.","max": 10},"pisilli": {"t": "1%, anche qualche credito in più.","max": 20},"couto": {"t": "3-4%, terzino di spinta.","min": 30,"max": 40},"oulai": {"t": "1%, da verificare.","max": 10},"bracaglia": {"t": "1%.","max": 10},"koutsoupias": {"t": "1%.","max": 10},"chalobah t.": {"t": "Forse non titolare, e debole."},"correia t.": {"t": "1%, scommessa.","max": 10}};
+var TOP_DIFESE=['Roma','Inter','Como','Napoli','Juventus'];
+var MODULO={POR:1,DC:4,CC:4,ATT:2};
+var clubSel=null, clubData={};
+function consiglio(p){ return p?CONSIGLI[nrm(p.nome)]||null:null; }
 
 var CFG={crediti:1000,rosa:{POR:3,DC:8,CC:8,ATT:6},squadre:[],mia:''};
 var PLAYERS=[],BY={},BYC={},STRAT=null,GRID=null;
@@ -462,7 +511,7 @@ function loadData(){
 }
 
 function save(){
-  var s=JSON.stringify({role:state.role,picks:state.picks}); memory=s;
+  var s=JSON.stringify({role:state.role,picks:state.picks,club:clubData}); memory=s;
   if(window.storage){ try{ return window.storage.set(KEY,s,false); }catch(e){} }
   try{ localStorage.setItem(KEY,s); }catch(e){}
   return Promise.resolve();
@@ -476,6 +525,7 @@ function loadPicks(){
     if(raw){ try{ var d=JSON.parse(raw);
       if(d.picks&&d.picks.length!==undefined) state.picks=d.picks;
       if(d.role&&ROLES.indexOf(d.role)>=0) state.role=d.role;
+      if(d.club) clubData=d.club;
     }catch(e){} }
   });
 }
@@ -486,6 +536,7 @@ $('nav').addEventListener('click',function(e){
   document.querySelectorAll('nav button').forEach(function(x){x.classList.toggle('on',x===b);});
   document.querySelectorAll('.page').forEach(function(s){s.classList.toggle('on',s.id==='p-'+b.dataset.p);});
   if(b.dataset.p==='asta') $('name').focus();
+  if(b.dataset.p==='club') renderClub();
 });
 
 /* ---------- ruolo ---------- */
@@ -554,7 +605,138 @@ function dossier(p){
      (taken?line('Aggiudicato ora',taken.price+' → '+esc(taken.team)):'')+
    '</div>'+
    (verdict?'<div class="verdict">'+verdict+'</div>':'')+
+   (function(){ var c=consiglio(p); if(!c) return '';
+      return '<div class="verdict" style="background:rgba(79,163,199,.10)">'+
+        (c.max?'<b>Il tuo tetto: '+(c.min?c.min+'-'+c.max:c.max)+' crediti.</b> ':'')+esc(c.t)+'</div>'; })()+
    (p.nota?'<div class="dnote"><b>Nota:</b> '+esc(p.nota)+'</div>':'');
+}
+
+/* ---------- squadre di Serie A ---------- */
+function clubs(){
+  var s={}; PLAYERS.forEach(function(p){ if(p.squadra) s[p.squadra]=1; });
+  return Object.keys(s).sort(function(a,b){return a.localeCompare(b,'it');});
+}
+function rosaClub(s,r){
+  return PLAYERS.filter(function(p){return p.squadra===s&&p.ruolo===r;})
+    .sort(function(a,b){ return (b.fvm||0)-(a.fvm||0) || (b.quotazione||0)-(a.quotazione||0); });
+}
+function medianaFm(r){
+  var v=PLAYERS.filter(function(p){return p.ruolo===r&&p.fm;}).map(function(p){return p.fm;}).sort(function(a,b){return a-b;});
+  return v.length?v[Math.floor(v.length/2)]:6;
+}
+/* bozza dell'undici: i più valutati dal listone, ruolo per ruolo */
+function undiciAuto(s){
+  return ROLES.reduce(function(acc,r){
+    return acc.concat(rosaClub(s,r).slice(0,MODULO[r]).map(function(p){return p.nome;}));
+  },[]).join(', ');
+}
+function panchinaAuto(s){
+  return ROLES.reduce(function(acc,r){
+    return acc.concat(rosaClub(s,r).slice(MODULO[r],MODULO[r]+2).map(function(p){return p.nome;}));
+  },[]).join(', ');
+}
+function titolariAuto(s){
+  return PLAYERS.filter(function(p){return p.squadra===s&&(p.pv||0)>=30;})
+    .sort(function(a,b){return b.pv-a.pv;})
+    .map(function(p){return p.nome+' ('+p.pv+')';}).join(', ');
+}
+function scommesseAuto(s){
+  return PLAYERS.filter(function(p){
+      return p.squadra===s&&(p.quotazione||99)<=8&&p.fm&&p.fm>=medianaFm(p.ruolo)&&(p.pv||0)>=15;
+    }).sort(function(a,b){return (b.fm||0)-(a.fm||0);}).slice(0,5)
+    .map(function(p){return p.nome+' (qt '+p.quotazione+')';}).join(', ');
+}
+function datiClub(s){
+  var d=clubData[s]||{};
+  return {
+    formazione: d.formazione!=null?d.formazione:undiciAuto(s),
+    panchina:   d.panchina  !=null?d.panchina  :panchinaAuto(s),
+    titolari:   d.titolari  !=null?d.titolari  :titolariAuto(s),
+    scommesse:  d.scommesse !=null?d.scommesse :scommesseAuto(s),
+    auto: d.formazione==null
+  };
+}
+function renderClub(){
+  if(!PLAYERS.length){ $('clubGrid').innerHTML='<div class="empty"><b>giocatori.json non caricato</b>Le squadre compaiono appena il listone è disponibile.</div>'; return; }
+  var taken={}; state.picks.forEach(function(p){taken[nrm(p.name)]=1;});
+  var list=clubs();
+  $('clubLab').textContent=list.length+' club · '+PLAYERS.length+' giocatori';
+  $('clubGrid').innerHTML=list.map(function(s){
+    var tot=PLAYERS.filter(function(p){return p.squadra===s;}).length;
+    var lib=PLAYERS.filter(function(p){return p.squadra===s&&!taken[p._k];}).length;
+    var top=TOP_DIFESE.indexOf(s)>=0;
+    return '<button class="clubbtn'+(clubSel===s?' on':'')+(top&&clubSel!==s?' top':'')+'" data-c="'+esc(s)+'" type="button">'+
+      esc(s)+'<span>'+lib+'/'+tot+' liberi'+(top?' · difesa top':'')+'</span></button>';
+  }).join('');
+  Array.prototype.forEach.call($('clubGrid').querySelectorAll('[data-c]'),function(b){
+    b.addEventListener('click',function(){ clubSel=(clubSel===b.dataset.c?null:b.dataset.c); renderClub(); });
+  });
+
+  if(!clubSel){ $('clubBody').innerHTML=''; return; }
+
+  var d=datiClub(clubSel);
+  function campo(id,lab,val,ph){
+    return '<div class="cfield"><label for="'+id+'">'+lab+'</label>'+
+      '<textarea id="'+id+'" placeholder="'+ph+'">'+esc(val)+'</textarea></div>';
+  }
+  /* media del modificatore: portiere più i tre difensori con la MV più alta */
+  var gk=rosaClub(clubSel,'POR').slice().sort(function(a,b){return (b.mv||0)-(a.mv||0);})[0];
+  var dcs=rosaClub(clubSel,'DC').slice().sort(function(a,b){return (b.mv||0)-(a.mv||0);}).slice(0,3);
+  var media=null;
+  if(gk&&dcs.length===3){
+    media=((gk.mv||6)+dcs.reduce(function(x,p){return x+(p.mv||6);},0))/4;
+  }
+  var fascia=media==null?null:(media<6?0:Math.min(7,Math.floor((media-6)/0.25)+1));
+
+  function tabella(r){
+    var l=rosaClub(clubSel,r); if(!l.length) return '';
+    return '<div><div class="rl">'+({POR:'Portieri',DC:'Difensori',CC:'Centrocampisti',ATT:'Attaccanti'}[r])+
+      ' <b style="float:right;font-family:var(--mono);font-weight:400">'+l.length+'</b></div><table><tbody>'+
+      l.map(function(p){
+        var c=consiglio(p), pres=taken[p._k];
+        return '<tr'+(pres?' style="opacity:.35"':'')+'>'+
+          '<td><button class="nm" data-cp="'+esc(p.nome)+'" type="button">'+esc(p.nome)+'</button>'+
+            (p.rigorista===1?' <span class="pill" style="background:var(--brass);color:#08152C">RIG</span>':'')+
+            (c?'<div class="cnota">'+esc(c.t)+'</div>':'')+'</td>'+
+          '<td class="num" style="text-align:right;color:var(--faint)">'+(p.pv!=null?p.pv+'p':'—')+'</td>'+
+          '<td class="num" style="text-align:right;color:var(--mute)">'+(n2(p.fm)||'—')+'</td>'+
+          '<td class="num" style="text-align:right">'+
+            (c&&c.max?'<span class="ctetto">'+(c.min?c.min+'-'+c.max:c.max)+'</span>':(p.quotazione!=null?p.quotazione:'—'))+
+          '</td></tr>';
+      }).join('')+'</tbody></table></div>';
+  }
+
+  $('clubBody').innerHTML=
+    '<div class="panel"><h2>'+esc(clubSel)+
+      (media!=null?' <em>modificatore atteso '+n2(media)+' → fascia '+(fascia>0?'+'+fascia:'0')+'</em>':'')+'</h2>'+
+      '<div class="cbox">'+
+        '<div>'+campo('cF','Probabile formazione',d.formazione,'Portiere, difensori, centrocampisti, attaccanti')+
+               campo('cP','Panchina',d.panchina,'Chi subentra')+'</div>'+
+        '<div>'+campo('cT','Titolarissimi',d.titolari,'Chi gioca sempre')+
+               campo('cS','Scommesse',d.scommesse,'Chi costa poco e può esplodere')+'</div>'+
+      '</div>'+
+      (d.auto?'<p style="font-size:12px;color:var(--faint);margin:0;line-height:1.6">Bozza automatica dal fantavalore del listone e dalle presenze 2025/26. Scrivici sopra: da quel momento resta la tua.</p>':'')+
+    '</div>'+
+    '<div class="panel"><h2>Rosa completa <em>presenze · fantamedia · prezzo</em></h2>'+
+      '<div class="crosa">'+ROLES.map(tabella).join('')+'</div>'+
+      '<p style="font-size:12px;color:var(--faint);margin:12px 0 0;line-height:1.6">A destra la quotazione del listone, oppure <span class="ctetto">in blu</span> il tetto in crediti che ti sei dato tu. Tocca un nome per aprirlo nella scheda dell\'asta.</p>'+
+    '</div>';
+
+  [['cF','formazione'],['cP','panchina'],['cT','titolari'],['cS','scommesse']].forEach(function(a){
+    var e=$(a[0]); if(!e) return;
+    e.addEventListener('change',function(){
+      if(!clubData[clubSel]) clubData[clubSel]={};
+      clubData[clubSel][a[1]]=e.value; save(); renderClub();
+    });
+  });
+  Array.prototype.forEach.call($('clubBody').querySelectorAll('[data-cp]'),function(b){
+    b.addEventListener('click',function(){
+      var p=BY[nrm(b.dataset.cp)]; if(!p) return;
+      document.querySelectorAll('nav button').forEach(function(x){x.classList.toggle('on',x.dataset.p==='asta');});
+      document.querySelectorAll('.page').forEach(function(s){s.classList.toggle('on',s.id==='p-asta');});
+      select(p,true); $('name').value=p.nome; window.scrollTo(0,0);
+    });
+  });
 }
 
 /* ---------- autocompletamento ---------- */
