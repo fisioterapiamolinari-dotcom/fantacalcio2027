@@ -294,6 +294,12 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
   .closerow{grid-template-columns:1fr}
   header{align-items:flex-start}.src{text-align:left}
 }
+table.lst th{white-space:nowrap}
+table.lst td{padding:8px 10px;vertical-align:top}
+table.lst tr.gone{opacity:.38}
+table.lst tr.clickable{cursor:pointer}
+table.lst tr.clickable:hover td{background:rgba(198,164,88,.08)}
+.lstintro{font-size:13px;line-height:1.65;color:var(--mute);margin:0 0 14px}
 </style>
 </head>
 <body>
@@ -312,7 +318,7 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
   <button data-p="assegnazione" type="button">Assegnazione</button>
   <button data-p="squadre" type="button">Situazione squadre</button>
   <button data-p="strategia" type="button">Strategia</button>
-  <button data-p="modificatore" type="button">Modificatore</button>
+  <button data-p="listone" type="button">Listone</button>
   <button data-p="griglia" type="button">Griglia portieri</button>
   <button data-p="club" type="button">Squadre</button>
 </nav>
@@ -407,22 +413,20 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
   <div class="panel"><div id="stratBody"></div></div>
 </section>
 
-<!-- ============ MODIFICATORE ============ -->
-<section class="page" id="p-modificatore">
+<!-- ============ LISTONE ============ -->
+<section class="page" id="p-listone">
   <div class="panel">
-    <h2>La tua difesa <em id="miaLab"></em></h2>
-    <div class="modbox" id="modBox"></div>
-    <div class="scala" id="scala"></div>
-  </div>
-  <div class="panel">
-    <h2>Portiere e difensori acquistati <em>ordinati per media voto</em></h2>
-    <ul class="mvlist" id="mvlist"></ul>
-    <p style="font-size:12.5px;line-height:1.6;color:var(--faint);margin:14px 0 0">
-      Il modificatore usa il voto del portiere più i <b style="color:var(--mute)">tre migliori difensori schierati</b>.
-      I difensori oltre il terzo non contano nel calcolo: servono per i bonus e per arrivare a cinque in campo.
-      Chi non ha dati 2025/26 è stimato a 6,00.
+    <h2>Listone dai fantacreator <em id="lstSrc"></em></h2>
+    <p style="font-size:13.5px;line-height:1.7;color:var(--mute);margin:0 0 14px">
+      Sei listoni normalizzati alla nostra lega (10 squadre x 1000 crediti): Profeta, RECOSTA, Carmy,
+      Guida all'Asta, Il Tattico, Le Segrete del Canta. <b style="color:var(--ink)">Media</b> e' la media di
+      Profeta e RECOSTA; <b style="color:var(--ink)">Mercato</b> e' la mediana di tutti e sei, cioe' il prezzo
+      che ci si aspetta all'asta.
     </p>
+    <div class="stratnav" id="lstNav"></div>
+    <input type="text" id="lstFilter" placeholder="Cerca giocatore o squadra&hellip;" style="margin-top:12px">
   </div>
+  <div class="panel"><div id="lstBody"></div></div>
 </section>
 
 <!-- ============ GRIGLIA ============ -->
@@ -471,7 +475,9 @@ var clubSel=null, clubData={};
 function consiglio(p){ return p?CONSIGLI[nrm(p.nome)]||null:null; }
 
 var CFG={crediti:1000,rosa:{POR:3,DC:8,CC:8,ATT:6},squadre:[],mia:''};
-var PLAYERS=[],BY={},BYC={},STRAT=null,GRID=null;
+var PLAYERS=[],BY={},BYC={},STRAT=null,GRID=null,LST=null;
+var lstTab='POR';
+function lst(p){ return (LST&&p)?(LST.giocatori[p._k]||null):null; }
 var state={role:'POR',picks:[]};
 var sel=null,memory=null;
 
@@ -507,7 +513,12 @@ function loadData(){
   .then(function(){ return fetch('./strategia.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); })
   .then(function(d){ STRAT=d; })
   .then(function(){ return fetch('./griglia-portieri.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); })
-  .then(function(d){ GRID=d; $('src').innerHTML=notes.join('<br>'); });
+  .then(function(d){ GRID=d; })
+  .then(function(){ return fetch('./listoni.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); })
+  .then(function(d){ LST=d;
+    if(d) notes.push('<b>6</b> listoni fantacreator');
+    else notes.push('listoni.json non caricato');
+    $('src').innerHTML=notes.join('<br>'); });
 }
 
 function save(){
@@ -584,6 +595,31 @@ function dossier(p){
      (p.fuorilista?'<span class="pill ghost" style="color:var(--neg);border-color:var(--neg)">fuori lista</span>':'')+
      (taken?'<span class="pill ghost" style="color:var(--neg);border-color:var(--neg)">già preso</span>':'')+
    '</div></div>'+
+   (function(){ var L=lst(p); if(!L) return '';
+      function pz(k,v){ return '<div class="stat"><div class="k">'+k+'</div><div class="v '+(v==null?'na':'')+'">'+(v==null?'—':v)+'</div></div>'; }
+      var car=[];
+      if(L.tit===5) car.push('TITOLARISSIMO');
+      else if(L.tit===4) car.push('titolare');
+      if(p.rigorista===1) car.push('RIGORISTA');
+      else if(p.rigorista===2) car.push('2° rigorista');
+      else if(p.rigorista===3) car.push('3° rigorista');
+      (L.tag||[]).forEach(function(t){ if(car.map(function(x){return x.toLowerCase();}).indexOf(t)<0) car.push(t); });
+      if(L.avoid>=2) car.push('da lasciare ('+L.avoid+' fonti)');
+      var pills=car.map(function(t){
+        var hot=(t==='TITOLARISSIMO'||t==='RIGORISTA');
+        var bad=(t.indexOf('lasciare')===0||t==='rischio infortuni'||t==='cartellini'||t==='incostante'||t==='rotto');
+        return '<span class="pill'+(hot?'':' ghost')+'"'+(hot?' style="background:var(--brass);color:#08152C"':
+               (bad?' style="color:var(--neg);border-color:var(--neg)"':''))+'>'+esc(t)+'</span>';
+      }).join(' ');
+      var cats=Object.keys(L.cat||{}).map(function(k){
+        return '<div class="rowline"><span>'+esc(k)+'</span><b>'+esc(L.cat[k])+'</b></div>'; }).join('');
+      return '<div class="dsec"><div class="dlab">Nei listoni</div><div class="grid2">'+
+        pz('Profeta',L.pr)+pz('RECOSTA',L.re)+pz('Media',L.med)+pz('Mercato (6 fonti)',L.mkt)+
+      '</div>'+
+      (L.slot?'<div class="rowline"><span>Categoria</span><b style="color:var(--brass)">'+esc(L.slot)+'</b></div>':'')+
+      (pills?'<div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:6px">'+pills+'</div>':'')+
+      (cats?'<details style="margin-top:10px"><summary style="cursor:pointer;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)">fascia per fonte</summary>'+cats+'</details>':'')+
+      '</div>'; })()+
    '<div class="dsec"><div class="dlab">Stagione 2025/26</div><div class="grid2">'+
      stat('Fantamedia',n2(p.fm))+stat('Media voto',n2(p.mv))+
      stat('Presenze',p.pv==null?null:p.pv)+stat('Gol',p.gf==null?(p.g==null?null:p.g):p.gf)+
@@ -937,70 +973,86 @@ function renderMercato(){
   f.style.display='none';
 }
 
-/* ---------- simulatore modificatore difesa ---------- */
-function gauss(){ var u=0,v=0; while(u===0)u=Math.random(); while(v===0)v=Math.random();
-  return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v); }
-function fascia(a){
-  if(a<6) return 0;
-  var t=[6.25,6.5,6.75,7,7.25,7.5];
-  for(var i=0;i<t.length;i++) if(a<t[i]) return i+1;
-  return 7;
-}
-function simModif(mvPor, mvDifs, N){
-  N=N||4000; var SD=0.55, tot=0;
-  for(var i=0;i<N;i++){
-    var por=mvPor+gauss()*SD;
-    var d=mvDifs.map(function(m){return m+gauss()*SD;}).sort(function(a,b){return b-a;}).slice(0,3);
-    tot+=fascia((por+d[0]+d[1]+d[2])/4);
-  }
-  return tot/N;
-}
-function miaRosa(){
-  var nome=CFG.mia||'';
-  var mine=state.picks.filter(function(p){return nrm(p.team)===nrm(nome);});
-  function mvOf(p){ var g=BY[nrm(p.name)]; return (g&&g.mv!=null)?g.mv:6.00; }
-  var por=mine.filter(function(p){return p.role==='POR';}).map(function(p){return {n:p.name,mv:mvOf(p)};})
-    .sort(function(a,b){return b.mv-a.mv;});
-  var dif=mine.filter(function(p){return p.role==='DC';}).map(function(p){return {n:p.name,mv:mvOf(p)};})
-    .sort(function(a,b){return b.mv-a.mv;});
-  return {nome:nome, por:por, dif:dif};
-}
-function renderModif(){
-  var R=miaRosa();
-  $('miaLab').textContent=R.nome||'imposta "mia" in squadre.json';
-  var mvPor=R.por.length?R.por[0].mv:6.00;
-  var difs=R.dif.slice(0,5).map(function(x){return x.mv;});
-  while(difs.length<5) difs.push(6.00);
-  var val=simModif(mvPor,difs);
-  var base=simModif(6.00,[6.00,6.00,6.00,6.00,6.00]);
-  var top3=R.dif.slice(0,3);
-  var avg=top3.length?((mvPor+top3.reduce(function(s,x){return s+x.mv;},0)+(3-top3.length)*6.00)/4):mvPor/4+4.5;
 
-  $('modBox').innerHTML=
-    '<div class="modbig"><div class="k">Modificatore atteso</div><div class="v">'+n2(val)+'</div>'+
-      '<div class="s">a giornata</div></div>'+
-    '<div class="modbig"><div class="k">In stagione</div><div class="v">'+Math.round(val*38)+'</div>'+
-      '<div class="s">punti su 38 giornate</div></div>'+
-    '<div class="modbig"><div class="k">Sopra la base</div><div class="v">'+(val-base>0?'+':'')+Math.round((val-base)*38)+'</div>'+
-      '<div class="s">rispetto a una difesa da 6,00</div></div>'+
-    '<div class="modbig"><div class="k">Media dei 4</div><div class="v">'+n2(avg)+'</div>'+
-      '<div class="s">portiere + 3 difensori</div></div>';
-
-  var scale=[[0,'sotto 6,00'],[1,'6,00 – 6,25'],[2,'6,25 – 6,50'],[3,'6,50 – 6,75'],
-             [4,'6,75 – 7,00'],[5,'7,00 – 7,25'],[6,'7,25 – 7,50'],[7,'oltre 7,50']];
-  var cur=fascia(avg);
-  $('scala').innerHTML=scale.map(function(s){
-    return '<div class="sr'+(s[0]===cur?' cur':'')+'"><span class="f">'+s[1]+'</span>'+
-      '<span class="g"><i style="width:'+(s[0]/7*100)+'%"></i></span>'+
-      '<span class="p">+'+s[0]+'</span></div>';
+/* ---------- listone dai fantacreator ---------- */
+var LST_TABS=[['tito','Titolarissimi'],['POR','Portieri 30'],['DC','Difensori 80'],
+              ['CC','Centrocampisti 80'],['ATT','Attaccanti 60'],['esca','Esche']];
+function lstRow(k,i){
+  var L=LST.giocatori[k]; if(!L) return '';
+  var g=BY[k]||{};
+  var car=[];
+  if(L.tit===5) car.push('titolarissimo');
+  if(g.rigorista===1) car.push('rigorista');
+  else if(g.rigorista===2) car.push('2° rig.');
+  (L.tag||[]).forEach(function(t){ if(t!=='titolarissimo'&&t!=='rigorista'&&car.indexOf(t)<0) car.push(t); });
+  var taken=state.picks.filter(function(x){return nrm(x.name)===k;})[0];
+  return '<tr class="clickable'+(taken?' gone':'')+'" data-n="'+esc(L.nome)+'">'+
+    '<td class="num" style="color:var(--faint)">'+(i+1)+'</td>'+
+    '<td><b>'+esc(L.nome)+'</b><div style="font-size:11px;color:var(--faint)">'+esc(L.sq||'')+
+      (L.slot?' · '+esc(L.slot):'')+'</div></td>'+
+    '<td class="num">'+(L.fm==null?'—':n2(L.fm))+'</td>'+
+    '<td class="num">'+(L.mv==null?'—':n2(L.mv))+'</td>'+
+    '<td class="num">'+(L.pv||'—')+'</td>'+
+    '<td class="num">'+(L.pr==null?'—':L.pr)+'</td>'+
+    '<td class="num">'+(L.re==null?'—':L.re)+'</td>'+
+    '<td class="num" style="color:var(--brass)"><b>'+(L.med==null?'—':L.med)+'</b></td>'+
+    '<td class="num">'+(L.mkt==null?'—':L.mkt)+'</td>'+
+    '<td style="font-size:11px;color:var(--mute)">'+esc(car.slice(0,3).join(', '))+'</td>'+
+  '</tr>';
+}
+function renderListone(){
+  if(!LST){ $('lstBody').innerHTML='<div class="empty"><b>listoni.json non caricato</b>Carica il file nel repository accanto a index.html.</div>'; return; }
+  $('lstSrc').textContent='aggiornato al '+LST.aggiornato;
+  $('lstNav').innerHTML=LST_TABS.map(function(t){
+    return '<button class="chip'+(t[0]===lstTab?' on':'')+'" type="button" data-l="'+t[0]+'">'+t[1]+'</button>';
   }).join('');
-
-  var all=R.por.slice(0,1).map(function(x){return {n:x.n,mv:x.mv,r:'POR',in:true};})
-    .concat(R.dif.map(function(x,i){return {n:x.n,mv:x.mv,r:'DC',in:i<3};}));
-  $('mvlist').innerHTML=all.length?all.map(function(x){
-    return '<li class="'+(x.in?'':'out')+'"><span>'+esc(x.n)+
-      (x.in?'':' <span style="font-size:11px">non conta</span>')+'</span><b>'+n2(x.mv)+'</b></li>';
-  }).join(''):'<li class="out">Nessun portiere o difensore acquistato.</li>';
+  $('lstNav').querySelectorAll('.chip').forEach(function(c){
+    c.addEventListener('click',function(){ lstTab=c.dataset.l; renderListone(); });
+  });
+  var keys=[], intro='';
+  if(lstTab==='tito'){
+    intro='Almeno 30 presenze nel 2025/26 e titolarita 4 o 5 per il 2026/27. Ordinati per fantamedia dentro ogni reparto.';
+    var html='';
+    ROLES.forEach(function(r){
+      var ks=(LST.titolarissimi[r]||[]);
+      if(!ks.length) return;
+      html+='<h3 style="font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin:22px 0 8px">'+
+        r+' <span style="color:var(--faint)">'+ks.length+'</span></h3>'+lstTable(ks);
+    });
+    $('lstBody').innerHTML='<p class="lstintro">'+intro+'</p>'+html;
+    wireLst(); return;
+  }
+  if(lstTab==='esca'){
+    intro='Giocatori che il mercato paga piu di quanto valgano, o che almeno due fonti dicono di lasciare. Sono quelli da chiamare per primi, per bruciare i crediti degli altri.';
+    keys=LST.esche||[];
+  } else {
+    keys=LST.liste[lstTab]||[];
+    intro='I '+keys.length+' che verranno venduti in una lega a 10 squadre, in ordine di prezzo atteso.';
+  }
+  $('lstBody').innerHTML='<p class="lstintro">'+intro+'</p>'+lstTable(keys);
+  wireLst();
+}
+function lstTable(keys){
+  var q=nrm(($('lstFilter').value||'').trim());
+  var rows=keys.filter(function(k){
+    if(!q) return true; var L=LST.giocatori[k]; if(!L) return false;
+    return nrm(L.nome).indexOf(q)>=0 || nrm(L.sq||'').indexOf(q)>=0;
+  });
+  if(!rows.length) return '<div class="empty"><b>Nessun risultato</b></div>';
+  return '<div style="overflow-x:auto"><table class="lst"><thead><tr>'+
+    '<th></th><th>Giocatore</th><th class="num">FM 25/26</th><th class="num">MV</th><th class="num">Pres</th>'+
+    '<th class="num">Profeta</th><th class="num">RECOSTA</th><th class="num">Media</th><th class="num">Mercato</th>'+
+    '<th>Caratteristiche</th></tr></thead><tbody>'+
+    rows.map(function(k,i){return lstRow(k,i);}).join('')+'</tbody></table></div>';
+}
+function wireLst(){
+  $('lstBody').querySelectorAll('tr.clickable').forEach(function(tr){
+    tr.addEventListener('click',function(){
+      var p=BY[nrm(tr.dataset.n)]; if(!p) return;
+      document.querySelector('#nav button[data-p="asta"]').click();
+      $('name').value=p._disp; select(p); $('price').focus();
+    });
+  });
 }
 
 /* ---------- render ---------- */
@@ -1095,10 +1147,11 @@ function render(){
 
   hint();
   renderMercato();
-  renderModif();
+  renderListone();
   renderGrid();
 }
 $('search').addEventListener('input',render);
+$('lstFilter').addEventListener('input',function(){ if(LST) renderListone(); });
 
 /* ---------- strategia ---------- */
 function renderStrat(){
@@ -1186,7 +1239,7 @@ function toast(m){ var t=$('toast'); t.textContent=m; t.classList.add('show');
   clearTimeout(tid); tid=setTimeout(function(){t.classList.remove('show');},2200); }
 
 loadData().then(loadPicks).then(function(){
-  setRole(state.role); select(null); renderStrat(); renderGrid(); $('name').focus();
+  setRole(state.role); select(null); renderStrat(); renderGrid(); renderListone(); $('name').focus();
 });
 </script>
 </body>

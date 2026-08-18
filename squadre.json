@@ -7,17 +7,17 @@
   "ATT": 6
  },
  "squadre": [
-  "Fantasquadra 1",
-  "Fantasquadra 2",
-  "Fantasquadra 3",
-  "Fantasquadra 4",
-  "Fantasquadra 5",
-  "Fantasquadra 6",
-  "Fantasquadra 7",
-  "Fantasquadra 8",
-  "Fantasquadra 9",
-  "Fantasquadra 10"
+  "Molla Bombers",
+  "Eagles",
+  "Burkina Faso",
+  "Scrotone",
+  "Truppian",
+  "Tirrena",
+  "FCMN",
+  "AKUREYRI",
+  "DG UNITED",
+  "TTT"
  ],
- "mia": "Fantasquadra 1",
- "_nota": "Metti in 'mia' il nome esatto della tua fantasquadra: serve al simulatore del modificatore difesa."
+ "mia": "Molla Bombers",
+ "_nota": "Nomi reali della lega FantaHydra. 'mia' e' la tua fantasquadra."
 }
