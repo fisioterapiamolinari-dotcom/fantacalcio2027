@@ -343,7 +343,7 @@ table.lst tr.clickable:hover td{background:rgba(198,164,88,.08)}
       <div class="live">
         <div class="field">
           <label class="lbl" for="name">Giocatore in chiamata</label>
-          <input type="text" id="name" autocomplete="off" placeholder="Scrivi le prime lettere del cognome">
+          <input type="text" id="name" autocomplete="off" placeholder="Cognome, nome completo o squadra (es. Inter)">
           <div class="ac" id="ac"></div>
         </div>
 
@@ -503,6 +503,7 @@ function loadData(){
       o.ruolo=(p.ruolo||'').toUpperCase();
       o._k=nrm(p.nome);
       o._kc=p.nome_completo?nrm(p.nome_completo):'';
+      o._ks=nrm(p.squadra||'');
       o._disp=p.nome_completo||p.nome;
       return o;});
       PLAYERS.forEach(function(p){BY[p._k]=p; if(p._kc)BYC[p._kc]=p;});
@@ -616,6 +617,11 @@ function dossier(p){
       return '<div class="dsec"><div class="dlab">Nei listoni</div><div class="grid2">'+
         pz('Profeta',L.pr)+pz('RECOSTA',L.re)+pz('Media',L.med)+pz('Mercato (6 fonti)',L.mkt)+
       '</div>'+
+      (p.pagato25!=null
+        ? '<div class="rowline"><span>Asta 25/26</span><b>'+
+            (p.presa25?'<span style="color:var(--mute)">'+esc(p.presa25)+'</span> ':'')+
+            '<span style="color:var(--ink)">'+p.pagato25+'</span></b></div>'
+        : '<div class="rowline"><span>Asta 25/26</span><b class="na">non venduto in lega</b></div>')+
       (L.slot?'<div class="rowline"><span>Categoria</span><b style="color:var(--brass)">'+esc(L.slot)+'</b></div>':'')+
       (pills?'<div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:6px">'+pills+'</div>':'')+
       (cats?'<details style="margin-top:10px"><summary style="cursor:pointer;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)">fascia per fonte</summary>'+cats+'</details>':'')+
@@ -785,14 +791,19 @@ $('name').addEventListener('input',function(e){
   var hasR=PLAYERS.some(function(p){return !!p.ruolo;});
   function pos(p){
     var i=p._kc?p._kc.indexOf(q):-1, j=p._k.indexOf(q);
+    if(i<0&&j<0) return 90;                       /* trovato solo per squadra: in coda */
     if(i<0) return j; if(j<0) return i; return Math.min(i,j);
   }
+  /* si cerca per cognome, nome completo o squadra di Serie A */
   acList=PLAYERS.filter(function(p){
-    return (p._k.indexOf(q)>=0||(p._kc&&p._kc.indexOf(q)>=0))&&!taken[p._k];
+    return (p._k.indexOf(q)>=0||(p._kc&&p._kc.indexOf(q)>=0)||(p._ks&&p._ks.indexOf(q)>=0))&&!taken[p._k];
   }).sort(function(a,b){
     if(hasR){var ra=a.ruolo===state.role?0:1,rb=b.ruolo===state.role?0:1; if(ra!==rb)return ra-rb;}
-    return pos(a)-pos(b);
-  }).slice(0,9);
+    var pa=pos(a),pb=pos(b); if(pa!==pb) return pa-pb;
+    var fa=(a.fm==null?-1:a.fm), fb=(b.fm==null?-1:b.fm);
+    if(fa!==fb) return fb-fa;                     /* dentro una squadra: prima i migliori */
+    return a._k.localeCompare(b._k);
+  }).slice(0,12);
   if(!acList.length){box.classList.remove('open');return;}
   select(acList[0],true);
   acIdx=-1;
@@ -997,6 +1008,8 @@ function lstRow(k,i){
     '<td class="num">'+(L.re==null?'—':L.re)+'</td>'+
     '<td class="num" style="color:var(--brass)"><b>'+(L.med==null?'—':L.med)+'</b></td>'+
     '<td class="num">'+(L.mkt==null?'—':L.mkt)+'</td>'+
+    '<td class="num" style="white-space:nowrap">'+(g.pagato25==null?'<span style="color:var(--faint)">—</span>':
+       ('<b>'+g.pagato25+'</b><div style="font-size:10px;color:var(--faint);font-weight:400">'+esc(g.presa25||'')+'</div>'))+'</td>'+
     '<td style="font-size:11px;color:var(--mute)">'+esc(car.slice(0,3).join(', '))+'</td>'+
   '</tr>';
 }
@@ -1042,7 +1055,7 @@ function lstTable(keys){
   return '<div style="overflow-x:auto"><table class="lst"><thead><tr>'+
     '<th></th><th>Giocatore</th><th class="num">FM 25/26</th><th class="num">MV</th><th class="num">Pres</th>'+
     '<th class="num">Profeta</th><th class="num">RECOSTA</th><th class="num">Media</th><th class="num">Mercato</th>'+
-    '<th>Caratteristiche</th></tr></thead><tbody>'+
+    '<th class="num">Asta 25/26</th><th>Caratteristiche</th></tr></thead><tbody>'+
     rows.map(function(k,i){return lstRow(k,i);}).join('')+'</tbody></table></div>';
 }
 function wireLst(){
