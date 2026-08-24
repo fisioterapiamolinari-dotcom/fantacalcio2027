@@ -1304,8 +1304,9 @@ $('price').addEventListener('keydown',function(e){
 });
 document.addEventListener('keydown',function(e){
   if(!$('p-asta').classList.contains('on')) return;
-  if(document.activeElement&&['INPUT','SELECT','TEXTAREA'].indexOf(document.activeElement.tagName)>=0
-     && document.activeElement.id!=='price') return;
+  /* disattiva la scorciatoia mentre si scrive in QUALSIASI campo, prezzo incluso:
+     altrimenti digitare "150" nel prezzo faceva scattare anche +1/+5 e il numero impazziva */
+  if(document.activeElement&&['INPUT','SELECT','TEXTAREA'].indexOf(document.activeElement.tagName)>=0) return;
   if(e.key==='1'){bump(1);} else if(e.key==='5'){bump(5);} else if(e.key==='0'){bump(10);}
 });
 
