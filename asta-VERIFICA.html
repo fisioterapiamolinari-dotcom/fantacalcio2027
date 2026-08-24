@@ -920,37 +920,54 @@ function totalSlots(){ return ROLES.reduce(function(s,r){return s+CFG.rosa[r];},
 
 /* ---------- dati ---------- */
 function loadData(){
-  var notes=[];
-  return fetch('./squadre.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).then(function(d){
-    if(d){ if(d.crediti)CFG.crediti=d.crediti; if(d.rosa)CFG.rosa=d.rosa;
-      if(d.squadre&&d.squadre.length)CFG.squadre=d.squadre;
-      if(d.mia)CFG.mia=d.mia;
-      notes.push('<b>'+CFG.squadre.length+'</b> squadre · <b>'+CFG.crediti+'</b> crediti'); }
-    else notes.push('squadre.json non caricato');
-  }).catch(function(){notes.push('squadre.json non caricato');})
-  .then(function(){ return fetch('./giocatori.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}); })
-  .then(function(d){
-    if(d){ PLAYERS=(d.giocatori||[]).map(function(p){var o=Object.assign({},p);
-      o.ruolo=(p.ruolo||'').toUpperCase();
-      o._k=nrm(p.nome);
-      o._kc=p.nome_completo?nrm(p.nome_completo):'';
-      o._ks=nrm(p.squadra||'');
-      o._disp=p.nome_completo||p.nome;
-      return o;});
-      PLAYERS.forEach(function(p){BY[p._k]=p; if(p._kc)BYC[p._kc]=p;});
-      var f=PLAYERS.filter(function(p){return p.fm!=null;}).length;
-      notes.push('<b>'+PLAYERS.length+'</b> giocatori · <b>'+f+'</b> con FM'); }
-    else notes.push('giocatori.json non caricato');
-  }).catch(function(){notes.push('giocatori.json non caricato');})
-  .then(function(){ return fetch('./strategia.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); })
-  .then(function(d){ STRAT=d; })
-  .then(function(){ return fetch('./griglia-portieri.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); })
-  .then(function(d){ GRID=d; })
-  .then(function(){ return fetch('./listoni.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); })
-  .then(function(d){ LST=d;
-    if(d) notes.push('<b>6</b> listoni fantacreator');
-    else notes.push('listoni.json non caricato');
-    $('src').innerHTML=notes.join('<br>'); });
+  CFG.crediti=1000;
+  CFG.rosa={POR:3,DC:8,CC:8,ATT:6};
+  CFG.squadre=['Molla Bombers','Eagles','Burkina Faso','Scrotone','Truppian','Tirrena','FCMN','AKUREYRI','DG UNITED','TTT'];
+  CFG.mia='Molla Bombers';
+
+  var sample=[
+    {nome:'Dimarco',nome_completo:'Federico Dimarco',squadra:'Inter',ruolo:'DC',quotazione:32,fvm:265,fm:7.64,mv:6.6,pv:35,mod_val:0.6,rigorista:null},
+    {nome:'Martinez L.',nome_completo:'Lautaro Martínez',squadra:'Inter',ruolo:'ATT',quotazione:35,fvm:370,fm:8.25,mv:6.42,pv:30,rigorista:2},
+    {nome:'Svilar',nome_completo:'Mile Svilar',squadra:'Roma',ruolo:'POR',quotazione:18,fvm:65,fm:5.45,mv:6.26,pv:38,mod_val:0.26},
+    {nome:'Paz N.',nome_completo:'Nico Paz',squadra:'Como',ruolo:'CC',quotazione:30,fvm:250,fm:7.3,mv:6.37,pv:35,rigorista:2},
+    {nome:'Kean',nome_completo:'Moise Kean',squadra:'Fiorentina',ruolo:'ATT',quotazione:25,fvm:212,fm:6.77,mv:5.88,pv:26,rigorista:3},
+    {nome:'Carnesecchi',nome_completo:'Marco Carnesecchi',squadra:'Atalanta',ruolo:'POR',quotazione:16,fvm:52,fm:5.58,mv:6.36,pv:37,mod_val:0.36},
+    {nome:'Bremer',nome_completo:'Bremer',squadra:'Juventus',ruolo:'DC',quotazione:15,fvm:50,fm:6.81,mv:6.33,pv:26,mod_val:0.33},
+    {nome:'Orsolini',nome_completo:'Riccardo Orsolini',squadra:'Bologna',ruolo:'CC',quotazione:26,fvm:200,fm:6.76,mv:6.06,pv:34,rigorista:1}
+  ];
+  PLAYERS=sample.map(function(p){var o=Object.assign({},p);
+    o._k=nrm(p.nome); o._kc=p.nome_completo?nrm(p.nome_completo):''; o._ks=nrm(p.squadra||''); o._disp=p.nome_completo||p.nome;
+    return o;});
+  PLAYERS.forEach(function(p){BY[p._k]=p; if(p._kc)BYC[p._kc]=p;});
+
+  STRAT={budget:1000,
+    ripartizione:[
+      {ruolo:'Portieri',obiettivo:'120-150',loro25:108,quota:'12-15%'},
+      {ruolo:'Difensori',obiettivo:'330-400',loro25:145,quota:'30-35%'},
+      {ruolo:'Centrocampisti',obiettivo:'150-200',loro25:293,quota:'15-20%'},
+      {ruolo:'Attaccanti',obiettivo:'250-300',loro25:431,quota:'25-30%'}
+    ],
+    sezioni:[
+      {id:'gen',titolo:'Generale',punti:[
+        {t:'Prezzo equo, non aggressivo',d:'Nella simulazione v2 pagare il 15% sopra il prezzo equo è solo spreco: -18 punti VORP e -0,3 posizioni.'},
+        {t:'Svuota il portafoglio sugli ultimi slot',d:'Chiudere l\'asta con crediti residui è l\'errore più comune: la lega 2025/26 ne ha lasciati 236.'}
+      ]},
+      {id:'dc',titolo:'Difensori',punti:[
+        {t:'Dimarco fino a 200',d:'Prezzo equo 363, mercato 150-200: la più grossa inefficienza del listino.'}
+      ]}
+    ]};
+
+  GRID={squadre:[
+    {squadra:'Inter',tripletta:31,coppia:16,accoppiamenti:[{sq:'Napoli',v:2},{sq:'Milan',v:1},{sq:'Roma',v:3}],
+      portieri:[{nome:'Sommer',q:14,pv:30,mv:6.2},{nome:'Martinez Jo.',q:17,pv:5,mv:6.0}]},
+    {squadra:'Napoli',tripletta:28,coppia:14,accoppiamenti:[{sq:'Inter',v:2},{sq:'Roma',v:1},{sq:'Milan',v:4}],
+      portieri:[{nome:'Meret',q:11,pv:11,mv:6.23},{nome:'Milinkovic-Savic',q:12,pv:27,mv:6.1}]}
+  ]};
+
+  LST={giocatori:{}};
+
+  $('src').innerHTML='<b>10</b> squadre · <b>1000</b> crediti<br><b>'+PLAYERS.length+'</b> giocatori (dati di esempio per Design)<br><b>anteprima</b> — dati reali da giocatori.json';
+  return Promise.resolve();
 }
 
 function save(){
@@ -1330,9 +1347,6 @@ function resetBanco(){ $('name').value=''; $('price').value=1; $('team').value='
 
 function assign(){
   var typed=$('name').value.trim(), price=parseInt($('price').value,10), team=$('team').value.trim();
-  /* usa sempre il giocatore risolto (quello mostrato nel pannello a sinistra), mai il testo
-     grezzo del campo: altrimenti chi digita "di" e clicca subito Aggiudica senza scegliere dal
-     menu registra "di" invece di "Federico Dimarco" */
   var q=nrm(typed), p=BY[q]||BYC[q]||sel;
   var name=p?(p._disp||p.nome):typed;
   if(!name) return toast('Manca il giocatore');
