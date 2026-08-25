@@ -543,6 +543,9 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
 .crosa button.nm{background:none;border:none;color:var(--ink);font-family:var(--sans);font-size:13.5px;
   padding:0;cursor:pointer;text-align:left}
 .crosa button.nm:hover{text-decoration:underline;color:var(--brass)}
+.crosa button.nm.nm-taken{color:var(--faint);text-decoration:line-through}
+.crosa button.nm.nm-taken:hover{color:var(--faint)}
+tr.row-taken{opacity:.6}
 .cnota{font-size:11.5px;line-height:1.45;color:var(--brass);opacity:.9;margin-top:3px;max-width:230px}
 .ctetto{color:var(--dc);font-weight:600}
 
@@ -635,7 +638,8 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
 }
 table.lst th{white-space:nowrap}
 table.lst td{padding:9px 10px;vertical-align:top}
-table.lst tr.gone{opacity:.36}
+table.lst tr.gone{opacity:.6}
+table.lst tr.gone td b{color:var(--faint);text-decoration:line-through}
 table.lst tr.clickable{cursor:pointer}
 table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
 .lstintro{font-size:13.5px;line-height:1.65;color:var(--mute);margin:0 0 14px}
@@ -1167,10 +1171,12 @@ function renderClub(){
       ' <b style="float:right;font-family:var(--mono);font-weight:400">'+l.length+'</b></div><table><tbody>'+
       l.map(function(p){
         var c=consiglio(p), pres=taken[p._k];
-        return '<tr'+(pres?' style="opacity:.35"':'')+'>'+
-          '<td><button class="nm" data-cp="'+esc(p.nome)+'" type="button">'+esc(p.nome)+'</button>'+
+        var presaInfo=pres?state.picks.filter(function(x){return nrm(x.name)===p._k;})[0]:null;
+        return '<tr'+(pres?' class="row-taken"':'')+'>'+
+          '<td><button class="nm'+(pres?' nm-taken':'')+'" data-cp="'+esc(p.nome)+'" type="button">'+esc(p.nome)+'</button>'+
             (p.rigorista===1?' <span class="pill" style="background:var(--brass);color:#08152C">RIG</span>':'')+
-            (c?'<div class="cnota">'+esc(c.t)+'</div>':'')+'</td>'+
+            (presaInfo?'<div class="cnota" style="color:var(--faint)">preso da '+esc(presaInfo.team)+' · '+presaInfo.price+' cr</div>':
+              (c?'<div class="cnota">'+esc(c.t)+'</div>':''))+'</td>'+
           '<td class="num" style="text-align:right;color:var(--faint)">'+(p.pv!=null?p.pv+'p':'—')+'</td>'+
           '<td class="num" style="text-align:right;color:var(--mute)">'+(n2(p.fm)||'—')+'</td>'+
           '<td class="num" style="text-align:right">'+
@@ -1444,7 +1450,9 @@ function lstRow(k,i){
   var taken=state.picks.filter(function(x){return nrm(x.name)===k;})[0];
   return '<tr class="clickable'+(taken?' gone':'')+'" data-n="'+esc(L.nome)+'">'+
     '<td class="num" style="color:var(--faint)">'+(i+1)+'</td>'+
-    '<td><b>'+esc(L.nome)+'</b><div style="font-size:11px;color:var(--faint)">'+esc(L.sq||'')+
+    '<td><b'+(taken?' class="nm-taken"':'')+'>'+esc(L.nome)+'</b>'+
+      (taken?'<div style="font-size:10px;color:var(--faint)">preso da '+esc(taken.team)+' · '+taken.price+' cr</div>':'')+
+      '<div style="font-size:11px;color:var(--faint)">'+esc(L.sq||'')+
       (L.slot?' · '+esc(L.slot):'')+'</div></td>'+
     '<td class="num">'+(L.fm==null?'—':n2(L.fm))+'</td>'+
     '<td class="num">'+(L.mv==null?'—':n2(L.mv))+'</td>'+
