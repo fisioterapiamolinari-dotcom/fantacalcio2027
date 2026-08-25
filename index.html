@@ -919,6 +919,10 @@ var sel=null,memory=null;
 function $(id){return document.getElementById(id);}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 function nrm(s){return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
+/* chiave canonica di un'aggiudicazione: usa il campo "key" (nome corto del listone) se
+   presente, altrimenti ricade sul nome salvato (compatibilità con aggiudicazioni vecchie,
+   salvate prima di questa correzione, che non hanno ancora "key"). */
+function pkKey(pk){ return pk.key||nrm(pk.name); }
 function n2(v,d){ if(v==null) return null; d=(d==null?2:d); return Number(v).toFixed(d).replace('.',','); }
 function totalSlots(){ return ROLES.reduce(function(s,r){return s+CFG.rosa[r];},0); }
 
@@ -1002,7 +1006,7 @@ function dossier(p){
   var box=$('dossier');
   if(!p){ box.innerHTML='<div class="dempty"><b>Nessun giocatore selezionato</b>'+
     'Scrivi le prime lettere di un cognome qui a sinistra e la scheda compare qui.</div>'; return; }
-  var taken=state.picks.filter(function(x){return nrm(x.name)===p._k;})[0];
+  var taken=state.picks.filter(function(x){return pkKey(x)===p._k;})[0];
   var mant=p.mantra?p.mantra.split('/').map(function(m){return MANTRA[m]||m;}).join(' / '):null;
   var per90=p.min?((p.g+p.a)/p.min*90):null;
   var sc=(p.scarto===undefined)?null:p.scarto;
@@ -1135,7 +1139,7 @@ function datiClub(s){
 }
 function renderClub(){
   if(!PLAYERS.length){ $('clubGrid').innerHTML='<div class="empty"><b>giocatori.json non caricato</b>Le squadre compaiono appena il listone è disponibile.</div>'; return; }
-  var taken={}; state.picks.forEach(function(p){taken[nrm(p.name)]=1;});
+  var taken={}; state.picks.forEach(function(p){taken[pkKey(p)]=1;});
   var list=clubs();
   $('clubLab').textContent=list.length+' club · '+PLAYERS.length+' giocatori';
   $('clubGrid').innerHTML=list.map(function(s){
@@ -1171,7 +1175,7 @@ function renderClub(){
       ' <b style="float:right;font-family:var(--mono);font-weight:400">'+l.length+'</b></div><table><tbody>'+
       l.map(function(p){
         var c=consiglio(p), pres=taken[p._k];
-        var presaInfo=pres?state.picks.filter(function(x){return nrm(x.name)===p._k;})[0]:null;
+        var presaInfo=pres?state.picks.filter(function(x){return pkKey(x)===p._k;})[0]:null;
         return '<tr'+(pres?' class="row-taken"':'')+'>'+
           '<td><button class="nm'+(pres?' nm-taken':'')+'" data-cp="'+esc(p.nome)+'" type="button">'+esc(p.nome)+'</button>'+
             (p.rigorista===1?' <span class="pill" style="background:var(--brass);color:#08152C">RIG</span>':'')+
@@ -1224,7 +1228,7 @@ $('name').addEventListener('input',function(e){
   var q=nrm(e.target.value.trim()),box=$('ac');
   if(BY[q]) select(BY[q],true); else if(BYC[q]) select(BYC[q],true);
   if(q.length<2||!PLAYERS.length){box.classList.remove('open');return;}
-  var taken={}; state.picks.forEach(function(p){taken[nrm(p.name)]=1;});
+  var taken={}; state.picks.forEach(function(p){taken[pkKey(p)]=1;});
   var hasR=PLAYERS.some(function(p){return !!p.ruolo;});
   function pos(p){
     var i=p._kc?p._kc.indexOf(q):-1, j=p._k.indexOf(q);
@@ -1342,16 +1346,17 @@ function assign(){
      menu registra "di" invece di "Federico Dimarco" */
   var q=nrm(typed), p=BY[q]||BYC[q]||sel;
   var name=p?(p._disp||p.nome):typed;
+  var key=p?p._k:nrm(typed);
   if(!name) return toast('Manca il giocatore');
   if(!(price>0)) return toast('Manca il prezzo');
   if(!team) return toast('Scegli chi se l\'è aggiudicato');
-  if(state.picks.some(function(p){return nrm(p.name)===nrm(name);})) return toast(name+' è già stato assegnato');
+  if(state.picks.some(function(pk){return pkKey(pk)===key;})) return toast(name+' è già stato assegnato');
   var st=stats().filter(function(t){return nrm(t.team)===nrm(team);})[0];
   if(st){
     if(st.spent+price>CFG.crediti) return toast(st.team+' ha solo '+(CFG.crediti-st.spent)+' crediti');
     if(st[state.role]>=CFG.rosa[state.role]) return toast(st.team+' ha già i '+CFG.rosa[state.role]+' '+state.role);
   }
-  state.picks.unshift({id:Date.now(),name:name,price:price,team:(st?st.team:team),role:state.role});
+  state.picks.unshift({id:Date.now(),name:name,key:key,price:price,team:(st?st.team:team),role:state.role});
   render(); save(); resetBanco();
   toast(name+' → '+(st?st.team:team)+' per '+price);
 }
@@ -1372,7 +1377,7 @@ function stats(){
 /* ---------- mercato: tasso di cambio live ---------- */
 function mercato(){
   var st=stats(), TOT=totalSlots();
-  var taken={}; state.picks.forEach(function(p){taken[nrm(p.name)]=1;});
+  var taken={}; state.picks.forEach(function(p){taken[pkKey(p)]=1;});
   var res={};
   ROLES.forEach(function(r){
     var slot=0;
@@ -1447,7 +1452,7 @@ function lstRow(k,i){
   if(g.rigorista===1) car.push('rigorista');
   else if(g.rigorista===2) car.push('2° rig.');
   (L.tag||[]).forEach(function(t){ if(t!=='titolarissimo'&&t!=='rigorista'&&car.indexOf(t)<0) car.push(t); });
-  var taken=state.picks.filter(function(x){return nrm(x.name)===k;})[0];
+  var taken=state.picks.filter(function(x){return pkKey(x)===k;})[0];
   return '<tr class="clickable'+(taken?' gone':'')+'" data-n="'+esc(L.nome)+'">'+
     '<td class="num" style="color:var(--faint)">'+(i+1)+'</td>'+
     '<td><b'+(taken?' class="nm-taken"':'')+'>'+esc(L.nome)+'</b>'+
@@ -1664,7 +1669,7 @@ function renderGrid(){
 
   var trip=sq.slice().sort(function(a,b){return a.tripletta-b.tripletta;}).map(function(s){
     var li=s.portieri.slice(0,3).map(function(p){
-      var taken=state.picks.filter(function(x){return nrm(x.name)===nrm(p.nome);})[0];
+      var taken=state.picks.filter(function(x){return pkKey(x)===nrm(p.nome);})[0];
       var mt=[];
       if(p.q!=null) mt.push('Q'+p.q);
       if(p.pv) mt.push(p.pv+' pres');
