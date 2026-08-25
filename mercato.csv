@@ -1,0 +1,520 @@
+﻿nome;squadra_sigla;ruolo;quotazione;mercato;dispersione;prezzo_profeta_norm1000;pma_profeta;fascia_profeta;prezzo_recosta_norm1000;pma_recosta;fascia_recosta;mv;fmv;presenze;minuti;gol;assist;titolarita;affidabilita;integrita
+Malen;ROM;A;34;313.1;14.5;305.8;33.1;1° Slot Relativo;320.3;33.1;Top;6.72;8.97;18;1478;14;2;5;5;5
+Martinez L.;INT;A;35;308.9;61.7;278.0;32.8;1° Slot Relativo;339.7;32.8;Top;6.42;8.25;30;2177;17;6;5;5;3
+Thuram;INT;A;29;251.7;40.2;231.6;25.4;1° Slot Relativo;271.8;25.4;Semi-Top;6.43;7.95;29;1914;13;6;5;5;3
+Hojlund;NAP;A;28;242.0;20.8;231.6;24.2;1° Slot Relativo;252.4;24.2;Semi-Top;6.21;7.44;33;2762;12;5;4;4;4
+Ramos G.;MIL;A;27;237.1;11.1;231.6;27.0;1° Slot Relativo;242.7;27.0;Semi-Top;0;0;30;1309;4;1;5;4;3
+Kolo Muani;JUV;A;26;227.7;10.6;222.4;26.4;1° Slot Relativo;233.0;26.4;Semi-Top;0;0;30;1671;2;1;5;4;5
+Kean;FIO;A;25;190.2;46.8;166.8;20.2;1° Slot Relativo;213.6;20.2;Semi-Top;5.88;6.76;26;2041;8;1;4;3;3
+Yildiz;JUV;A;23;175.8;36.6;157.5;19.4;1° Slot Relativo;194.1;19.4;Semi-Top;6.39;7.3;35;2844;10;6;5;5;5
+Paz N.;COM;C;30;161.2;7.5;157.5;17.6;1° Slot Relativo;165.0;17.6;Top;6.37;7.3;35;2887;12;5;5;5;5
+McTominay;NAP;C;28;151.8;7.1;148.2;16.2;1° Slot Relativo;155.3;16.2;Top;6.39;7.25;33;2793;10;2;5;5;4
+Dimarco;INT;D;32;145.6;0.1;145.5;15.0;Dimarco;145.6;15.0;Top;6.6;7.64;35;2703;7;17;5;5;4
+Douvikas;COM;A;20;142.7;44.6;120.4;16.0;1° Slot Relativo;165.0;16.0;Semi-Top;6.18;7.37;36;2277;14;1;5;4;4
+Orsolini;BOL;C;26;137.4;3.1;139.0;14.0;1° Slot Relativo;135.9;14.0;Top;6.06;6.77;34;2129;10;1;5;4;3
+Scamacca;ATA;A;19;127.9;3.5;129.7;12.2;1° Slot Relativo;126.2;12.2;FANTA ROTTO;6.18;7.54;22;1318;10;1;3;4;1
+Davis K.;UDI;A;19;123.6;24.7;111.2;13.2;2° Slot Relativo;135.9;13.2;Terza;6.32;7.37;30;2080;10;4;5;4;2
+Calhanoglu;INT;C;27;118.7;15.0;111.2;14.0;1° Slot Relativo;126.2;14.0;Top;6.52;7.63;22;1651;9;4;5;5;2
+Pulisic;MIL;C;25;118.7;15.0;111.2;13.2;1° Slot Relativo;126.2;13.2;Top;6.15;7.08;27;1612;8;4;5;4;2
+Svilar;ROM;P;18;118.5;3.9;120.4;10.8;top;116.5;10.8;Top;6.26;5.44;38;3420;0;0;5;5;5
+Berardi;SAS;A;18;104.3;4.9;101.9;8.9;2° Slot Relativo;106.8;8.9;Terza;6.31;7.19;26;1971;8;4;5;4;2
+Dovbyk;BOL;A;16;104.3;4.9;101.9;9.8;2° Slot Relativo;106.8;9.8;Terza;6;6.77;13;386;3;1;3;4;1
+Simeone;TOR;A;15;104.3;4.9;101.9;10.8;2° Slot Relativo;106.8;10.8;Terza;6.08;7.1;32;2246;11;0;4;4;3
+Vicario;JUV;P;16;94.7;14.5;101.9;9.6;top;87.4;9.6;Top;0;0;31;2790;0;0;5;4;3
+Zaniolo;UDI;C;18;94.7;14.5;101.9;9.4;1° Slot Relativo;87.4;9.4;Semi-Top;6.26;6.78;31;2272;5;5;5;4;1
+Esposito F.P.;INT;A;16;94.7;14.5;101.9;7.0;2° Slot Relativo;87.4;7.0;Terza;6.26;7.02;31;1561;7;3;3;5;5
+Krstovic;ATA;A;18;94.7;14.5;101.9;7.8;2° Slot Relativo;87.4;7.8;Terza;6.16;7.19;32;1787;10;5;3;4;5
+Maignan;MIL;P;15;90.2;13.7;83.4;9.4;semitop;97.1;9.4;Top;6.26;5.42;37;3296;0;0;5;5;3
+Baturina;COM;C;19;90.2;13.7;83.4;10.6;1° Slot Relativo;97.1;10.6;Semi-Top;6.3;7.14;25;1591;6;3;4;5;5
+Martinez Jo.;INT;P;17;90.1;5.3;92.7;9.2;top;87.4;9.2;Top;6;5.2;5;450;0;0;3;4;5
+Carnesecchi;ATA;P;16;85.4;4.0;83.4;9.1;semitop;87.4;9.1;Top;6.36;5.58;37;3330;0;0;5;5;4
+Laurientè;SAS;A;15;85.4;4.0;83.4;6.0;2° Slot Relativo;87.4;6.0;Terza;6.23;6.99;37;2614;7;9;5;4;4
+Butez;COM;P;16;85.2;15.0;92.7;9.0;top;77.7;9.0;Top;6.07;5.37;38;3420;0;1;5;5;5
+Alajbegovic;JUV;C;12;85.2;15.0;92.7;8.2;1° Slot Relativo;77.7;8.2;Semi-Top;0;0;28;1912;9;3;4;3;5
+Dybala;ROM;A;14;85.2;15.0;92.7;8.2;2° Slot Relativo;77.7;8.2;FANTA ROTTO;6.26;6.74;21;1356;2;7;3;5;1
+Atta;FIO;C;17;83.5;0.1;83.4;9.3;1° Slot Relativo;83.5;9.3;Semi-Top;6.36;6.88;32;2564;5;3;5;5;3
+Meret;NAP;P;11;80.3;24.8;92.7;8.0;top;67.9;8.0;Top;6.23;5.18;11;980;0;1;3;4;2
+Pellegrino M.;FIO;A;15;75.9;3.6;74.1;4.4;2° Slot Relativo;77.7;4.4;Terza;5.99;6.65;37;2994;9;0;3;4;4
+Wesley;ROM;D;17;71.3;12.8;64.9;8.8;1° Slot Relativo;77.7;8.8;Top;6.12;6.47;30;2457;5;0;5;4;3
+Castro S.;ROM;A;14;71.0;6.2;74.1;5.0;2° Slot Relativo;67.9;5.0;Quarta;5.93;6.52;35;2365;7;1;3;4;4
+Colombo;GEN;A;11;69.3;8.9;64.9;5.6;3° Slot Relativo;73.8;5.6;Terza;5.92;6.41;37;2346;7;1;5;3;4
+Da Cunha;COM;C;18;67.0;9.7;62.1;8.0;2° Slot Relativo;71.8;8.0;Semi-Top;6.34;6.91;35;2747;6;4;5;5;5
+Zaccagni;LAZ;C;16;66.7;22.1;55.6;8.2;2° Slot Relativo;77.7;8.2;ALTO POTENZIALE;5.88;5.96;26;2114;3;0;5;3;2
+Akanji;INT;D;16;66.4;3.0;64.9;6.0;1° Slot Relativo;67.9;6.0;Top;6.28;6.41;32;2820;2;0;5;5;4
+Bremer;JUV;D;15;66.4;3.0;64.9;6.2;1° Slot Relativo;67.9;6.2;Top;6.33;6.81;26;2175;4;3;5;5;1
+De Bruyne;NAP;C;15;66.4;3.0;64.9;7.2;2° Slot Relativo;67.9;7.2;Semi-Top;6.26;7.23;17;1169;5;2;4;4;1
+Mastantuono;FIO;C;12;66.4;3.0;64.9;8.8;2° Slot Relativo;67.9;8.8;Semi-Top;0;0;23;1036;0;0;4;4;5
+Vlasic;TOR;C;14;66.4;3.0;64.9;7.4;2° Slot Relativo;67.9;7.4;Semi-Top;6.03;6.67;37;3056;8;3;5;4;3
+Mora;ROM;C;19;66.2;15.9;74.1;7.2;1° Slot Relativo;58.2;7.2;Terza;0;0;28;1181;1;1;4;4;5
+Barella;INT;C;17;64.5;0.8;64.9;6.6;2° Slot Relativo;64.1;6.6;Semi-Top;6.28;6.71;34;2534;3;9;4;5;4
+Rabiot;MIL;C;22;63.7;16.2;55.6;7.8;2° Slot Relativo;71.8;7.8;Semi-Top;6.33;6.99;29;2550;6;4;5;4;3
+Leao;MIL;A;18;61.8;12.3;55.6;5.6;3° Slot Relativo;67.9;5.6;Terza;5.88;6.86;28;1872;9;3;3;4;3
+Rowe;BOL;C;11;61.6;6.7;64.9;6.1;2° Slot Relativo;58.2;6.1;ALTO POTENZIALE;6.2;6.59;28;1609;3;3;4;5;4
+Pinamonti;SAS;A;13;60.2;3.9;62.1;4.4;3° Slot Relativo;58.2;4.4;Terza;5.88;6.62;34;2575;9;3;3;3;4
+Santos A.;NAP;A;14;60.2;3.9;62.1;6.0;3° Slot Relativo;58.2;6.0;Quarta;6.35;7.23;13;840;4;0;4;5;5
+Zielinski;INT;C;10;59.7;10.5;64.9;6.0;2° Slot Relativo;54.4;6.0;Terza;6.25;6.8;30;2045;6;2;3;5;3
+De Ketelaere;ATA;A;17;58.5;18.8;49.1;7.4;3° Slot Relativo;67.9;7.4;Quarta;6.21;6.6;31;2189;3;5;5;4;2
+De Gea;FIO;P;13;56.9;2.6;55.6;6.4;semitop;58.2;6.4;Semi-Top;6.24;4.98;37;3330;0;0;5;4;5
+Gudmundsson A.;FIO;C;13;55.7;24.4;43.5;5.8;3° Slot Relativo;67.9;5.8;ALTO POTENZIALE;5.88;6.35;32;2262;5;3;3;4;3
+Molina N.;ROM;D;18;53.7;9.1;49.1;7.9;1° Slot Relativo;58.2;7.9;Semi-Top;0;0;26;1321;2;1;4;4;2
+Moreira;MIL;C;12;53.7;9.1;49.1;6.0;2° Slot Relativo;58.2;6.0;Terza;0;0;27;2045;0;0;4;4;3
+Raspadori;ATA;A;13;53.7;9.1;49.1;5.0;3° Slot Relativo;58.2;5.0;Quarta;6.12;6.89;13;792;3;1;4;4;3
+Bastoni;INT;D;14;52.0;7.1;55.6;6.2;1° Slot Relativo;48.5;6.2;Semi-Top;6.2;6.34;28;2251;1;4;5;4;3
+Mancini;ROM;D;15;52.0;7.1;55.6;5.4;1° Slot Relativo;48.5;5.4;Semi-Top;6.25;6.51;36;3068;4;2;5;5;5
+Pavlovic;MIL;D;14;52.0;7.1;55.6;4.9;1° Slot Relativo;48.5;4.9;Semi-Top;6.24;6.62;34;2872;5;0;5;5;4
+Rrahmani;NAP;D;14;49.2;12.9;55.6;5.0;1° Slot Relativo;42.7;5.0;Semi-Top;6.24;6.48;21;1800;2;0;5;5;3
+Bowie;SAS;A;10;48.8;0.6;49.1;1.4;3° Slot Relativo;48.5;1.4;Quarta;5.96;6.78;14;1204;4;0;3;3;3
+Adams A.;VEN;A;12;47.7;21.1;37.1;3.6;4° Slot Relativo;58.2;3.6;Quarta;0;0;32;2060;0;0;4;3;2
+Diao;COM;A;11;47.4;2.2;46.3;3.9;3° Slot Relativo;48.5;3.9;Quarta;6;6.38;16;1082;2;1;4;4;2
+Soulè;ROM;A;12;47.4;2.2;46.3;3.2;3° Slot Relativo;48.5;3.2;Quarta;6.13;6.83;32;2161;6;5;4;4;3
+McKennie;JUV;C;17;46.0;5.0;43.5;6.0;3° Slot Relativo;48.5;6.0;Terza;6.13;6.67;34;2841;5;6;5;5;3
+Taylor K.;LAZ;C;13;46.0;5.0;43.5;4.0;3° Slot Relativo;48.5;4.0;Terza;6.06;6.56;17;1402;3;2;5;4;4
+Conceicao;JUV;C;12;44.8;15.3;37.1;5.8;3° Slot Relativo;52.4;5.8;ALTO POTENZIALE;6.28;6.7;30;2110;3;5;3;5;2
+Spence;INT;D;12;44.1;8.7;39.8;6.0;2° Slot Relativo;48.5;6.0;Semi-Top;0;0;30;2057;0;0;3;4;2
+Ostigard;GEN;D;11;44.0;10.3;49.1;4.0;1° Slot Relativo;38.8;4.0;Semi-Top;6.13;6.51;30;2624;5;0;5;4;3
+Ramon;COM;D;10;41.1;4.7;43.5;4.0;2° Slot Relativo;38.8;4.0;Semi-Top;6.16;6.14;32;2742;2;0;4;4;3
+Ekkelenkamp;UDI;C;10;40.6;11.4;46.3;3.8;3° Slot Relativo;34.9;3.8;Terza;6.05;6.61;31;2205;5;3;5;4;4
+Kalulu;JUV;D;13;39.9;5.6;37.1;5.0;2° Slot Relativo;42.7;5.0;Semi-Top;6.14;6.36;37;3282;2;4;5;5;3
+Samardzic;ATA;C;12;39.9;5.6;37.1;5.6;3° Slot Relativo;42.7;5.6;ALTO POTENZIALE;5.93;6.29;21;1022;2;2;3;3;5
+Jimenez A.;FIO;D;8;39.5;17.9;30.6;3.8;3° Slot Relativo;48.5;3.8;ALTO POTENZIALE;5.5;5;1;44;0;0;4;4;5
+Chalobah T.;COM;D;9;39.3;1.0;39.8;3.8;2° Slot Relativo;38.8;3.8;Semi-Top;0;0;34;2782;4;0;4;4;4
+Bisseck;INT;D;11;38.0;1.7;37.1;3.0;2° Slot Relativo;38.8;3.0;Semi-Top;6.22;6.65;23;1922;3;2;3;4;5
+Di Lorenzo;NAP;D;12;38.0;1.7;37.1;4.9;2° Slot Relativo;38.8;4.9;Semi-Top;6.08;6.33;26;2278;2;1;5;4;2
+Solet;UDI;D;13;38.0;1.7;37.1;5.8;2° Slot Relativo;38.8;5.8;Semi-Top;6.18;6.4;34;2961;3;1;5;5;4
+Skorupski;BOL;P;10;37.7;17.2;46.3;3.0;semitop;29.1;3.0;Semi-Top;6.19;5.27;18;1594;0;0;4;4;3
+Ederson D.S.;ATA;C;12;36.0;2.2;37.1;4.2;3° Slot Relativo;34.9;4.2;Terza;6.25;6.43;30;2236;2;1;5;5;3
+Couto;COM;D;8;35.0;4.1;37.1;3.6;2° Slot Relativo;33.0;3.6;Terza;0;0;19;995;2;3;4;4;4
+Casadei;TOR;C;10;34.5;10.7;39.8;2.0;3° Slot Relativo;29.1;2.0;ALTO POTENZIALE;5.97;6.45;32;1987;6;0;3;3;5
+Saelemaekers;MIL;C;10;34.5;10.7;39.8;3.3;3° Slot Relativo;29.1;3.3;Terza;6.14;6.41;35;2801;3;3;4;4;3
+Romero D.;PAR;A;10;34.2;29.7;49.1;1.4;3° Slot Relativo;19.4;1.4;SCOMMESSA;0;0;0;;0;0;3;3;1
+Koulierakis;ROM;D;8;33.6;1.3;34.3;1.8;2° Slot Relativo;33.0;1.8;Terza;0;0;29;2480;0;0;3;3;3
+Mandas;LAZ;P;9;33.1;8.0;37.1;2.4;da abbinare;29.1;2.4;Semi-Top;0;0;0;;0;0;3;4;5
+Yeboah J.;VEN;A;8;31.4;7.1;27.8;1.6;4° Slot Relativo;34.9;1.6;Quarta;0;0;34;2619;10;9;4;4;5
+Frattesi;LAZ;C;7;30.4;5.2;27.8;3.8;4° Slot Relativo;33.0;3.8;Terza;5.89;5.89;14;550;0;0;3;3;3
+Spinazzola;NAP;D;8;29.9;1.5;30.6;3.0;3° Slot Relativo;29.1;3.0;FANTA ROTTO;6.17;6.55;30;1905;3;3;4;5;2
+Bernardeschi;BOL;C;9;29.9;1.5;30.6;2.6;4° Slot Relativo;29.1;2.6;Quarta;6.04;6.56;24;1212;4;2;3;4;3
+Cambiaso;JUV;D;9;28.6;20.3;18.5;3.7;4° Slot Relativo;38.8;3.7;ALTO POTENZIALE;5.81;5.99;36;2796;3;4;5;3;4
+Calò;FRO;C;7;28.6;20.3;18.5;2.0;5° Slot Relativo;38.8;2.0;Terza;0;0;37;3168;10;16;4;4;5
+N'Dicka;ROM;D;13;28.5;1.3;27.8;4.0;3° Slot Relativo;29.1;4.0;Terza;6.08;6.32;31;2683;3;1;5;4;4
+Neres;NAP;A;6;28.5;1.3;27.8;1.2;4° Slot Relativo;29.1;1.2;FANTA ROTTO;6.19;6.85;16;925;3;3;3;4;1
+Geubbels;LEC;A;9;28.2;17.7;37.1;1.2;4° Slot Relativo;19.4;1.2;SCOMMESSA;0;0;24;1013;0;0;3;3;3
+Tourè E.;PAR;A;11;28.2;17.7;37.1;2.0;4° Slot Relativo;19.4;2.0;SCOMMESSA;0;0;22;1648;5;4;4;4;2
+Konè M.;ROM;C;10;27.3;23.0;15.8;3.7;6° Slot Relativo;38.8;3.7;Terza;6.26;6.54;29;2459;2;3;5;5;3
+Modric;MIL;C;12;27.1;4.1;25.0;3.1;4° Slot Relativo;29.1;3.1;Terza;6.45;6.66;33;2816;2;3;5;5;3
+Zambo Anguissa;NAP;C;11;27.0;7.3;30.6;2.2;4° Slot Relativo;23.3;2.2;POSS OCCASIONE;6.17;6.86;18;1257;4;1;3;5;1
+Milinkovic-Savic V.;NAP;P;5;26.7;16.4;18.5;2.0;secondi scomodi;34.9;2.0;Top;6.2;5.64;27;2430;0;0;3;5;5
+Stones;INT;D;12;26.5;2.6;27.8;3.6;3° Slot Relativo;25.2;3.6;FANTA ROTTO;0;0;9;439;0;0;3;4;1
+Zappacosta;ATA;D;8;25.6;4.5;27.8;2.0;3° Slot Relativo;23.3;2.0;Terza;6.06;6.3;35;2580;3;1;4;4;3
+Vergara;NAP;C;8;25.4;23.5;37.1;0.6;3° Slot Relativo;13.6;0.6;ALTO POTENZIALE;6.25;6.5;8;615;1;0;3;4;2
+Thuram K.;JUV;C;10;24.4;17.2;15.8;2.4;6° Slot Relativo;33.0;2.4;Terza;6.1;6.39;34;2453;3;2;4;4;4
+Nkunku;MIL;A;13;24.2;48.5;0.0;0.4;Non Impostata;48.5;0.4;Quarta;5.94;6.86;26;1351;7;3;3;4;2
+Valdepenas;FIO;D;6;23.9;20.7;34.3;2.2;2° Slot Relativo;13.6;2.2;SCOMMESSA;0;0;1;78;0;0;4;3;5
+Bonny;INT;A;7;23.8;10.6;18.5;1.8;4° Slot Relativo;29.1;1.8;SCOMMESSA;6.15;6.84;27;1128;5;4;3;4;3
+Falcone;LEC;P;8;23.6;8.4;27.8;1.8;da abbinare;19.4;1.8;Terza;6.41;5.23;38;3420;0;0;5;4;5
+Provedel;INT;P;2;23.6;8.4;27.8;2.0;secondi scomodi;19.4;2.0;Top;6.26;5.35;27;2430;0;0;3;4;2
+Pisilli;ROM;C;5;23.6;8.4;27.8;0.4;4° Slot Relativo;19.4;0.4;ALTO POTENZIALE;6.09;6.48;22;1287;2;4;3;4;5
+Ghedjemis;FRO;A;9;23.2;3.9;21.3;0.8;4° Slot Relativo;25.2;0.8;Quarta;0;0;37;3043;15;3;5;4;4
+Okoye;UDI;P;9;23.1;15.1;30.6;3.0;da abbinare;15.5;3.0;Terza;6.07;5.09;30;2617;0;1;5;3;2
+Hermoso;ROM;D;10;22.2;5.6;25.0;1.6;3° Slot Relativo;19.4;1.6;Quarta;6.17;6.41;27;2095;3;2;3;4;3
+Kristensen T.;ATA;D;7;22.1;17.0;30.6;2.0;3° Slot Relativo;13.6;2.0;SCOMMESSA;5.98;6.23;28;2475;3;0;4;3;3
+Sucic P.;INT;C;8;22.0;24.6;34.3;1.4;4° Slot Relativo;9.7;1.4;SCOMMESSA;6.07;6.27;28;1794;2;2;3;4;5
+Kempf;COM;D;5;21.6;12.3;27.8;1.0;3° Slot Relativo;15.5;1.0;Quarta;6.12;6.52;29;2325;4;1;3;4;3
+Ndour;FIO;C;8;21.6;12.3;27.8;1.0;4° Slot Relativo;15.5;1.0;POSS OCCASIONE;5.8;6.07;30;1873;3;0;3;3;4
+Miranda J.;BOL;D;8;21.4;0.1;21.3;2.4;3° Slot Relativo;21.4;2.4;Terza;6;6.1;31;2574;1;3;5;4;3
+Celik;JUV;D;8;20.9;4.8;18.5;1.6;4° Slot Relativo;23.3;1.6;ALTO POTENZIALE;6.17;6.26;32;2732;1;2;3;4;4
+Dragusin;FIO;D;8;20.9;4.8;18.5;2.8;4° Slot Relativo;23.3;2.8;Terza;0;0;10;534;0;0;4;4;2
+Gila;MIL;D;12;20.9;4.8;18.5;4.0;4° Slot Relativo;23.3;4.0;Terza;6.03;5.95;31;2484;0;0;5;4;3
+Politano;NAP;C;10;20.9;4.8;18.5;3.2;5° Slot Relativo;23.3;3.2;ALTO POTENZIALE;6.09;6.36;33;2214;2;5;3;4;3
+Bernabè;PAR;C;7;20.9;4.8;18.5;1.6;6° Slot Relativo;23.3;1.6;Quarta;6.17;6.48;32;2495;3;1;5;4;2
+Di Gregorio;JUV;P;9;20.8;36.0;2.8;0.4;Non Impostata;38.8;0.4;Semi-Top;6.08;5.33;30;2654;0;0;2;4;4
+Dodò;FIO;D;10;20.5;9.4;15.8;1.2;5° Slot Relativo;25.2;1.2;POSS OCCASIONE;5.99;6.03;36;3140;1;2;3;3;2
+Rodriguez Je.;COM;C;12;20.5;9.4;15.8;2.4;6° Slot Relativo;25.2;2.4;ALTO POTENZIALE;6.25;6.66;28;1733;2;8;3;4;4
+Thorstvedt;SAS;C;10;20.5;9.4;15.8;1.6;7° Slot relativo;25.2;1.6;Quarta;6.15;6.49;31;2458;4;3;5;4;2
+Vojvoda;UDI;D;8;20.4;1.9;21.3;2.8;3° Slot Relativo;19.4;2.8;POSS OCCASIONE;6.02;6.26;27;1595;2;1;4;4;3
+Diouf;INT;C;8;20.4;1.9;21.3;2.2;5° Slot Relativo;19.4;2.2;SCOMMESSA;6.15;6.4;10;480;1;0;3;4;3
+Bartesaghi;MIL;D;8;19.6;7.5;15.8;2.3;5° Slot Relativo;23.3;2.3;POSS OCCASIONE;5.97;6.05;31;2444;2;0;3;4;5
+Valeri;PAR;D;8;18.9;0.9;18.5;2.0;4° Slot Relativo;19.4;2.0;Terza;6.06;6.09;34;2643;0;2;5;4;4
+Baldanzi;GEN;C;11;18.9;0.9;18.5;2.4;5° Slot Relativo;19.4;2.4;ALTO POTENZIALE;6.15;6.39;17;781;1;2;3;4;1
+Isaksen;LAZ;C;9;18.9;0.9;18.5;1.4;6° Slot Relativo;19.4;1.4;FANTA ROTTO;6.04;6.63;27;1600;5;1;3;3;3
+Kevin Carlos;CAG;A;13;18.9;0.9;18.5;1.2;5° Slot Relativo;19.4;1.2;SCOMMESSA;0;0;23;873;0;0;4;3;3
+Sow;GEN;C;7;18.8;18.1;27.8;0.2;4° Slot Relativo;9.7;0.2;SCOMMESSA;0;0;33;2198;0;0;4;3;4
+Pedraza;LAZ;D;5;17.6;3.6;15.8;0.4;5° Slot Relativo;19.4;0.4;Terza;0;0;27;1692;1;2;3;3;1
+Perrone;COM;C;10;17.6;3.6;15.8;2.0;6° Slot Relativo;19.4;2.0;Quarta;6.22;6.47;36;2751;3;4;4;4;4
+Adams C.;TOR;A;9;17.4;15.3;25.0;0.5;4° Slot Relativo;9.7;0.5;POSS OCCASIONE;5.98;6.64;32;1895;6;3;3;3;4
+Jones C.;INT;C;12;17.1;34.3;34.3;4.0;4° Slot Relativo;0.0;4.0;Non Impostata;0;0;34;1930;0;2;3;4;2
+Bijlow;GEN;P;8;17.0;3.0;18.5;1.6;da abbinare;15.5;1.6;Terza;6.06;4.78;16;1396;0;0;4;3;2
+Cacciamani;TOR;C;5;16.8;22.0;27.8;0.8;4° Slot Relativo;5.8;0.8;SCOMMESSA;0;0;36;2601;2;4;4;4;5
+Delprato;PAR;D;8;16.1;4.9;18.5;1.6;4° Slot Relativo;13.6;1.6;Quarta;5.91;6.01;35;2955;2;0;5;4;4
+Scalvini;ATA;D;10;16.1;4.9;18.5;2.2;4° Slot Relativo;13.6;2.2;FANTA ROTTO;6.06;6.44;24;1819;3;1;5;4;1
+Caprile;CAG;P;9;15.7;0.3;15.8;2.0;da abbinare;15.5;2.0;Terza;6.29;4.87;38;3420;0;0;5;4;3
+Doekhi;LAZ;D;7;15.7;0.3;15.8;1.1;5° Slot Relativo;15.5;1.1;Quarta;0;0;34;3060;0;0;4;3;3
+Bernasconi;ATA;D;6;15.7;7.4;12.0;2.0;6° Slot Relativo;19.4;2.0;ALTO POTENZIALE;6.09;6.16;22;1570;0;3;5;4;3
+Chukwueze;MIL;C;6;15.5;11.6;21.3;1.0;5° Slot Relativo;9.7;1.0;ALTO POTENZIALE;5.5;5.5;1;25;0;0;3;3;3
+Fazzini;CAG;C;7;15.5;11.6;21.3;1.3;5° Slot Relativo;9.7;1.3;FANTA ROTTO;5.88;5.8;12;574;0;0;5;4;2
+Vitinha O.;GEN;A;8;15.5;11.6;21.3;1.2;4° Slot Relativo;9.7;1.2;TITOLARE;5.95;6.39;31;2242;5;1;5;3;2
+Piccoli;BOL;A;8;15.1;6.9;18.5;1.4;5° Slot Relativo;11.6;1.4;SCOMMESSA;5.78;6.24;27;1662;4;1;3;3;4
+Marcandalli;GEN;D;6;14.7;2.2;15.8;0.8;5° Slot Relativo;13.6;0.8;Quarta;5.87;5.84;31;2600;0;1;5;3;5
+Tiago Gabriel;LEC;D;7;14.1;8.8;18.5;1.0;4° Slot Relativo;9.7;1.0;Quarta;6;6.01;36;3220;2;0;5;4;5
+Vasquez;GEN;D;9;14.1;8.8;18.5;2.0;4° Slot Relativo;9.7;2.0;Quarta;6.08;6.14;36;3217;1;0;5;4;4
+Fagioli;FIO;C;8;14.1;8.8;18.5;0.4;6° Slot Relativo;9.7;0.4;SCOMMESSA;6.03;6.23;33;2567;2;3;4;4;3
+Schmid;FRO;C;8;14.1;8.8;18.5;0.4;6° Slot Relativo;9.7;0.4;SCOMMESSA;0;0;34;2993;0;0;4;3;4
+Volpato;SAS;C;7;14.1;8.8;18.5;0.2;6° Slot Relativo;9.7;0.2;ALTO POTENZIALE;6.14;6.52;21;1062;2;4;3;4;2
+Esposito Se.;CAG;A;13;14.1;8.8;18.5;0.4;5° Slot Relativo;9.7;0.4;POSS OCCASIONE;6.26;6.87;36;2702;7;4;1;3;3
+Kelly L.;JUV;D;5;13.7;4.2;15.8;0.8;5° Slot Relativo;11.6;0.8;Quarta;6.01;6.07;35;2997;1;1;3;4;4
+Busio;VEN;C;5;13.2;10.7;18.5;0.4;6° Slot Relativo;7.8;0.4;Quarta;0;0;37;3205;7;4;5;3;3
+Carlos Augusto;INT;D;7;12.8;6.1;15.8;1.2;5° Slot Relativo;9.7;1.2;SCOMMESSA;6.13;6.17;28;1753;1;1;3;4;3
+Kaiki;COM;D;7;12.8;6.1;15.8;1.6;5° Slot Relativo;9.7;1.6;Quarta;0;0;0;;0;0;3;3;5
+Rensch;ROM;D;5;12.8;6.1;15.8;0.3;6° Slot Relativo;9.7;0.3;SCOMMESSA;6.16;6.5;19;1178;1;4;3;4;2
+Caqueret;COM;C;6;12.8;6.1;15.8;0.2;7° Slot relativo;9.7;0.2;SCOMMESSA;6.11;6.41;28;1488;2;4;3;4;4
+Colpani;MON;C;8;12.8;6.1;15.8;1.2;7° Slot relativo;9.7;1.2;ALTO POTENZIALE;0;0;27;1432;2;1;3;4;3
+Odgaard;BOL;C;8;12.8;6.1;15.8;0.3;7° Slot relativo;9.7;0.3;ALTO POTENZIALE;5.91;6.61;22;1381;5;1;3;3;3
+Pasalic;ATA;C;9;12.8;6.1;15.8;0.6;7° Slot relativo;9.7;0.6;ALTO POTENZIALE;5.94;6.28;31;1932;3;3;3;3;5
+Norton-Cuffy;GEN;D;8;12.4;6.2;9.3;2.4;6° Slot Relativo;15.5;2.4;Quarta;5.93;6.1;27;2216;2;1;5;4;2
+Adzic;SAS;C;5;11.6;19.4;21.3;0.8;5° Slot Relativo;1.9;0.8;ALTRI;6.13;6.88;4;163;1;0;3;4;3
+Cissè A.;MIL;C;3;11.6;19.4;21.3;0.2;5° Slot Relativo;1.9;0.2;ALTO POTENZIALE;0;0;22;1715;6;1;2;3;2
+Valle;COM;D;6;11.4;4.3;9.3;0.8;6° Slot Relativo;13.6;0.8;Quarta;6.06;6.23;26;2026;1;3;3;4;3
+Liberali;COM;C;6;11.4;4.3;9.3;1.0;7° Slot relativo;13.6;1.0;SCOMMESSA;0;0;28;1572;4;3;3;4;5
+Mina;CAG;D;8;10.8;10.0;15.8;1.2;5° Slot Relativo;5.8;1.2;TITOLARE;6;6.17;26;2155;2;1;5;4;3
+Mandragora;FIO;C;9;10.8;10.0;15.8;0.6;7° Slot relativo;5.8;0.6;Quarta;6.04;6.61;34;2436;7;2;3;4;3
+Elmas;ATA;C;7;10.7;21.3;21.3;0.6;5° Slot Relativo;0.0;0.6;Non Impostata;5.8;5.96;28;1783;1;3;2;3;2
+Varela G.;MON;A;3;10.7;21.3;21.3;0.2;4° Slot Relativo;0.0;0.2;Non Impostata;0;0;32;1519;6;3;3;3;5
+Gaetano;ATA;C;7;10.2;16.6;18.5;1.2;5° Slot Relativo;1.9;1.2;TITOLARE;6.06;6.31;32;1911;2;4;3;4;3
+Douglas Luiz;JUV;C;4;10.2;16.6;18.5;0.6;6° Slot Relativo;1.9;0.6;ALTO POTENZIALE;0;0;21;930;1;0;3;3;3
+Muric;SAS;P;7;9.5;0.4;9.3;0.8;da abbinare;9.7;0.8;Quarta;6.08;4.77;32;2880;0;0;3;4;3
+Stankovic F.;VEN;P;6;9.5;0.4;9.3;0.6;da abbinare;9.7;0.6;Quarta;0;0;38;3420;0;0;5;4;3
+Ahanor;ATA;D;6;9.5;0.4;9.3;0.2;6° Slot Relativo;9.7;0.2;POSS OCCASIONE;5.79;5.69;21;1375;0;0;3;3;2
+Hainaut;VEN;D;3;9.5;0.4;9.3;0.2;6° Slot Relativo;9.7;0.2;SCOMMESSA;0;0;37;3049;5;5;3;4;4
+Zortea;BOL;D;6;9.5;0.4;9.3;1.0;6° Slot Relativo;9.7;1.0;ALTO POTENZIALE;5.86;5.9;28;1808;0;2;3;3;3
+Coco;TOR;D;7;9.5;0.4;9.3;0.4;7° Slot relativo;9.7;0.4;SCOMMESSA;5.84;5.91;35;3090;1;1;5;4;4
+Comuzzo;TOR;D;6;9.5;0.4;9.3;0.4;7° Slot relativo;9.7;0.4;TITOLARE;5.75;5.75;24;1709;1;0;4;3;3
+Boga;JUV;A;6;9.5;0.4;9.3;0.6;5° Slot Relativo;9.7;0.6;POSS OCCASIONE;6.19;7.15;13;680;4;1;3;4;2
+Maldini;CAG;A;5;9.5;0.4;9.3;1.2;5° Slot Relativo;9.7;1.2;SCOMMESSA;5.94;6.3;18;952;2;1;4;3;3
+Zapata D.;TOR;A;7;9.5;0.4;9.3;0.2;5° Slot Relativo;9.7;0.2;FANTA ROTTO;5.83;6.13;23;1108;3;1;3;3;1
+Joao Mario;FIO;D;3;9.2;18.5;18.5;0.3;4° Slot Relativo;0.0;0.3;Non Impostata;5.79;6;14;995;1;1;3;3;3
+Zalewski;ATA;C;6;9.2;12.7;2.8;0.4;Non Impostata;15.5;0.4;POSS OCCASIONE;6.1;6.41;31;1905;2;5;3;4;3
+Heggem;BOL;D;6;8.8;13.9;15.8;0.4;5° Slot Relativo;1.9;0.4;POSS OCCASIONE;5.84;5.8;25;2112;0;0;3;3;3
+Lucumì;JUV;D;8;8.8;13.9;15.8;2.2;5° Slot Relativo;1.9;2.2;POSS OCCASIONE;5.88;5.9;28;2287;1;0;3;3;3
+Romagnoli;LAZ;D;7;8.8;13.9;15.8;0.3;5° Slot Relativo;1.9;0.3;SCOMMESSA;6.03;5.91;32;2669;0;0;3;4;3
+Lucca;NAP;A;3;8.8;13.9;15.8;0.2;5° Slot Relativo;1.9;0.2;ALTRI;5.72;6;9;401;1;0;1;3;3
+Gabbia;MIL;D;7;8.2;10.8;2.8;1.0;7° Slot relativo;13.6;1.0;Quarta;5.91;5.84;29;2530;0;0;5;4;3
+Cancellieri;LAZ;C;9;8.2;10.8;2.8;0.4;Non Impostata;13.6;0.4;ALTO POTENZIALE;5.93;6.29;28;1731;4;1;3;3;3
+Cristante;ROM;C;8;8.2;10.8;2.8;0.7;Non Impostata;13.6;0.7;SCOMMESSA;6.11;6.22;37;3102;2;1;5;4;4
+Raimondo;FRO;A;7;8.2;10.8;2.8;0.6;5° Slot Relativo;13.6;0.6;SCOMMESSA;0;0;36;2375;11;1;4;3;3
+Cambiaghi;BOL;C;8;8.1;3.2;6.5;0.2;8° Slot Relativo;9.7;0.2;ALTO POTENZIALE;5.98;6.42;24;1519;3;4;3;4;2
+Birindelli;MON;D;4;7.6;3.5;9.3;0.4;6° Slot Relativo;5.8;0.4;SCOMMESSA;0;0;37;2992;5;2;5;4;3
+Dominguez B.;SAS;C;3;6.8;13.6;0.0;0.2;Non Impostata;13.6;0.2;ALTO POTENZIALE;5.83;6.04;12;543;0;3;2;3;4
+Haps;VEN;D;5;6.2;6.9;2.8;0.4;7° Slot relativo;9.7;0.4;Quarta;0;0;25;1221;5;3;4;4;3
+Basic;VEN;C;6;6.2;6.9;2.8;0.2;8° Slot Relativo;9.7;0.2;SCOMMESSA;6.09;6.44;23;1749;2;3;4;3;3
+Berisha M.;LEC;C;5;6.2;6.9;2.8;0.2;8° Slot Relativo;9.7;0.2;SCOMMESSA;6.17;6.92;12;896;2;3;4;4;2
+Unai Gomez;UDI;C;7;6.2;6.9;2.8;0.2;8° Slot Relativo;9.7;0.2;SCOMMESSA;0;0;26;977;1;1;3;3;3
+Koutsoupias;FRO;C;4;6.2;6.9;2.8;0.2;Non Impostata;9.7;0.2;SCOMMESSA;0;0;34;2579;8;4;2;3;3
+Pellegrini Lo.;ROM;C;10;6.2;6.9;2.8;0.2;Non Impostata;9.7;0.2;SCOMMESSA;6.04;6.58;24;1477;4;2;3;4;2
+Cutrone;MON;A;9;6.2;6.9;2.8;1.1;6° Slot Relativo;9.7;1.1;TITOLARE;5.71;5.92;14;895;1;0;3;3;4
+David;JUV;A;9;6.2;6.9;2.8;0.6;6° Slot Relativo;9.7;0.6;POSS OCCASIONE;5.77;6.34;30;1784;6;2;3;2;4
+Elphege;PAR;A;3;6.2;6.9;2.8;0.2;6° Slot Relativo;9.7;0.2;POSS OCCASIONE;6;6.88;8;305;2;1;3;4;5
+Kvernadze;FRO;A;4;6.2;6.9;2.8;0.2;Non Impostata;9.7;0.2;SCOMMESSA;0;0;36;2520;5;5;3;4;5
+Provstgaard;LAZ;D;3;6.0;12.0;12.0;0.2;6° Slot Relativo;0.0;0.2;Non Impostata;5.91;5.84;23;1524;0;0;3;4;4
+Gallo;LEC;D;6;5.6;7.4;9.3;0.6;6° Slot Relativo;1.9;0.6;TITOLARE;5.95;5.99;37;3079;0;3;5;4;4
+Idzes;SAS;D;7;5.6;7.4;9.3;0.6;6° Slot Relativo;1.9;0.6;TITOLARE;5.94;5.91;35;3064;0;0;5;4;4
+Bellanova;ATA;D;6;5.6;7.4;9.3;1.0;7° Slot relativo;1.9;1.0;ALTO POTENZIALE;5.82;5.82;22;1375;0;1;3;3;3
+Hien;ATA;D;8;5.6;7.4;9.3;0.2;7° Slot relativo;1.9;0.2;FANTA ROTTO;5.91;5.86;28;1964;1;0;3;3;2
+Kabasele;UDI;D;4;5.6;7.4;9.3;0.2;7° Slot relativo;1.9;0.2;POSS OCCASIONE;5.98;6.18;28;2257;3;0;4;4;4
+Kolasinac;ATA;D;5;5.6;7.4;9.3;0.2;7° Slot relativo;1.9;0.2;FANTA ROTTO;6.03;5.94;17;1219;0;0;3;4;1
+Troilo;PAR;D;3;5.6;7.4;9.3;0.2;7° Slot relativo;1.9;0.2;TITOLARE;5.79;5.72;21;1627;1;0;4;2;5
+Ismajli;TOR;D;7;5.6;7.4;9.3;0.2;8° Slot Relativo;1.9;0.2;FANTA ROTTO;5.92;5.9;24;1906;0;2;4;4;2
+Monterisi;FRO;D;6;5.6;7.4;9.3;0.3;8° Slot Relativo;1.9;0.3;SCOMMESSA;0;0;25;2042;2;5;3;3;3
+Bakola;SAS;C;5;5.6;7.4;9.3;0.2;7° Slot relativo;1.9;0.2;ALTRI;6.17;6.17;3;124;0;0;3;3;3
+Oristanio;TOR;C;7;5.6;7.4;9.3;0.2;7° Slot relativo;1.9;0.2;SCOMMESSA;5.78;5.92;18;856;1;0;3;4;3
+Romano;CAG;C;5;5.6;7.4;9.3;0.2;7° Slot relativo;1.9;0.2;ALTRI;0;0;19;1429;0;2;4;3;5
+Messias;GEN;C;3;5.6;7.4;9.3;0.2;Non Impostata;1.9;0.2;FANTA ROTTO;6.18;6.68;19;676;3;1;2;4;1
+Pessina;MON;C;7;5.6;7.4;9.3;0.3;Non Impostata;1.9;0.3;FANTA ROTTO;0;0;37;3267;5;1;5;4;2
+Mota;MON;A;5;5.6;7.4;9.3;0.4;5° Slot Relativo;1.9;0.4;ALTRI;0;0;34;1921;5;4;4;4;3
+Mangas;MON;D;6;5.3;5.0;2.8;0.6;8° Slot Relativo;7.8;0.6;SCOMMESSA;0;0;15;817;2;1;5;3;3
+Obrador;SAS;D;6;4.8;9.7;0.0;0.6;Non Impostata;9.7;0.6;Quarta;6.06;6.4;16;1124;1;3;4;4;2
+Pedersen;TOR;D;5;4.8;9.7;0.0;1.0;Non Impostata;9.7;1.0;SCOMMESSA;5.84;5.97;28;2134;1;2;4;3;2
+Perin;JUV;P;6;4.7;9.3;9.3;0.2;Non Impostata;0.0;0.2;Non Impostata;6.11;5.11;9;766;0;0;2;5;3
+Olivera;NAP;D;5;4.7;9.3;9.3;0.2;6° Slot Relativo;0.0;0.2;Non Impostata;5.75;5.68;22;1369;0;0;3;3;3
+Obert;CAG;D;7;4.3;3.0;2.8;0.4;7° Slot relativo;5.8;0.4;SCOMMESSA;5.88;5.82;34;2783;0;3;5;3;4
+Pobega;BOL;C;6;4.3;3.0;2.8;0.2;Non Impostata;5.8;0.2;SCOMMESSA;5.83;6.18;23;1434;3;1;4;3;2
+Rrahmani Al.;VEN;A;8;4.3;3.0;2.8;0.2;Non Impostata;5.8;0.2;POSS OCCASIONE;0;0;0;;0;0;3;3;5
+Meichtry;GEN;C;5;4.2;4.6;6.5;0.2;7° Slot relativo;1.9;0.2;SCOMMESSA;0;0;35;1796;8;3;3;3;3
+Mkhitaryan;INT;C;5;4.2;4.6;6.5;0.2;Non Impostata;1.9;0.2;ALTRI;6.21;6.59;28;1554;4;1;3;4;3
+Perez K.;VEN;C;5;4.2;4.6;6.5;0.2;Non Impostata;1.9;0.2;SCOMMESSA;0;0;35;2769;3;7;3;3;4
+Ratkov;LAZ;A;10;4.2;4.6;6.5;0.3;5° Slot Relativo;1.9;0.3;POSS OCCASIONE;5.64;5.64;7;229;0;0;2;2;4
+Oulai;FIO;C;6;3.9;7.8;0.0;0.4;Non Impostata;7.8;0.4;POSS OCCASIONE;0;0;25;2077;2;4;3;3;5
+Viery;FIO;D;6;3.3;1.1;2.8;0.6;8° Slot Relativo;3.9;0.6;SCOMMESSA;0;0;0;;0;0;4;3;5
+Tomori;MIL;D;7;2.9;5.8;0.0;0.2;Non Impostata;5.8;0.2;SCOMMESSA;5.97;5.88;32;2564;0;1;2;4;3
+Corvi;PAR;P;1;2.3;0.9;2.8;0.4;da abbinare;1.9;0.4;Quarta;6.18;5.09;17;1530;0;0;4;4;5
+Daffara;PAR;P;7;2.3;0.9;2.8;0.2;da abbinare;1.9;0.2;Quarta;0;0;25;2250;0;0;2;3;4
+Desplanches;FRO;P;2;2.3;0.9;2.8;0.2;da abbinare;1.9;0.2;Quarta;0;0;25;2195;0;0;3;3;1
+Palmisani;FRO;P;4;2.3;0.9;2.8;0.2;da abbinare;1.9;0.2;Quarta;0;0;38;3411;0;0;3;3;5
+Paleari;TOR;P;1;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;Quarta;6.09;4.52;29;2610;0;0;3;3;4
+Comert;TOR;D;4;2.3;0.9;2.8;0.2;7° Slot relativo;1.9;0.2;SCOMMESSA;0;0;17;1339;0;0;3;3;1
+Bella-Kotchap;VEN;D;6;2.3;0.9;2.8;0.4;8° Slot Relativo;1.9;0.4;TITOLARE;5.83;5.75;18;1346;0;0;5;3;3
+Schingtienne;VEN;D;3;2.3;0.9;2.8;0.2;8° Slot Relativo;1.9;0.2;TITOLARE;0;0;35;3047;1;2;5;3;3
+Zanoli;UDI;D;4;2.3;0.9;2.8;0.2;8° Slot Relativo;1.9;0.2;FANTA ROTTO;6.05;6.29;19;1291;1;2;3;4;1
+Sohm;VEN;C;5;2.3;0.9;2.8;0.2;8° Slot Relativo;1.9;0.2;SCOMMESSA;5.65;5.63;24;1431;0;1;3;2;3
+Traorè Hj.;GEN;C;5;2.3;0.9;2.8;0.2;8° Slot Relativo;1.9;0.2;FANTA ROTTO;0;0;13;619;2;1;3;4;2
+Adopo;CAG;C;6;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;TITOLARE;5.83;5.88;38;3057;1;1;5;3;5
+Cataldi;LAZ;C;4;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;ALTRI;6.07;6.4;27;1993;3;3;4;4;2
+Coulibaly L.;LEC;C;6;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;TITOLARE;6.05;6.29;33;2697;3;1;5;4;4
+Ellertsson;GEN;C;6;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;TITOLARE;5.84;5.91;35;2768;1;1;3;3;4
+Ferguson;BOL;C;7;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;TITOLARE;5.8;5.78;23;1597;1;0;3;4;3
+Fitz-Jim;TOR;C;4;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;TITOLARE;0;0;16;493;1;0;4;4;1
+Gandelman;LEC;C;5;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;SCOMMESSA;5.97;6.38;17;975;2;1;3;3;3
+Grillitsch;FRO;C;5;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;TITOLARE;0;0;20;1129;1;1;3;3;3
+Jashari;MIL;C;4;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;ALTRI;5.71;5.79;12;700;0;1;3;4;2
+Keita M.;PAR;C;5;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;TITOLARE;6.01;6.05;36;2994;1;1;5;3;3
+Locatelli;JUV;C;8;2.3;0.9;2.8;1.0;Non Impostata;1.9;1.0;TITOLARE;6.26;6.19;36;3006;1;2;5;5;4
+Pierotti;LEC;C;6;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;TITOLARE;5.8;5.85;37;2629;1;1;4;3;5
+Rovella;LAZ;C;6;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;TITOLARE;5.73;5.68;11;512;0;1;3;4;1
+Stankovic A.;INT;C;3;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;ALTO POTENZIALE;0;0;39;3076;6;2;2;3;5
+Frigan;PAR;A;5;2.3;0.9;2.8;0.2;6° Slot Relativo;1.9;0.2;FANTA ROTTO;0;0;3;175;1;0;3;3;1
+Havel;GEN;A;4;2.3;0.9;2.8;0.2;6° Slot Relativo;1.9;0.2;ALTRI;0;0;30;2314;13;3;2;3;2
+Mendy P.;CAG;A;4;2.3;0.9;2.8;0.2;6° Slot Relativo;1.9;0.2;SCOMMESSA;5.94;6.63;8;330;2;0;3;3;5
+Noslin;LAZ;A;6;2.3;0.9;2.8;0.2;6° Slot Relativo;1.9;0.2;ALTRI;6.02;6.5;23;1134;4;2;3;4;3
+Adorante;VEN;A;5;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;Non Impostata;0;0;33;2183;17;1;2;3;3
+Ekhator;JUV;A;3;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;ALTRI;5.96;6.26;25;944;3;0;2;3;3
+Gimenez;MIL;A;6;2.3;0.9;2.8;0.2;Non Impostata;1.9;0.2;ALTRI;5.5;5.5;15;897;0;1;2;2;1
+Thiam;MON;P;5;1.4;2.8;2.8;0.2;da abbinare;0.0;0.2;Non Impostata;0;0;42;3780;0;0;4;3;5
+Motta;LAZ;P;1;1.4;2.8;2.8;0.2;Non Impostata;0.0;0.2;Non Impostata;6;5.17;9;810;0;0;3;3;3
+Pessina Mas.;BOL;P;1;1.4;2.8;2.8;0.2;Non Impostata;0.0;0.2;Non Impostata;6.13;5.63;4;352;0;0;2;3;5
+Turati;SAS;P;1;1.4;2.8;2.8;0.2;Non Impostata;0.0;0.2;Non Impostata;6.17;5;6;533;0;0;3;3;3
+Ghilardi;ROM;D;4;1.4;2.8;2.8;0.2;8° Slot Relativo;0.0;0.2;Non Impostata;5.98;5.96;21;1086;0;0;3;4;4
+Kouadio;MON;D;3;1.4;2.8;2.8;0.2;8° Slot Relativo;0.0;0.2;Non Impostata;6;6;2;69;0;0;5;3;5
+Mlacic;UDI;D;1;1.4;2.8;2.8;0.2;8° Slot Relativo;0.0;0.2;Non Impostata;5.83;5.5;3;163;0;0;2;3;5
+Puczka;GEN;D;2;1.4;2.8;2.8;0.2;8° Slot Relativo;0.0;0.2;Non Impostata;0;0;0;;0;0;2;3;5
+Rodriguez Ju.;CAG;D;3;1.4;2.8;2.8;0.2;8° Slot Relativo;0.0;0.2;Non Impostata;5.63;5.72;16;1315;1;0;4;2;3
+Addai;COM;C;5;1.4;2.8;2.8;0.2;8° Slot Relativo;0.0;0.2;Non Impostata;5.96;6.54;12;687;3;0;2;4;2
+Fadera;CAG;C;2;1.4;2.8;2.8;0.2;8° Slot Relativo;0.0;0.2;Non Impostata;5.92;6.11;24;976;2;1;2;3;3
+Gorter;LEC;C;1;1.4;2.8;2.8;0.2;8° Slot Relativo;0.0;0.2;Non Impostata;5.5;5.5;1;27;0;0;1;3;5
+Miller L.;UDI;C;3;1.4;2.8;2.8;0.2;8° Slot Relativo;0.0;0.2;Non Impostata;5.92;5.92;19;989;0;2;2;4;5
+Ciurria;MON;C;2;1.4;2.8;2.8;0.2;Non Impostata;0.0;0.2;ALTRI;0;0;28;1600;1;3;4;3;3
+Dagasso;VEN;C;1;1.4;2.8;2.8;0.2;Non Impostata;0.0;0.2;ALTRI;0;0;30;1798;3;4;3;3;5
+De Roon;ATA;C;4;1.4;2.8;2.8;0.2;Non Impostata;0.0;0.2;Non Impostata;5.97;6;34;2703;1;2;3;4;4
+Maleh;LEC;C;2;1.4;2.8;2.8;0.3;Non Impostata;0.0;0.3;Non Impostata;5.69;5.71;21;1566;1;0;3;2;4
+Miretti;JUV;C;3;1.4;2.8;2.8;0.2;Non Impostata;0.0;0.2;Non Impostata;5.97;6.2;15;604;1;1;2;4;3
+Przyborek;LAZ;C;1;1.4;2.8;2.8;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;17;953;2;2;1;3;4
+Borrelli;CAG;A;4;1.4;2.8;2.8;0.2;6° Slot Relativo;0.0;0.2;Non Impostata;5.92;6.46;26;1272;5;1;3;3;3
+Camarda;MIL;A;5;1.4;2.8;2.8;0.2;6° Slot Relativo;0.0;0.2;Non Impostata;5.67;5.64;18;688;1;0;2;3;4
+Lontani;PAR;A;1;1.4;2.8;2.8;0.2;6° Slot Relativo;0.0;0.2;Non Impostata;0;0;0;;0;0;3;3;5
+Stulic;LEC;A;7;1.4;2.8;2.8;0.2;Non Impostata;0.0;0.2;Non Impostata;5.73;6.11;30;1713;4;0;3;2;3
+Bertola;UDI;D;4;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;5.86;5.84;25;1761;0;1;3;3;4
+Beukema;NAP;D;6;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;5.93;6.16;22;1679;2;0;3;3;3
+Bracaglia;FRO;D;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;0;0;32;2439;5;2;3;3;5
+Buongiorno;NAP;D;7;0.9;1.9;0.0;0.4;Non Impostata;1.9;0.4;FANTA ROTTO;5.89;5.87;32;2522;0;1;3;4;1
+Correia T.;VEN;D;4;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;0;0;24;1394;0;0;3;3;1
+Doig;SAS;D;4;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;POSS OCCASIONE;5.85;5.76;27;1920;0;0;3;3;3
+Floriani Mussolini;LAZ;D;3;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;5.72;5.72;23;1162;0;1;2;3;5
+Gaspar K.;LEC;D;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;5.83;5.64;21;1830;0;0;2;3;2
+Gatti;JUV;D;4;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;ALTRI;5.94;6.22;16;1089;2;0;3;4;3
+Holm;BOL;D;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;FANTA ROTTO;6.09;6.43;16;885;1;4;2;4;1
+Marusic;LAZ;D;6;0.9;1.9;0.0;0.3;Non Impostata;1.9;0.3;TITOLARE;5.86;5.97;33;2785;1;2;4;4;3
+Missori;SAS;D;1;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;TITOLARE;0;0;32;2493;2;2;3;3;5
+Mitaj;GEN;D;4;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;0;0;0;;0;0;3;3;3
+Oyono A.;FRO;D;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;TITOLARE;0;0;34;2764;1;4;4;3;3
+Parisi;FIO;D;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;FANTA ROTTO;6.02;5.98;23;1527;1;1;1;4;3
+Pavard;INT;D;6;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;POSS OCCASIONE;6.5;6.5;1;90;0;0;2;4;3
+Ranieri L.;FIO;D;3;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;ALTRI;5.85;5.79;31;2472;1;0;2;3;4
+Tavares N.;LAZ;D;6;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;POSS OCCASIONE;5.91;5.8;22;1481;0;0;3;3;2
+Terzic;FRO;D;4;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;0;0;21;997;0;1;3;3;2
+Valenti;PAR;D;4;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;TITOLARE;5.96;5.83;27;2251;0;0;3;4;2
+Veiga D.;LEC;D;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;ALTRI;5.82;5.7;36;3021;0;0;5;3;4
+Vitik;BOL;D;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;ALTRI;5.94;5.86;18;1323;0;0;3;3;3
+Akinsanmiro;MON;C;6;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;TITOLARE;5.8;5.8;23;1447;0;1;3;3;3
+Amondarain;BOL;C;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;TITOLARE;0;0;0;;0;0;2;3;5
+Amorim;GEN;C;4;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;TITOLARE;5.72;5.66;9;553;0;0;3;3;5
+Chakvetadze;UDI;C;2;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;ALTRI;0;0;29;1801;0;3;2;3;3
+Dele-Bashiru;LAZ;C;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;5.69;5.83;21;1180;1;0;3;3;3
+Diallo O.;PAR;C;3;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;0;0;0;;0;0;3;3;5
+El Aynaoui;ROM;C;4;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;5.98;6.1;21;988;1;2;3;3;3
+Fabbian;FIO;C;4;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;ALTRI;5.8;6.03;22;1188;2;0;2;3;3
+Felici;CAG;C;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;FANTA ROTTO;6.05;6.55;11;409;2;1;3;4;1
+Fofana Y.;MIL;C;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;ALTRI;5.85;6.06;33;2219;2;3;3;3;5
+Folorunsho;NAP;C;4;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;ALTRI;6.04;6.21;26;2009;2;0;2;4;1
+Frendrup;GEN;C;7;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;TITOLARE;5.96;5.97;36;3089;1;0;5;4;4
+Hasa;FRO;C;2;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;0;0;31;2295;5;4;2;3;4
+Karlstrom;UDI;C;6;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;TITOLARE;5.96;5.96;36;3153;1;0;5;4;4
+Konè I.;SAS;C;9;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;FANTA ROTTO;6.19;6.63;35;2774;6;0;1;4;1
+Koopmeiners;JUV;C;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;ALTRI;5.64;5.55;29;1819;0;0;2;3;3
+Lobotka;NAP;C;7;0.9;1.9;0.0;0.4;Non Impostata;1.9;0.4;TITOLARE;6.05;6.1;31;2438;1;0;5;4;3
+Loftus-Cheek;MIL;C;4;0.9;1.9;0.0;0.3;Non Impostata;1.9;0.3;ALTRI;6.1;6.53;21;1127;3;1;2;4;1
+Matic;SAS;C;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;TITOLARE;5.96;5.96;34;2669;1;1;5;3;5
+Nicolussi Caviglia;PAR;C;6;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;SCOMMESSA;5.89;5.98;23;1458;0;4;3;4;5
+Piotrowski;UDI;C;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;ALTRI;5.88;5.95;30;1700;1;0;3;4;3
+Sorensen O.;PAR;C;3;0.9;1.9;0.0;0.3;Non Impostata;1.9;0.3;ALTRI;5.85;5.95;30;1835;1;1;3;3;3
+Winks;CAG;C;6;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;TITOLARE;0;0;34;2568;1;2;4;3;3
+Zerbin;FRO;C;5;0.9;1.9;0.0;0.2;Non Impostata;1.9;0.2;TITOLARE;5.76;5.81;29;1645;0;2;3;4;5
+Bleve;LEC;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;37;3330;0;0;1;3;3
+Christensen O.;FIO;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;7.5;6.5;1;87;0;0;1;3;4
+Contini;NAP;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;10;0;0;1;3;2
+De Marzi;ROM;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;5
+Di Gennaro;INT;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6;5;1;9;0;0;1;3;3
+Gollini;ROM;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;2
+Grandi;VEN;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;4
+Happonen;BOL;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;5
+Lezzerini;FIO;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;3;0;0;1;3;2
+Lolic;FRO;P;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;0;;0;0;1;3;5
+Mascardi;TOR;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;17;1486;0;0;3;3;5
+Montipò;VEN;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6.2;4.94;35;3150;0;1;3;4;4
+Padelli;UDI;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6.25;5.25;2;180;0;0;1;3;3
+Penev;LEC;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;5
+Piana;UDI;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;5
+Pinsoglio;JUV;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;4;3
+Pisseri;FRO;P;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;1;9;0;0;1;3;5
+Pizzignacco;MON;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;2;3;4
+Pozzi;VEN;P;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;0;;0;0;1;3;5
+Radunovic;CAG;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;16;1394;0;0;1;3;3
+Renzetti;LAZ;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;5
+Russo A.;SAS;P;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;0;;0;0;1;3;5
+Satalino;SAS;P;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;0;;0;0;1;3;3
+Sherri;CAG;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;0;0;0;1;3;5
+Siviero;TOR;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;3
+Sommariva;GEN;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.75;3.75;2;175;0;0;1;3;5
+Sportiello;ATA;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.5;4.5;1;90;0;0;1;3;2
+Stolz;GEN;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;15;1350;0;0;1;3;5
+Strajnar;MON;P;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;0;;0;0;1;3;5
+Terracciano;MIL;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6;6;2;124;0;0;1;4;4
+Tornqvist;COM;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;5
+Torriani;MIL;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;5
+Vigorito;COM;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;4
+Vismara;ATA;P;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;5
+Fortini;TOR;D;5;0.0;0.0;0.0;0.2;5° Slot Relativo;0.0;0.2;Non Impostata;5.96;5.96;12;528;0;0;2;4;3
+Zè Pedro;CAG;D;5;0.0;0.0;0.0;0.2;8° Slot Relativo;0.0;0.2;Non Impostata;5.77;5.68;22;1705;0;1;4;2;3
+Abankwah;UDI;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;31;2603;1;0;1;3;5
+Akpoguma;FRO;D;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;8;58;0;0;4;3;1
+Alhassane;BOL;D;2;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;27;1716;0;0;2;3;5
+Amey;FRO;D;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;0;;0;0;1;3;4
+Antov;MON;D;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;2;20;0;0;1;3;4
+Arizala;UDI;D;4;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;5.8;5.8;5;183;0;0;1;3;5
+Aurelio;CAG;D;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;33;2300;6;3;1;3;1
+Badiashile;NAP;D;7;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;8;472;0;0;0;0;0
+Bakoune;MON;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;22;1046;0;3;2;3;3
+Biraghi;TOR;D;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.59;5.59;11;519;0;0;2;3;3
+Britschgi;PAR;D;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.75;5.7;28;2096;0;2;3;3;5
+Cabal;JUV;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.94;6.55;9;288;2;0;2;3;1
+Calvani;FRO;D;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;35;2791;1;1;3;3;5
+Candè;SAS;D;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.69;5.57;8;506;0;0;3;2;2
+Carboni A.;MON;D;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;34;2557;2;2;4;3;4
+Carboni F.;PAR;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6;6;2;111;0;0;2;3;5
+Casale;BOL;D;3;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;5.65;5.65;10;677;0;0;1;2;2
+Cinquegrano;SAS;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;2;3;5
+Cittadini;FRO;D;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;25;1203;0;0;1;3;3
+Corrado;FRO;D;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;16;560;3;0;1;3;5
+Delli Carri;MON;D;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;36;2224;3;1;3;3;5
+De Silvestri;BOL;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6.05;5.95;10;491;0;0;1;3;2
+De Winter;MIL;D;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.75;5.9;24;1804;1;1;2;2;3
+Diawara S.;MIL;D;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;5
+Ebosse;UDI;D;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.75;5.69;16;1334;0;1;2;2;2
+Estupinan;MIL;D;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.64;5.68;14;1036;1;1;2;2;4
+Favasuli;NAP;D;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;41;3497;2;6;3;3;5
+Franjic;VEN;D;2;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;19;1246;0;2;2;3;3
+Goldaniga;COM;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;14;0;0;1;3;1
+Gomes;VEN;D;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;12;631;0;0;2;3;5
+Halhal;VEN;D;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;33;2849;1;2;3;3;3
+Helland;BOL;D;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.5;5.33;6;488;0;0;1;2;4
+Idrissi R.;CAG;D;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.82;6.08;17;765;2;0;2;3;4
+Jean;LEC;D;2;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;5.8;5.7;5;191;0;0;1;3;3
+Kamara H.;UDI;D;6;0.0;0.0;0.0;0.3;Non Impostata;0.0;0.3;Non Impostata;5.88;5.86;26;1869;0;2;3;3;3
+Kofler;CAG;D;5;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;28;2416;3;0;2;3;5
+Kossounou;ATA;D;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.94;6.1;16;984;1;0;2;4;2
+Lazzari;LAZ;D;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.79;5.73;17;943;0;0;2;3;2
+Leysen F.;SAS;D;5;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;27;1872;1;1;3;3;4
+Lucchesi;MON;D;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;32;1776;1;0;3;3;4
+Macchioni;SAS;D;1;0.0;0.0;0.0;;Non Impostata;0.0;;Non Impostata;0;0;0;90;0;0;;;
+Marianucci;NAP;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.73;5.73;11;692;0;1;2;3;4
+Marin R.;NAP;D;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;23;1979;2;0;4;3;5
+Martin;GEN;D;5;0.0;0.0;0.0;0.3;Non Impostata;0.0;0.3;Non Impostata;5.97;6.11;29;2170;1;5;2;4;3
+Matturro;GEN;D;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;19;940;0;0;1;2;2
+Mazzocchi;NAP;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.94;5.94;9;301;0;1;1;3;3
+Moreno M.;VEN;D;5;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;28;2256;0;0;3;3;3
+Ndaba;LEC;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.5;5.5;9;540;0;0;2;2;5
+Ndiaye;PAR;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.59;5.36;11;781;0;0;3;2;2
+Odenthal;SAS;D;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;18;1574;1;0;3;3;4
+Omar Fayed;FRO;D;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;8;553;0;0;1;3;1
+Otoa;GEN;D;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.6;5.35;10;828;0;0;2;2;3
+Oyono J.;FRO;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;13;484;0;1;2;3;5
+Palma;UDI;D;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.5;5.5;4;116;0;0;2;3;3
+Patric;LAZ;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.85;5.75;10;661;0;0;2;3;2
+Pellegrini Lu.;LAZ;D;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.85;5.81;24;1476;1;0;2;3;2
+Pieragnolo;SAS;D;1;0.0;0.0;0.0;0.3;Non Impostata;0.0;0.3;Non Impostata;0;0;0;;0;0;1;3;1
+Pongracic;FIO;D;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.84;5.67;35;2920;0;0;3;3;3
+Rugani;JUV;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.69;5.57;8;578;0;0;1;3;1
+Sabelli;GEN;D;2;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;5.81;5.66;13;920;0;0;2;3;5
+Sagrado;VEN;D;2;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;29;1297;1;1;1;3;3
+Siebert;LEC;D;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.68;5.76;19;1700;1;0;4;3;3
+Smolcic I.;COM;D;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.96;5.84;25;1667;0;1;3;3;5
+Sutalo J.;LAZ;D;7;0.0;0.0;0.0;;Non Impostata;0.0;;Non Impostata;0;0;24;1797;0;0;;;
+Sverko;VEN;D;3;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;25;1935;0;1;1;2;2
+Terracciano F.;MIL;D;2;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;5.86;5.83;35;3012;2;0;2;3;3
+Van Der Brempt;COM;D;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.96;5.96;14;930;0;1;2;3;2
+Walukiewicz;SAS;D;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.81;5.74;34;2858;0;1;5;3;4
+Zappa;CAG;D;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.9;5.98;25;1600;0;3;3;3;3
+Ziolkowski;ROM;D;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.94;5.77;9;509;0;0;2;4;5
+Aboukhlal;TOR;C;3;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;5.77;5.59;11;510;0;0;2;3;2
+Almqvist;PAR;C;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.94;6.05;9;452;0;1;2;3;3
+Anjorin;TOR;C;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.78;5.72;9;277;0;0;2;4;2
+Belahyane;LAZ;C;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.77;5.82;11;612;0;2;2;4;5
+Boloca;SAS;C;2;0.0;0.0;0.0;0.3;Non Impostata;0.0;0.3;Non Impostata;5.75;5.75;2;136;0;0;1;3;2
+Brescianini;FIO;C;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;ALTRI;5.97;6.3;18;1035;2;1;2;3;3
+Cichella;FRO;C;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;36;2244;2;4;1;3;5
+Colombo L.;MON;C;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;30;1379;1;3;3;3;5
+Comotto;MIL;C;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;0;;0;0;1;3;5
+Cremaschi;PAR;C;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6;6;1;136;0;0;1;3;3
+Deiola;CAG;C;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.98;5.96;20;1435;0;1;3;3;3
+Duncan;VEN;C;2;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;17;744;1;1;1;3;3
+El Azzouzi A.;FRO;C;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;29;2524;1;1;3;3;3
+El Azzouzi O.;BOL;C;2;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;11;814;0;0;1;3;3
+Fini;FRO;C;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.5;5.5;1;31;0;0;1;3;5
+Foe Ondoa;MON;C;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;0;;0;0;3;3;5
+Fofana Sa.;LEC;C;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;5.5;5.5;2;87;0;0;1;3;3
+Forson O.;MON;C;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;2;3;3
+Gelli F.;FRO;C;3;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;25;1092;1;1;2;3;2
+Gilmour;NAP;C;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6.08;6.27;13;802;1;0;2;4;3
+Gineitis;TOR;C;5;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.87;5.81;27;1765;0;1;3;3;5
+Helgason;VEN;C;3;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;5.63;5.63;4;141;0;0;2;3;3
+Iannoni;SAS;C;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6;6.3;5;248;1;0;1;3;5
+Ilic;TOR;C;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;ALTRI;6;5.88;8;416;0;0;1;4;2
+Ilkhan;TOR;C;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.82;6;17;1017;1;2;2;3;3
+Kaba;LEC;C;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.77;5.72;11;624;0;0;2;3;3
+Konaté A.;PAR;C;1;0.0;0.0;0.0;;Non Impostata;0.0;;Non Impostata;0;0;0;;0;0;;;
+Kone B.;FRO;C;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;19;686;1;2;1;3;3
+Laerke;LEC;C;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;0;;0;0;4;3;5
+Lahdo;COM;C;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;3
+Lipani;SAS;C;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.93;5.91;21;1028;0;1;3;3;3
+Liteta;CAG;C;1;0.0;0.0;0.0;0.3;Non Impostata;0.0;0.3;Non Impostata;5.75;5.75;4;267;0;0;2;2;3
+Luis Henrique;INT;C;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.89;6.06;27;1621;1;2;3;3;4
+Masini;FRO;C;2;0.0;0.0;0.0;0.4;Non Impostata;0.0;0.4;Non Impostata;5.98;5.91;21;1399;0;1;2;4;4
+Milla;COM;C;5;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;37;3277;0;0;3;3;5
+Moro N.;BOL;C;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.93;6.13;28;1798;2;0;3;3;5
+Mout;MON;C;1;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;0;0;0;;0;0;3;3;5
+Musah;MIL;C;2;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.94;6.1;16;652;1;0;2;3;4
+Ngom;LEC;C;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.69;5.65;13;847;0;0;2;3;5
+Njie;TOR;C;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.8;6.1;10;290;1;1;2;3;2
+Ordonez C.;PAR;C;2;0.0;0.0;0.0;0.3;Non Impostata;0.0;0.3;Non Impostata;5.79;5.81;21;1086;1;0;1;3;5
+Prati;CAG;C;4;0.0;0.0;0.0;0.0;Non Impostata;0.0;0.0;Non Impostata;5.88;5.88;32;1888;1;0;2;3;4
+Ricci S.;MIL;C;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;ALTRI;6;6.16;28;1295;1;3;3;4;3
+Sulemana I.;ATA;C;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.69;5.77;18;895;1;0;2;3;1
+Tourè I.;MON;C;6;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.82;5.82;30;2281;1;0;3;4;4
+Venturino;GEN;C;2;0.0;0.0;0.0;0.3;Non Impostata;0.0;0.3;Non Impostata;5.86;5.86;7;237;0;0;2;3;5
+Zarraga;UDI;C;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.75;5.65;10;455;0;0;1;3;3
+Zhegrova;JUV;C;6;0.0;0.0;0.0;0.3;Non Impostata;0.0;0.3;Non Impostata;5.96;5.92;12;364;0;0;2;4;2
+Azon;COM;A;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;38;1822;5;4;2;4;5
+Bayo V.;UDI;A;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.75;5.83;12;474;0;1;1;3;4
+De Martis;PAR;A;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;0;;0;0;1;3;5
+Dia;LAZ;A;10;0.0;0.0;0.0;0.3;Non Impostata;0.0;0.3;Non Impostata;5.68;5.86;25;1257;1;2;3;2;2
+Giovane;NAP;A;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6;6.45;31;1878;3;6;2;4;4
+Gueye;UDI;A;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.77;5.92;13;404;1;0;2;3;5
+Kuhn;COM;A;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.96;6.25;14;656;1;1;2;3;3
+Kulenovic;TOR;A;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.71;5.71;7;294;0;1;2;3;5
+Lang;NAP;A;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6.04;6.33;14;661;1;2;3;4;3
+Lauberbach;VEN;A;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;22;1871;6;1;2;3;3
+Lisman;VEN;A;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;13;370;0;1;1;3;1
+Milik;JUV;A;5;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6;6;2;34;0;0;2;4;1
+Morata;COM;A;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.5;5.21;17;923;0;0;2;2;1
+Mutandwa;CAG;A;6;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;32;2409;16;3;2;4;3
+N'Dri;LEC;A;3;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.82;6.08;17;519;2;0;3;3;3
+Robinson J.;MON;A;4;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;0;0;26;878;2;1;2;3;5
+Sulemana K.;ATA;A;6;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6;6.24;21;1001;2;1;1;4;1
+Trepy;CAG;A;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;6.13;6.88;4;83;1;0;2;3;5
+Vaz;ROM;A;1;0.0;0.0;0.0;0.2;Non Impostata;0.0;0.2;Non Impostata;5.93;6.36;7;205;1;0;2;3;4
