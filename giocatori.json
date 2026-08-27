@@ -1,6 +1,6 @@
 {
- "aggiornato": "2026-08-25",
- "fonti": "Listone ufficiale 2026/27 (ruoli, mantra, quotazione, FVM). Statistiche 2025/26 Fantacalcio.it (Pv, Mv, Fm, ammonizioni). Understat 2025/26 (xG, xA). Prezzi pagati nella lega FantaHydra. Rigoristi: gerarchie Goal.com aggiornate al 23 luglio 2026. Prezzi di mercato: Classic (Profeta) e RECOSTA_STRATEGIA_CLASSIC, normalizzati a 10.000 crediti (10 squadre x 1000), 2 fonti su 6 disponibili al 25/08/2026.",
+ "aggiornato": "2026-08-27",
+ "fonti": "Listone ufficiale 2026/27 (ruoli, mantra, quotazione, FVM). Statistiche 2025/26 Fantacalcio.it (Pv, Mv, Fm, ammonizioni). Understat 2025/26 (xG, xA). Prezzi pagati nella lega FantaHydra. Rigoristi: gerarchie Goal.com aggiornate al 23 luglio 2026. Prezzi di mercato: Classic (Profeta) e RECOSTA_STRATEGIA_CLASSIC, normalizzati a 10.000 crediti (10 squadre x 1000), 2 fonti su 6 disponibili al 25/08/2026. Aggiunta 27/08/2026: espulsioni (esp) e autogol (au) da Statistiche 2025/26 Fantacalcio.it, stesso file e stesso join per nome gia usato per gf/ass_uff/amm/gs/rp (0 discrepanze verificate sui campi gia presenti).",
  "fonti_prezzo_mercato": {
   "disponibili": [
    "Classic (Profeta)",
@@ -14,7 +14,7 @@
   ],
   "nota": "Il campo 'mercato' e' la media di 2 fonti su 6, non ancora una mediana robusta. Il campo 'dispersione_mercato' misura quanto le due fonti disponibili sono in disaccordo: valori alti (es. Douvikas 44.6) segnalano stime ancora fragili."
  },
- "nota_limiti": "Non sono stati ricalcolati i campi del motore VORP v2 (vorp, vorp_mod, vorp_tot, equo, arbitraggio, pv_att, fm_att): richiedono il motore di valutazione completo, non presente in questa sessione. mod_val (MV-6.00) e i campi storici (fvm, pagato25, presa25, xg, xa) restano quelli del file caricato, invariati.",
+ "nota_limiti": "Non sono stati ricalcolati i campi del motore VORP v2 (vorp, vorp_mod, vorp_tot, equo, arbitraggio, pv_att, fm_att): richiedono il motore di valutazione completo, non presente in questa sessione. mod_val (MV-6.00) e i campi storici (fvm, pagato25, presa25, xg, xa) restano quelli del file caricato, invariati. Aggiunto 27/08/2026: esp (espulsioni) e au (autogol) per i 388/505 giocatori con statistiche 2025/26 disponibili (stesso sottoinsieme di gf/ass_uff/amm). Per i portieri e per tutti gli altri e gia possibile calcolare la FM completa: Fm = 6 + (Gf*3 - Gs*1 + Rp*3 - Ass*(-1, cioe +1 per assist) + Amm*(-0.5) + Esp*(-1) + Au*(-2)) al netto della calibrazione ufficiale di Leghe Fantacalcio, che puo differire leggermente su arrotondamenti e casi particolari (recuperi, senza voto).",
  "giocatori": [
   {
    "nome": "Martinez L.",
@@ -57,7 +57,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Malen",
@@ -100,7 +102,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Thuram",
@@ -143,7 +147,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Hojlund",
@@ -186,7 +192,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Dimarco",
@@ -229,7 +237,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Paz N.",
@@ -272,7 +282,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "McTominay",
@@ -315,7 +327,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ramos G.",
@@ -352,7 +366,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Calhanoglu",
@@ -395,7 +411,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kolo Muani",
@@ -432,7 +450,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Kean",
@@ -475,7 +495,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Orsolini",
@@ -518,7 +540,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Yildiz",
@@ -561,7 +585,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pulisic",
@@ -604,7 +630,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Douvikas",
@@ -647,7 +675,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Scamacca",
@@ -690,7 +720,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Rabiot",
@@ -733,7 +765,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Davis K.",
@@ -776,7 +810,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Leao",
@@ -819,7 +855,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Berardi",
@@ -862,7 +900,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "De Ketelaere",
@@ -905,7 +945,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Baturina",
@@ -948,7 +990,9 @@
    "titolarita": 4,
    "affidabilita": 5,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Zaniolo",
@@ -991,7 +1035,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "De Bruyne",
@@ -1034,7 +1080,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Krstovic",
@@ -1077,7 +1125,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Esposito F.P.",
@@ -1120,7 +1170,9 @@
    "titolarita": 3,
    "affidabilita": 5,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Zaccagni",
@@ -1163,7 +1215,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Da Cunha",
@@ -1206,7 +1260,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Laurientè",
@@ -1249,7 +1305,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Atta",
@@ -1292,7 +1350,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Dovbyk",
@@ -1335,7 +1395,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Wesley",
@@ -1378,7 +1440,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 2,
+   "au": 0
   },
   {
    "nome": "Simeone",
@@ -1421,7 +1485,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pellegrino M.",
@@ -1464,7 +1530,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Castro S.",
@@ -1507,7 +1575,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Vlasic",
@@ -1550,7 +1620,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Barella",
@@ -1593,7 +1665,9 @@
    "titolarita": 4,
    "affidabilita": 5,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "McKennie",
@@ -1636,7 +1710,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Dybala",
@@ -1679,7 +1755,9 @@
    "titolarita": 3,
    "affidabilita": 5,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Svilar",
@@ -1722,7 +1800,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Taylor K.",
@@ -1765,7 +1845,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Colombo",
@@ -1808,7 +1890,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Martinez Jo.",
@@ -1851,7 +1935,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Raspadori",
@@ -1894,7 +1980,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gudmundsson A.",
@@ -1937,7 +2025,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Conceicao",
@@ -1980,7 +2070,9 @@
    "titolarita": 3,
    "affidabilita": 5,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Mastantuono",
@@ -2017,7 +2109,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Santos A.",
@@ -2060,7 +2154,9 @@
    "titolarita": 4,
    "affidabilita": 5,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Alajbegovic",
@@ -2097,7 +2193,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Butez",
@@ -2140,7 +2238,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pinamonti",
@@ -2183,7 +2283,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Akanji",
@@ -2226,7 +2328,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Zambo Anguissa",
@@ -2269,7 +2373,9 @@
    "titolarita": 3,
    "affidabilita": 5,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Soulè",
@@ -2312,7 +2418,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Nkunku",
@@ -2355,7 +2463,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Carnesecchi",
@@ -2398,7 +2508,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Adams A.",
@@ -2435,7 +2547,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Diao",
@@ -2478,7 +2592,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Esposito Se.",
@@ -2521,7 +2637,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Modric",
@@ -2564,7 +2682,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bremer",
@@ -2607,7 +2727,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Maignan",
@@ -2650,7 +2772,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Mancini",
@@ -2693,7 +2817,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pavlovic",
@@ -2736,7 +2862,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kevin Carlos",
@@ -2773,7 +2901,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Politano",
@@ -2816,7 +2946,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Rrahmani",
@@ -2859,7 +2991,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Solet",
@@ -2902,7 +3036,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 1
   },
   {
    "nome": "Kalulu",
@@ -2945,7 +3081,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Lukaku",
@@ -2988,7 +3126,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ederson D.S.",
@@ -3031,7 +3171,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "De Gea",
@@ -3074,7 +3216,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Meret",
@@ -3117,7 +3261,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "N'Dicka",
@@ -3160,7 +3306,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bastoni",
@@ -3203,7 +3351,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Tourè E.",
@@ -3246,7 +3396,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Saelemaekers",
@@ -3289,7 +3441,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Konè M.",
@@ -3332,7 +3486,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Samardzic",
@@ -3375,7 +3531,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ekkelenkamp",
@@ -3418,7 +3576,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Thorstvedt",
@@ -3461,7 +3621,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Thuram K.",
@@ -3504,7 +3666,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Zielinski",
@@ -3547,7 +3711,9 @@
    "titolarita": 3,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 1
   },
   {
    "nome": "David",
@@ -3590,7 +3756,9 @@
    "titolarita": 3,
    "affidabilita": 2,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ostigard",
@@ -3633,7 +3801,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Di Lorenzo",
@@ -3676,7 +3846,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Di Gregorio",
@@ -3719,7 +3891,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bowie",
@@ -3762,7 +3936,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Perrone",
@@ -3805,7 +3981,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Stones",
@@ -3842,7 +4020,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Rowe",
@@ -3885,7 +4065,9 @@
    "titolarita": 4,
    "affidabilita": 5,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Diouf",
@@ -3928,7 +4110,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Casadei",
@@ -3971,7 +4155,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Skorupski",
@@ -4014,7 +4200,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Bernabè",
@@ -4057,7 +4245,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Vergara",
@@ -4100,7 +4290,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Cutrone",
@@ -4143,7 +4335,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bisseck",
@@ -4186,7 +4380,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Vasquez",
@@ -4229,7 +4425,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ratkov",
@@ -4272,7 +4470,9 @@
    "titolarita": 2,
    "affidabilita": 2,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Adams C.",
@@ -4315,7 +4515,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Rodriguez Je.",
@@ -4358,7 +4560,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Pasalic",
@@ -4401,7 +4605,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Locatelli",
@@ -4444,7 +4650,9 @@
    "titolarita": 5,
    "affidabilita": 5,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ramon",
@@ -4487,7 +4695,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Dia",
@@ -4530,7 +4740,9 @@
    "titolarita": 3,
    "affidabilita": 2,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gila",
@@ -4573,7 +4785,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Ghedjemis",
@@ -4610,7 +4824,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Baldanzi",
@@ -4653,7 +4869,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Dodò",
@@ -4696,7 +4914,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Mandas",
@@ -4739,7 +4959,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Cristante",
@@ -4782,7 +5004,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Okoye",
@@ -4825,7 +5049,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Yeboah J.",
@@ -4862,7 +5088,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Cancellieri",
@@ -4905,7 +5133,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Mandragora",
@@ -4948,7 +5178,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pellegrini Lo.",
@@ -4991,7 +5223,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Scalvini",
@@ -5034,7 +5268,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Oristanio",
@@ -5077,7 +5313,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Couto",
@@ -5114,7 +5352,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Carlos Augusto",
@@ -5157,7 +5397,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Cambiaso",
@@ -5200,7 +5442,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 2
   },
   {
    "nome": "Dragusin",
@@ -5237,7 +5481,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Caprile",
@@ -5280,7 +5526,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Sucic P.",
@@ -5323,7 +5571,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Chalobah T.",
@@ -5360,7 +5610,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Gutierrez",
@@ -5403,7 +5655,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Hermoso",
@@ -5446,7 +5700,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Geubbels",
@@ -5483,7 +5739,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Boga",
@@ -5526,7 +5784,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Calò",
@@ -5563,7 +5823,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Isaksen",
@@ -5606,7 +5868,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ndour",
@@ -5649,7 +5913,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Colpani",
@@ -5686,7 +5952,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Cambiaghi",
@@ -5729,7 +5997,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Bartesaghi",
@@ -5772,7 +6042,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 1
   },
   {
    "nome": "Falcone",
@@ -5815,7 +6087,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Raimondo",
@@ -5852,7 +6126,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Piccoli",
@@ -5895,7 +6171,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gaetano",
@@ -5938,7 +6216,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Valeri",
@@ -5981,7 +6261,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Miranda J.",
@@ -6024,7 +6306,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Spinazzola",
@@ -6067,7 +6351,9 @@
    "titolarita": 4,
    "affidabilita": 5,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Zappacosta",
@@ -6110,7 +6396,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Romagnoli",
@@ -6153,7 +6441,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Dallinga",
@@ -6196,7 +6486,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Unai Gomez",
@@ -6233,7 +6525,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Volpato",
@@ -6276,7 +6570,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Fofana Y.",
@@ -6319,7 +6615,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Fagioli",
@@ -6362,7 +6660,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kaiki",
@@ -6399,7 +6699,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Jimenez A.",
@@ -6442,7 +6744,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gabbia",
@@ -6485,7 +6789,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Neres",
@@ -6528,7 +6834,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Liberali",
@@ -6571,7 +6879,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Odgaard",
@@ -6614,7 +6924,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Norton-Cuffy",
@@ -6657,7 +6969,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Doekhi",
@@ -6694,7 +7008,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Bonny",
@@ -6737,7 +7053,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Zalewski",
@@ -6780,7 +7098,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bernardeschi",
@@ -6823,7 +7143,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Delprato",
@@ -6866,7 +7188,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Celik",
@@ -6909,7 +7233,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Rrahmani Al.",
@@ -6946,7 +7272,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Vitinha O.",
@@ -6989,7 +7317,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Oulai",
@@ -7026,7 +7356,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Konè I.",
@@ -7069,7 +7401,9 @@
    "titolarita": 1,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Karlstrom",
@@ -7112,7 +7446,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Caqueret",
@@ -7155,7 +7491,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Lobotka",
@@ -7198,7 +7536,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pessina",
@@ -7235,7 +7575,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Koulierakis",
@@ -7272,7 +7614,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Tomori",
@@ -7315,7 +7659,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Mina",
@@ -7358,7 +7704,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Marusic",
@@ -7401,7 +7749,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Suzuki",
@@ -7444,7 +7794,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Mutandwa",
@@ -7481,7 +7833,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Pierotti",
@@ -7524,7 +7878,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Fazzini",
@@ -7567,7 +7923,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Frendrup",
@@ -7610,7 +7968,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Basic",
@@ -7653,7 +8013,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Mkhitaryan",
@@ -7696,7 +8058,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Viery",
@@ -7733,7 +8097,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Idzes",
@@ -7776,7 +8142,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Vojvoda",
@@ -7819,7 +8187,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Zortea",
@@ -7862,7 +8232,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Stulic",
@@ -7905,7 +8277,9 @@
    "titolarita": 3,
    "affidabilita": 2,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Camarda",
@@ -7948,7 +8322,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Mota",
@@ -7985,7 +8361,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Zapata D.",
@@ -8028,7 +8406,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Cacciamani",
@@ -8065,7 +8445,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Ondrejka",
@@ -8108,7 +8490,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "El Aynaoui",
@@ -8151,7 +8535,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ellertsson",
@@ -8194,7 +8580,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Ferguson",
@@ -8237,7 +8625,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Zhegrova",
@@ -8280,7 +8670,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Nicolussi Caviglia",
@@ -8323,7 +8715,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Valdepenas",
@@ -8360,7 +8754,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Valle",
@@ -8403,7 +8799,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Circati",
@@ -8446,7 +8844,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Coco",
@@ -8489,7 +8889,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Lucumì",
@@ -8532,7 +8934,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ismajli",
@@ -8575,7 +8979,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pavard",
@@ -8618,7 +9024,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Buongiorno",
@@ -8661,7 +9069,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bijlow",
@@ -8704,7 +9114,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Noslin",
@@ -8747,7 +9159,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Pisilli",
@@ -8790,7 +9204,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bernasconi",
@@ -8833,7 +9249,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Tiago Gabriel",
@@ -8876,7 +9294,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 1
   },
   {
    "nome": "Tavares N.",
@@ -8919,7 +9339,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Sulemana K.",
@@ -8962,7 +9384,9 @@
    "titolarita": 1,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bakola",
@@ -9005,7 +9429,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Akinsanmiro",
@@ -9048,7 +9474,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Berisha M.",
@@ -9091,7 +9519,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Rovella",
@@ -9134,7 +9564,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Rensch",
@@ -9177,7 +9609,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ahanor",
@@ -9220,7 +9654,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Beukema",
@@ -9263,7 +9699,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Hien",
@@ -9306,7 +9744,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 1
   },
   {
    "nome": "Djimsiti",
@@ -9349,7 +9789,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kvernadze",
@@ -9386,7 +9828,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Piotrowski",
@@ -9429,7 +9873,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Keita M.",
@@ -9472,7 +9918,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 1
   },
   {
    "nome": "Matic",
@@ -9515,7 +9963,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Mangas",
@@ -9552,7 +10002,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Heggem",
@@ -9595,7 +10047,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Kristensen T.",
@@ -9638,7 +10092,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bellanova",
@@ -9681,7 +10137,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pedraza",
@@ -9718,7 +10176,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Martin",
@@ -9761,7 +10221,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Muric",
@@ -9804,7 +10266,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gimenez",
@@ -9847,7 +10311,9 @@
    "titolarita": 2,
    "affidabilita": 2,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Maldini",
@@ -9890,7 +10356,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Adorante",
@@ -9927,7 +10395,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Milla",
@@ -9964,7 +10434,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Meichtry",
@@ -10001,7 +10473,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Gandelman",
@@ -10044,7 +10518,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Perez K.",
@@ -10081,7 +10557,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Adzic",
@@ -10124,7 +10602,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Almqvist",
@@ -10167,7 +10647,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Sow",
@@ -10204,7 +10686,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Koopmeiners",
@@ -10247,7 +10731,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Busio",
@@ -10284,7 +10770,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Coulibaly L.",
@@ -10327,7 +10815,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Sohm",
@@ -10370,7 +10860,9 @@
    "titolarita": 3,
    "affidabilita": 2,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pobega",
@@ -10413,7 +10905,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Winks",
@@ -10450,7 +10944,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Obert",
@@ -10493,7 +10989,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Monterisi",
@@ -10530,7 +11028,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Stankovic F.",
@@ -10567,7 +11067,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Frigan",
@@ -10610,7 +11112,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Fitz-Jim",
@@ -10647,7 +11151,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Dele-Bashiru",
@@ -10690,7 +11196,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gineitis",
@@ -10733,7 +11241,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Zerbin",
@@ -10776,7 +11286,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Luis Henrique",
@@ -10819,7 +11331,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Adopo",
@@ -10862,7 +11376,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Frattesi",
@@ -10905,7 +11421,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bella-Kotchap",
@@ -10948,7 +11466,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kempf",
@@ -10991,7 +11511,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kelly L.",
@@ -11034,7 +11556,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Marcandalli",
@@ -11077,7 +11601,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pedersen",
@@ -11120,7 +11646,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Doig",
@@ -11163,7 +11691,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Olivera",
@@ -11206,7 +11736,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Holm",
@@ -11249,7 +11781,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Gallo",
@@ -11292,7 +11826,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Diallo O.",
@@ -11329,7 +11865,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Amondarain",
@@ -11366,7 +11904,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Koutsoupias",
@@ -11403,7 +11943,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Romano",
@@ -11440,7 +11982,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Sorensen O.",
@@ -11483,7 +12027,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Miller L.",
@@ -11526,7 +12072,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Njie",
@@ -11569,7 +12117,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Douglas Luiz",
@@ -11612,7 +12162,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Cataldi",
@@ -11655,7 +12207,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "De Roon",
@@ -11698,7 +12252,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Siebert",
@@ -11741,7 +12297,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Floriani Mussolini",
@@ -11784,7 +12342,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Candè",
@@ -11827,7 +12387,9 @@
    "titolarita": 3,
    "affidabilita": 2,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Lucchesi",
@@ -11864,7 +12426,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Gaspar K.",
@@ -11907,7 +12471,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Oyono A.",
@@ -11944,7 +12510,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Birindelli",
@@ -11981,7 +12549,9 @@
    "titolarita": 5,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "De Winter",
@@ -12024,7 +12594,9 @@
    "titolarita": 2,
    "affidabilita": 2,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kamara H.",
@@ -12067,7 +12639,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Parisi",
@@ -12110,7 +12684,9 @@
    "titolarita": 1,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 1
   },
   {
    "nome": "Correia T.",
@@ -12147,7 +12723,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Angelino",
@@ -12190,7 +12768,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kolasinac",
@@ -12233,7 +12813,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Thiam",
@@ -12270,7 +12852,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Elphege",
@@ -12313,7 +12897,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Cichella",
@@ -12350,7 +12936,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Amorim",
@@ -12393,7 +12981,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ngom",
@@ -12436,7 +13026,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Jashari",
@@ -12479,7 +13071,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Miretti",
@@ -12522,7 +13116,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ricci S.",
@@ -12565,7 +13161,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Chukwueze",
@@ -12608,7 +13206,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Loftus-Cheek",
@@ -12651,7 +13251,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Traorè Hj.",
@@ -12688,7 +13290,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Kofler",
@@ -12725,7 +13329,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Bracaglia",
@@ -12762,7 +13368,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Zè Pedro",
@@ -12805,7 +13413,9 @@
    "titolarita": 4,
    "affidabilita": 2,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Vitik",
@@ -12848,7 +13458,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Veiga D.",
@@ -12891,7 +13503,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Moreno M.",
@@ -12928,7 +13542,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Comuzzo",
@@ -12971,7 +13587,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 1
   },
   {
    "nome": "Haps",
@@ -13008,7 +13626,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Delli Carri",
@@ -13045,7 +13665,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Robinson J.",
@@ -13082,7 +13704,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Giovane",
@@ -13125,7 +13749,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Lang",
@@ -13168,7 +13794,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ekhator",
@@ -13211,7 +13839,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Lucca",
@@ -13254,7 +13884,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Morata",
@@ -13297,7 +13929,9 @@
    "titolarita": 2,
    "affidabilita": 2,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Addai",
@@ -13340,7 +13974,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Felici",
@@ -13383,7 +14019,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Stankovic A.",
@@ -13420,7 +14058,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Folorunsho",
@@ -13463,7 +14103,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Moro N.",
@@ -13506,7 +14148,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ilkhan",
@@ -13549,7 +14193,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Halhal",
@@ -13586,7 +14232,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Comert",
@@ -13623,7 +14271,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Calvani",
@@ -13660,7 +14310,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Rodriguez Ju.",
@@ -13703,7 +14355,9 @@
    "titolarita": 4,
    "affidabilita": 2,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Britschgi",
@@ -13746,7 +14400,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Smolcic I.",
@@ -13789,7 +14445,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Provstgaard",
@@ -13832,7 +14490,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ghilardi",
@@ -13875,7 +14535,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gatti",
@@ -13918,7 +14580,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bertola",
@@ -13961,7 +14625,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Zanoli",
@@ -14004,7 +14670,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Valenti",
@@ -14047,7 +14715,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Walukiewicz",
@@ -14090,7 +14760,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Milinkovic-Savic V.",
@@ -14133,7 +14805,9 @@
    "titolarita": 3,
    "affidabilita": 5,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Perin",
@@ -14176,7 +14850,9 @@
    "titolarita": 2,
    "affidabilita": 5,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Havel",
@@ -14213,7 +14889,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Mendy P.",
@@ -14256,7 +14934,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kulenovic",
@@ -14299,7 +14979,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "N'Dri",
@@ -14342,7 +15024,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Borrelli",
@@ -14385,7 +15069,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Fini",
@@ -14428,7 +15114,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gilmour",
@@ -14471,7 +15159,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Mitaj",
@@ -14508,7 +15198,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Kouadio",
@@ -14551,7 +15243,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Estupinan",
@@ -14594,7 +15288,9 @@
    "titolarita": 2,
    "affidabilita": 2,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Carboni A.",
@@ -14631,7 +15327,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Zappa",
@@ -14674,7 +15372,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kabasele",
@@ -14717,7 +15417,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Dominguez B.",
@@ -14760,7 +15462,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gelli F.",
@@ -14797,7 +15501,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Fabbian",
@@ -14840,7 +15546,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Messias",
@@ -14883,7 +15591,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Deiola",
@@ -14926,7 +15636,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Cuenca A.",
@@ -14963,7 +15675,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Arizala",
@@ -15006,7 +15720,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Troilo",
@@ -15049,7 +15765,9 @@
    "titolarita": 4,
    "affidabilita": 2,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 2,
+   "au": 0
   },
   {
    "nome": "Athekame",
@@ -15092,7 +15810,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Cittadini",
@@ -15129,7 +15849,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Pongracic",
@@ -15172,7 +15894,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Lazzari",
@@ -15215,7 +15939,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Desplanches",
@@ -15252,7 +15978,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Palmisani",
@@ -15289,7 +16017,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Varela G.",
@@ -15326,7 +16056,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Gueye",
@@ -15369,7 +16101,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Colombo L.",
@@ -15406,7 +16140,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Prati",
@@ -15449,7 +16185,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Sulemana I.",
@@ -15492,7 +16230,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Helgason",
@@ -15535,7 +16275,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Brescianini",
@@ -15578,7 +16320,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Akpoguma",
@@ -15615,7 +16359,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Puczka",
@@ -15652,7 +16398,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Joao Mario",
@@ -15695,7 +16443,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Idrissi R.",
@@ -15738,7 +16488,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Schingtienne",
@@ -15775,7 +16527,9 @@
    "titolarita": 5,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Hainaut",
@@ -15818,7 +16572,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Sverko",
@@ -15855,7 +16611,9 @@
    "titolarita": 1,
    "affidabilita": 2,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Kossounou",
@@ -15898,7 +16656,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ranieri L.",
@@ -15941,7 +16701,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Chakvetadze",
@@ -15978,7 +16740,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Venturino",
@@ -16021,7 +16785,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ciurria",
@@ -16058,7 +16824,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Musah",
@@ -16101,7 +16869,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Alhassane",
@@ -16138,7 +16908,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Marin R.",
@@ -16175,7 +16947,9 @@
    "titolarita": 4,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Casale",
@@ -16218,7 +16992,9 @@
    "titolarita": 1,
    "affidabilita": 2,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kuhn",
@@ -16261,7 +17037,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Petagna",
@@ -16298,7 +17076,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Przyborek",
@@ -16341,7 +17121,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Aboukhlal",
@@ -16384,7 +17166,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ordonez C.",
@@ -16427,7 +17211,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Hasa",
@@ -16464,7 +17250,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Lipani",
@@ -16507,7 +17295,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Boloca",
@@ -16550,7 +17340,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Belahyane",
@@ -16593,7 +17385,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Maleh",
@@ -16636,7 +17430,9 @@
    "titolarita": 3,
    "affidabilita": 2,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Aurelio",
@@ -16673,7 +17469,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Helland",
@@ -16716,7 +17514,9 @@
    "titolarita": 1,
    "affidabilita": 2,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Otoa",
@@ -16759,7 +17559,9 @@
    "titolarita": 2,
    "affidabilita": 2,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 1
   },
   {
    "nome": "Palma",
@@ -16802,7 +17604,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Van Der Brempt",
@@ -16845,7 +17649,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Marianucci",
@@ -16888,7 +17694,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pellegrini Lu.",
@@ -16931,7 +17739,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Sabelli",
@@ -16974,7 +17784,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 1
   },
   {
    "nome": "Biraghi",
@@ -17017,7 +17829,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Daffara",
@@ -17054,7 +17868,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Provedel",
@@ -17097,7 +17913,9 @@
    "titolarita": 3,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Buksa",
@@ -17140,7 +17958,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Vaz",
@@ -17183,7 +18003,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Masini",
@@ -17226,7 +18048,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Anjorin",
@@ -17269,7 +18093,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "El Azzouzi O.",
@@ -17306,7 +18132,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Zarraga",
@@ -17349,7 +18177,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ilic",
@@ -17392,7 +18222,9 @@
    "titolarita": 1,
    "affidabilita": 4,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Duncan",
@@ -17429,7 +18261,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Diawara S.",
@@ -17466,7 +18300,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Franjic",
@@ -17503,7 +18339,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Bakoune",
@@ -17540,7 +18378,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Ndiaye",
@@ -17583,7 +18423,9 @@
    "titolarita": 3,
    "affidabilita": 2,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Ndaba",
@@ -17626,7 +18468,9 @@
    "titolarita": 2,
    "affidabilita": 2,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Jean",
@@ -17669,7 +18513,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Sagrado",
@@ -17706,7 +18552,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Cabal",
@@ -17749,7 +18597,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ebosse",
@@ -17792,7 +18642,9 @@
    "titolarita": 2,
    "affidabilita": 2,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "De Silvestri",
@@ -17835,7 +18687,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Patric",
@@ -17878,7 +18732,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Bayo V.",
@@ -17921,7 +18777,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "El Azzouzi A.",
@@ -17958,7 +18816,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Camara A.",
@@ -17995,7 +18855,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Cremaschi",
@@ -18038,7 +18900,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gorter",
@@ -18081,7 +18945,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Fadera",
@@ -18124,7 +18990,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kone B.",
@@ -18161,7 +19029,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Bjarkason",
@@ -18198,7 +19068,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Corrado",
@@ -18235,7 +19107,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Oyono J.",
@@ -18272,7 +19146,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Mlacic",
@@ -18315,7 +19191,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Carboni F.",
@@ -18358,7 +19236,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Abankwah",
@@ -18395,7 +19275,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Mazzocchi",
@@ -18438,7 +19320,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 1,
+   "au": 0
   },
   {
    "nome": "Rugani",
@@ -18481,7 +19365,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Turati",
@@ -18524,7 +19410,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Trepy",
@@ -18567,7 +19455,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Kaba",
@@ -18610,7 +19500,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ziolkowski",
@@ -18653,7 +19545,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Vogliacco",
@@ -18696,7 +19590,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Matturro",
@@ -18733,7 +19629,9 @@
    "titolarita": 1,
    "affidabilita": 2,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Missori",
@@ -18776,7 +19674,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Antov",
@@ -18813,7 +19713,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Lauberbach",
@@ -18850,7 +19752,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Lisman",
@@ -18887,7 +19791,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Albarracin",
@@ -18930,7 +19836,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Moro L.",
@@ -18973,7 +19881,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Azon",
@@ -19016,7 +19926,9 @@
    "titolarita": 2,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Dagasso",
@@ -19053,7 +19965,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Lahdo",
@@ -19096,7 +20010,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Fofana Sa.",
@@ -19139,7 +20055,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Liteta",
@@ -19182,7 +20100,9 @@
    "titolarita": 2,
    "affidabilita": 2,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Iannoni",
@@ -19225,7 +20145,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gelli J.",
@@ -19262,7 +20184,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Gomes",
@@ -19299,7 +20223,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Raterink",
@@ -19342,7 +20268,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Perez M.",
@@ -19385,7 +20313,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pieragnolo",
@@ -19428,7 +20358,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Amey",
@@ -19465,7 +20397,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Goldaniga",
@@ -19508,7 +20442,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 1,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Vismara",
@@ -19545,7 +20481,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Renzetti",
@@ -19582,7 +20520,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Happonen",
@@ -19619,7 +20559,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Pozzi",
@@ -19656,7 +20598,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Strajnar",
@@ -19693,7 +20637,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Lolic",
@@ -19730,7 +20676,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Mascardi",
@@ -19767,7 +20715,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Siviero",
@@ -19810,7 +20760,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Motta",
@@ -19853,7 +20805,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Tornqvist",
@@ -19896,7 +20850,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pessina Mas.",
@@ -19939,7 +20895,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "De Marzi",
@@ -19976,7 +20934,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Torriani",
@@ -20019,7 +20979,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pizzignacco",
@@ -20056,7 +21018,9 @@
    "titolarita": 2,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Grandi",
@@ -20093,7 +21057,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Corvi",
@@ -20136,7 +21102,9 @@
    "titolarita": 4,
    "affidabilita": 4,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Sherri",
@@ -20179,7 +21147,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Stolz",
@@ -20216,7 +21186,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Samooja",
@@ -20259,7 +21231,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Christensen O.",
@@ -20302,7 +21276,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Piana",
@@ -20339,7 +21315,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": null,
+   "au": null
   },
   {
    "nome": "Paleari",
@@ -20382,7 +21360,9 @@
    "titolarita": 3,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Ciocci",
@@ -20425,7 +21405,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Russo A.",
@@ -20468,7 +21450,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Contini",
@@ -20511,7 +21495,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Terracciano",
@@ -20554,7 +21540,9 @@
    "titolarita": 1,
    "affidabilita": 4,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Vigorito",
@@ -20597,7 +21585,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 4,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Fruchtl",
@@ -20640,7 +21630,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Rossi F.",
@@ -20683,7 +21675,9 @@
    "titolarita": null,
    "affidabilita": null,
    "integrita": null,
-   "fonti_prezzo_disponibili": 0
+   "fonti_prezzo_disponibili": 0,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Satalino",
@@ -20726,7 +21720,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Pinsoglio",
@@ -20769,7 +21765,9 @@
    "titolarita": 1,
    "affidabilita": 4,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Di Gennaro",
@@ -20812,7 +21810,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Gollini",
@@ -20855,7 +21855,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Padelli",
@@ -20898,7 +21900,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 3,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Sommariva",
@@ -20941,7 +21945,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 5,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Lezzerini",
@@ -20984,7 +21990,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   },
   {
    "nome": "Sportiello",
@@ -21027,7 +22035,9 @@
    "titolarita": 1,
    "affidabilita": 3,
    "integrita": 2,
-   "fonti_prezzo_disponibili": 2
+   "fonti_prezzo_disponibili": 2,
+   "esp": 0,
+   "au": 0
   }
  ]
 }
