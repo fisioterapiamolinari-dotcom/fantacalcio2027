@@ -1,0 +1,125 @@
+{
+  "aggiornato": "2026-08-29",
+  "fonte_principale": "Goal.com Italia - rigoristi Serie A 2026/27 (pubblicato 29/08/2026, unica fonte con tutte le 20 squadre in un colpo solo)",
+  "fonte_incrocio": "TuttoFantacalcio.it (25/08/2026) e Fanpage.it, usate solo per completare le squadre con meno di 3 nomi",
+  "nota_schema": "'nome' come in giocatori.json. 'certezza' e' 'alta' se la fonte principale non segnala dubbi, 'contesa' se la fonte stessa parla di gerarchia aperta/contesa, 'ipotetico' per i nomi aggiunti da una seconda fonte per completare a 3 quando la principale ne dava solo 2 (li ho segnati esplicitamente, non sono un'invenzione ma nemmeno una certezza).",
+  "rigoristi": [
+    { "squadra": "Atalanta", "gerarchia": [
+      { "nome": "Kessiè", "ordine": 1 },
+      { "nome": "Scamacca", "ordine": 2 },
+      { "nome": "De Ketelaere", "ordine": 3 }
+    ], "certezza": "alta", "note": "Kessiè neo-arrivato, storico realizzativo molto alto in carriera" },
+
+    { "squadra": "Bologna", "gerarchia": [
+      { "nome": "Orsolini", "ordine": 1 },
+      { "nome": "Dovbyk", "ordine": 2 },
+      { "nome": "Bernardeschi", "ordine": 3 }
+    ], "certezza": "alta" },
+
+    { "squadra": "Cagliari", "gerarchia": [
+      { "nome": "Fazzini", "ordine": 1 },
+      { "nome": "Mina", "ordine": 2 },
+      { "nome": "Deiola", "ordine": 3 }
+    ], "certezza": "media", "note": "ruolo in ridefinizione dopo la probabile uscita di Esposito Se." },
+
+    { "squadra": "Como", "gerarchia": [
+      { "nome": "Da Cunha", "ordine": 1 },
+      { "nome": "Paz N.", "ordine": 2 },
+      { "nome": "Douvikas", "ordine": 3 }
+    ], "certezza": "alta", "note": "Da Cunha ha scavalcato Paz N. in questa stagione" },
+
+    { "squadra": "Fiorentina", "gerarchia": [
+      { "nome": "Gudmundsson A.", "ordine": 1 },
+      { "nome": "Pellegrino M.", "ordine": 2 },
+      { "nome": "Mandragora", "ordine": 3 }
+    ], "certezza": "contesa", "note": "gerarchia esplicitamente indicata come da definire dalla fonte" },
+
+    { "squadra": "Frosinone", "gerarchia": [
+      { "nome": "Calò", "ordine": 1 },
+      { "nome": "Raimondo", "ordine": 2 },
+      { "nome": "Ghedjemis", "ordine": 3, "ipotetico": true }
+    ], "certezza": "alta", "note": "il 3o nome (Ghedjemis) viene da una fonte diversa, la principale si ferma a 2" },
+
+    { "squadra": "Genoa", "gerarchia": [
+      { "nome": "Colombo", "ordine": 1 },
+      { "nome": "Messias", "ordine": 2 },
+      { "nome": "Vitinha O.", "ordine": 3 }
+    ], "certezza": "alta", "note": "eredita' il ruolo dopo la partenza di Malinovskyi" },
+
+    { "squadra": "Inter", "gerarchia": [
+      { "nome": "Calhanoglu", "ordine": 1 },
+      { "nome": "Martinez L.", "ordine": 2 },
+      { "nome": "Zielinski", "ordine": 3 }
+    ], "certezza": "alta", "note": "gerarchia stabile da piu' stagioni" },
+
+    { "squadra": "Juventus", "gerarchia": [
+      { "nome": "Yildiz", "ordine": 1 },
+      { "nome": "Locatelli", "ordine": 2 },
+      { "nome": "Kolo Muani", "ordine": 3 }
+    ], "certezza": "contesa", "note": "Yildiz e Locatelli se la contendono davvero, non e' un ordine consolidato" },
+
+    { "squadra": "Lazio", "gerarchia": [
+      { "nome": "Zaccagni", "ordine": 1 },
+      { "nome": "Pinamonti", "ordine": 2 },
+      { "nome": "Cataldi", "ordine": 3 }
+    ], "certezza": "media", "note": "l'ordine tra Pinamonti (neo-arrivato) e Cataldi puo' dipendere dal momento" },
+
+    { "squadra": "Lecce", "gerarchia": [
+      { "nome": "Geubbels", "ordine": 1 },
+      { "nome": "Stulic", "ordine": 2 },
+      { "nome": "Berisha M.", "ordine": 3, "ipotetico": true }
+    ], "certezza": "media", "note": "Geubbels neo-arrivato, nessun precedente in Serie A; 3o nome da fonte secondaria" },
+
+    { "squadra": "Milan", "gerarchia": [
+      { "nome": "Ramos G.", "ordine": 1 },
+      { "nome": "Pulisic", "ordine": 2 },
+      { "nome": "Modric", "ordine": 3, "ipotetico": true }
+    ], "certezza": "contesa", "note": "gerarchia esplicitamente aperta, riscritta due volte a fine agosto dopo le partenze di Nkunku e Leao. Verificare a ogni giornata." },
+
+    { "squadra": "Monza", "gerarchia": [
+      { "nome": "Pessina", "ordine": 1 },
+      { "nome": "Cutrone", "ordine": 2 },
+      { "nome": "Petagna", "ordine": 3 }
+    ], "certezza": "alta" },
+
+    { "squadra": "Napoli", "gerarchia": [
+      { "nome": "De Bruyne", "ordine": 1 },
+      { "nome": "Hojlund", "ordine": 2 },
+      { "nome": "McTominay", "ordine": 3, "ipotetico": true }
+    ], "certezza": "alta", "note": "De Bruyne primo rigorista quando in campo, nessun dubbio; 3o nome da fonte secondaria" },
+
+    { "squadra": "Parma", "gerarchia": [
+      { "nome": "Tourè E.", "ordine": 1 },
+      { "nome": "Bernabè", "ordine": 2 }
+    ], "certezza": "media", "note": "solo 2 nomi trovati con fonte decente, non ho aggiunto un 3o per non inventarlo senza indizi" },
+
+    { "squadra": "Roma", "gerarchia": [
+      { "nome": "Malen", "ordine": 1 },
+      { "nome": "Dybala", "ordine": 2 },
+      { "nome": "Soulè", "ordine": 3 }
+    ], "certezza": "media", "note": "Malen insidia Dybala, non e' detto che l'ordine regga tutta la stagione" },
+
+    { "squadra": "Sassuolo", "gerarchia": [
+      { "nome": "Berardi", "ordine": 1 },
+      { "nome": "Esposito Se.", "ordine": 2 }
+    ], "certezza": "alta", "note": "Esposito Se. secondo rigorista dopo l'addio di Pinamonti" },
+
+    { "squadra": "Torino", "gerarchia": [
+      { "nome": "Vlasic", "ordine": 1 },
+      { "nome": "Zapata", "ordine": 2 },
+      { "nome": "Simeone", "ordine": 3 }
+    ], "certezza": "alta" },
+
+    { "squadra": "Udinese", "gerarchia": [
+      { "nome": "Davis K.", "ordine": 1 },
+      { "nome": "Solet", "ordine": 2 },
+      { "nome": "Zaniolo", "ordine": 3 }
+    ], "certezza": "alta" },
+
+    { "squadra": "Venezia", "gerarchia": [
+      { "nome": "Busio", "ordine": 1 },
+      { "nome": "Adams", "ordine": 2 },
+      { "nome": "Rrahmani", "ordine": 3, "ipotetico": true }
+    ], "certezza": "media", "note": "Busio designato dall'allenatore; il 3o nome (Rrahmani, occhio: NON il difensore del Napoli, e' un omonimo) viene da fonte secondaria - verificare bene" }
+  ]
+}

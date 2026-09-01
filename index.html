@@ -669,6 +669,25 @@ table.lst tr.gone td b{color:var(--faint);text-decoration:line-through}
 table.lst tr.clickable{cursor:pointer}
 table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
 .lstintro{font-size:13.5px;line-height:1.65;color:var(--mute);margin:0 0 14px}
+.roleh{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin:22px 4px 8px}
+.roleh span{color:var(--faint);letter-spacing:0;text-transform:none;font-weight:400}
+.chiprow{display:flex;flex-wrap:wrap;gap:7px;margin:0 4px}
+.chiprow .chip{cursor:pointer}
+.chiprow .chip.gone{opacity:.4;text-decoration:line-through}
+.teamblock{background:var(--s1);border:1px solid rgba(255,255,255,.075);border-radius:12px;
+  padding:13px 15px;margin:0 0 10px}
+.teamblock .tb-head{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.teamblock .tb-name{font-weight:600;font-size:13.5px}
+.tb-tag{font-size:10px;letter-spacing:.05em;padding:2px 8px;border-radius:9px}
+.tb-tag.alta{background:rgba(119,194,149,.15);color:var(--pos)}
+.tb-tag.media{background:rgba(211,176,103,.18);color:var(--brass)}
+.tb-tag.contesa{background:rgba(227,112,88,.15);color:var(--neg)}
+.tb-order{display:flex;flex-wrap:wrap;gap:7px}
+.tb-item{display:flex;align-items:center;gap:6px;background:rgba(255,255,255,.04);
+  border:1px solid var(--line);border-radius:8px;padding:5px 10px;font-size:13px;cursor:pointer}
+.tb-item b{color:var(--brass);font-size:11px}
+.tb-item.ipot{border-style:dashed;color:var(--mute)}
+.tb-note{font-size:12px;color:var(--faint);margin-top:8px;line-height:1.5}
 
 /* ---- dettaglio giocatore (listone) ---- */
 .pd-finder{display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;margin-top:16px;padding:16px 18px;
@@ -756,6 +775,8 @@ table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
       <button data-p="strategia" type="button">Strategia</button>
       <button data-p="assegnazione" type="button">Assegnazioni</button>
       <button data-p="club" type="button">Serie A</button>
+      <button data-p="titolarissimi" type="button">Titolarissimi</button>
+      <button data-p="rigoristi" type="button">Rigoristi</button>
     </nav>
   </div>
   <div class="topright">
@@ -918,6 +939,32 @@ table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
   <div id="clubBody"></div>
 </section>
 
+<!-- ============ TITOLARISSIMI ============ -->
+<section class="page" id="p-titolarissimi">
+  <div class="panel">
+    <h2>Titolarissimi <em id="titoLab"></em></h2>
+    <p style="font-size:13.5px;line-height:1.7;color:var(--mute);margin:0">
+      Tutti i giocatori con titolarità 5 nel listone, qualunque squadra. Diverso dalla scheda
+      Titolarissimi dentro Listone: qui il criterio è solo titolarità=5, senza soglia di presenze.
+      Clicca un nome per aprirlo in Asta live.
+    </p>
+  </div>
+  <div id="titoBody"></div>
+</section>
+
+<!-- ============ RIGORISTI ============ -->
+<section class="page" id="p-rigoristi">
+  <div class="panel">
+    <h2>Rigoristi <em id="rigLab"></em></h2>
+    <p style="font-size:13.5px;line-height:1.7;color:var(--mute);margin:0">
+      Gerarchie squadra per squadra. I nomi con il bordo tratteggiato vengono da una fonte
+      secondaria usata solo per completare una terna quando la principale si fermava a due:
+      meno certi, non inventati a caso.
+    </p>
+  </div>
+  <div id="rigBody"></div>
+</section>
+
 </div>
 <div class="toast" id="toast"></div>
 
@@ -977,7 +1024,12 @@ var clubSel=null, clubData={};
 function consiglio(p){ return p?CONSIGLI[nrm(p.nome)]||null:null; }
 
 var CFG={crediti:1000,rosa:{POR:3,DC:8,CC:8,ATT:6},squadre:[],mia:''};
-var PLAYERS=[],BY={},BYC={},STRAT=null,GRID=null,LST=null;
+var PLAYERS=[],BY={},BYC={},STRAT=null,GRID=null,LST=null,RIG=null;
+/* sigle a 3 lettere, stesse usate da fantacalcio.it, per le schede Titolarissimi/Rigoristi */
+var SIGLA={Atalanta:'ATA',Bologna:'BOL',Cagliari:'CAG',Como:'COM',Fiorentina:'FIO',Frosinone:'FRO',
+  Genoa:'GEN',Inter:'INT',Juventus:'JUV',Lazio:'LAZ',Lecce:'LEC',Milan:'MIL',Monza:'MON',Napoli:'NAP',
+  Parma:'PAR',Roma:'ROM',Sassuolo:'SAS',Torino:'TOR',Udinese:'UDI',Venezia:'VEN'};
+function sigla(s){ return SIGLA[s]||(s||'').slice(0,3).toUpperCase(); }
 var lstTab='POR';
 function lst(p){ return (LST&&p)?(LST.giocatori[p._k]||null):null; }
 var state={role:'POR',picks:[]};
@@ -1024,7 +1076,11 @@ function loadData(){
   .then(function(){ return fetch('./listoni.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); })
   .then(function(d){ LST=d;
     if(d) notes.push('<b>6</b> listoni fantacreator');
-    else notes.push('listoni.json non caricato');
+    else notes.push('listoni.json non caricato'); })
+  .then(function(){ return fetch('./rigoristi.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); })
+  .then(function(d){ RIG=d;
+    if(d) notes.push('rigoristi aggiornati al <b>'+d.aggiornato+'</b>');
+    else notes.push('rigoristi.json non caricato');
     $('src').innerHTML=notes.join('<br>'); });
 }
 
@@ -1055,7 +1111,64 @@ $('nav').addEventListener('click',function(e){
   document.querySelectorAll('.page').forEach(function(s){s.classList.toggle('on',s.id==='p-'+b.dataset.p);});
   if(b.dataset.p==='asta') $('name').focus();
   if(b.dataset.p==='club') renderClub();
+  if(b.dataset.p==='titolarissimi') renderTito();
+  if(b.dataset.p==='rigoristi') renderRig();
 });
+
+/* ---------- apre un giocatore in Asta live da una chip/riga ---------- */
+function openInAsta(k){
+  var p=BY[nrm(k)]; if(!p) return;
+  document.querySelector('#nav button[data-p="asta"]').click();
+  $('name').value=p._disp; select(p); $('price').focus();
+}
+
+/* ---------- titolarissimi (titolarita 5 esatto, tutte le squadre) ---------- */
+function renderTito(){
+  if(!LST){ $('titoBody').innerHTML='<div class="panel"><div class="empty"><b>listoni.json non caricato</b></div></div>'; return; }
+  $('titoLab').textContent='aggiornato al '+LST.aggiornato;
+  var groups={POR:[],DC:[],CC:[],ATT:[]};
+  Object.keys(LST.giocatori).forEach(function(k){
+    var L=LST.giocatori[k]; if(L.tit!==5) return;
+    var g=BY[k]; var r=(g&&g.ruolo)||null; if(!groups[r]) return;
+    groups[r].push({k:k,nome:L.nome,sq:g?g.squadra:L.sq});
+  });
+  var html='';
+  ROLES.forEach(function(r){
+    var arr=groups[r].slice().sort(function(a,b){return a.nome.localeCompare(b.nome,'it');});
+    if(!arr.length) return;
+    html+='<div class="panel"><div class="roleh">'+r+' <span>'+arr.length+'</span></div><div class="chiprow">'+
+      arr.map(function(x){
+        var taken=state.picks.filter(function(p){return pkKey(p)===x.k;})[0];
+        return '<span class="chip'+(taken?' gone':'')+'" data-k="'+esc(x.k)+'">'+esc(x.nome)+' ('+esc(sigla(x.sq))+')</span>';
+      }).join('')+'</div></div>';
+  });
+  $('titoBody').innerHTML=html||'<div class="panel"><div class="empty"><b>Nessun titolarissimo trovato</b></div></div>';
+  $('titoBody').querySelectorAll('.chip[data-k]').forEach(function(c){
+    c.addEventListener('click',function(){ openInAsta(c.dataset.k); });
+  });
+}
+
+/* ---------- rigoristi (gerarchie per squadra, da rigoristi.json) ---------- */
+function renderRig(){
+  if(!RIG){ $('rigBody').innerHTML='<div class="panel"><div class="empty"><b>rigoristi.json non caricato</b>Carica il file nel repository accanto a index.html.</div></div>'; return; }
+  $('rigLab').textContent='aggiornato al '+RIG.aggiornato;
+  var teams=RIG.rigoristi.slice().sort(function(a,b){return a.squadra.localeCompare(b.squadra,'it');});
+  $('rigBody').innerHTML=teams.map(function(t){
+    var certLab={alta:'gerarchia solida',media:'da monitorare',contesa:'gerarchia aperta'}[t.certezza]||t.certezza;
+    var items=t.gerarchia.map(function(g){
+      var k=nrm(g.nome), taken=state.picks.filter(function(p){return pkKey(p)===k;})[0];
+      return '<span class="tb-item'+(g.ipotetico?' ipot':'')+(taken?' gone':'')+'" data-k="'+esc(k)+'">'+
+        '<b>'+g.ordine+'</b>'+esc(g.nome)+'</span>';
+    }).join('');
+    return '<div class="teamblock"><div class="tb-head"><span class="tb-name">'+esc(t.squadra)+
+      ' ('+esc(sigla(t.squadra))+')</span><span class="tb-tag '+t.certezza+'">'+certLab+'</span></div>'+
+      '<div class="tb-order">'+items+'</div>'+
+      (t.note?'<div class="tb-note">'+esc(t.note)+'</div>':'')+'</div>';
+  }).join('');
+  $('rigBody').querySelectorAll('.tb-item[data-k]').forEach(function(c){
+    c.addEventListener('click',function(){ openInAsta(c.dataset.k); });
+  });
+}
 
 /* ---------- ruolo ---------- */
 function setRole(r){

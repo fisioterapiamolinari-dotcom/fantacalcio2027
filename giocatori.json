@@ -59,7 +59,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Creera molto per la squadra ma non e il rigorista: attenzione a non aspettarsi lo stesso bottino gol delle stagioni migliori."
   },
   {
    "nome": "Malen",
@@ -104,7 +105,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Prima punta titolare, rischio concentrazione se dovesse fermarsi per infortunio (nessun vero titolare alternativo puro)."
   },
   {
    "nome": "Thuram",
@@ -149,7 +151,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Genera molte occasioni ma non sempre le concretizza; a fine partita spesso ha consumato piu palloni di quanti ne ha finalizzati."
   },
   {
    "nome": "Hojlund",
@@ -194,7 +197,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Prima punta titolare; squadra giudicata meno offensiva rispetto alla gestione Conte, ma con margini di crescita nel gioco."
   },
   {
    "nome": "Dimarco",
@@ -239,7 +243,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Paz N.",
@@ -284,7 +289,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "McTominay",
@@ -329,7 +335,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Centrocampista di riferimento offensivo, ma i conduttori vedrebbero bene un ulteriore rinforzo di qualita alle spalle di Hojlund."
   },
   {
    "nome": "Ramos G.",
@@ -368,7 +375,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Prima punta titolare quasi senza ballottaggio reale, tra i migliori colpi offensivi del mercato Milan; range gol indicativo 12-16."
   },
   {
    "nome": "Calhanoglu",
@@ -413,7 +421,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Top assoluto del centrocampo Inter secondo i conduttori."
   },
   {
    "nome": "Kolo Muani",
@@ -452,7 +461,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Kean",
@@ -497,7 +507,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Orsolini",
@@ -542,7 +553,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Resta un top ma percepito come caro rispetto a giocatori con fiducia-squadra simile (es. Zaccagni); valutare bene il prezzo relativo."
   },
   {
    "nome": "Yildiz",
@@ -587,7 +599,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Infortunio: frattura alla base del quinto metatarso, stop stimato attorno ai 3 mesi. Da verificare/aggiornare prima dell'asta, non risultava nel tracker infortuni."
   },
   {
    "nome": "Pulisic",
@@ -632,7 +645,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Resta un top nonostante problemi fisici ricorrenti; prezzo relativo piu basso di altri primi slot nonostante il contesto offensivo forte del Milan."
   },
   {
    "nome": "Douvikas",
@@ -677,7 +691,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ballottaggio aperto per la titolarita da prima punta con un altro attaccante appena arrivato; quando gioca rende bene."
   },
   {
    "nome": "Scamacca",
@@ -722,7 +737,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ballottaggio da prima punta con Krstovic; nelle prime uscite sembra il riferimento offensivo preferito di Sarri."
   },
   {
    "nome": "Rabiot",
@@ -767,7 +783,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Preferito personale dei conduttori tra i centrocampisti Milan; puo giocare sia da mediano che piu avanzato."
   },
   {
    "nome": "Davis K.",
@@ -812,7 +829,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Secondo slot offensivo importante, prezzo di mercato gia alto e destinato a salire ulteriormente."
   },
   {
    "nome": "Leao",
@@ -857,7 +875,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Berardi",
@@ -902,7 +921,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Certezza fantacalcistica del reparto offensivo insieme a Laurientè."
   },
   {
    "nome": "De Ketelaere",
@@ -947,7 +967,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Esterno offensivo affidabile, buon minutaggio atteso."
   },
   {
    "nome": "Baturina",
@@ -992,7 +1013,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Alternativa a Nico Paz a prezzo inferiore: puo giocare anche largo a sinistra, rischio/investimento piu basso a fronte di gol gia segnati."
   },
   {
    "nome": "Zaniolo",
@@ -1037,7 +1059,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "De Bruyne",
@@ -1082,7 +1105,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Krstovic",
@@ -1127,7 +1151,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ballottaggio con Scamacca per la maglia da titolare. Entra spesso a gara in corso ma continua a tirare molto anche dalla panchina."
   },
   {
    "nome": "Esposito F.P.",
@@ -1172,7 +1197,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Coppia offensiva con Thuram dietro Lautaro: avra occasioni ma non e garantito che le concretizzi in tanti gol."
   },
   {
    "nome": "Zaccagni",
@@ -1217,7 +1243,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Fiducia buona: profilo da 'secondo slot alto/primo slot basso', rigorista. Non scontato porti sempre lo stesso bottino di gol delle ultime stagioni."
   },
   {
    "nome": "Da Cunha",
@@ -1262,7 +1289,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Laurientè",
@@ -1307,7 +1335,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Certezza fantacalcistica del reparto offensivo insieme a Berardi; bel terzo slot secondo i conduttori."
   },
   {
    "nome": "Atta",
@@ -1352,7 +1381,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Da inquadrare piu come mezzala che come trequartista puro; alto minutaggio atteso, buon inserimento."
   },
   {
    "nome": "Dovbyk",
@@ -1397,7 +1427,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Wesley",
@@ -1442,7 +1473,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 2,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Esterno offensivo costoso ma titolare, opzione se si punta forte sulla difesa."
   },
   {
    "nome": "Simeone",
@@ -1487,7 +1519,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ha dimostrato di portare doppia cifra quando titolare fisso in una squadra propositiva; occhio alla tenuta fisica (spesso fermato da infortuni)."
   },
   {
    "nome": "Pellegrino M.",
@@ -1532,7 +1565,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Castro S.",
@@ -1577,7 +1611,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Attaccante ritenuto forte, puo convivere con Malen/Dybala nell'attacco a tre; primi minuti da subentrante."
   },
   {
    "nome": "Vlasic",
@@ -1622,7 +1657,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Secondo slot di centrocampo, visto bene nelle prime uscite."
   },
   {
    "nome": "Barella",
@@ -1667,7 +1703,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Un gradino sotto Calhanoglu nella gerarchia offensiva del centrocampo."
   },
   {
    "nome": "McKennie",
@@ -1712,7 +1749,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Nome apprezzato per fascia/centrocampo per la duttilita."
   },
   {
    "nome": "Dybala",
@@ -1757,7 +1795,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Talento indiscusso ma fragilita fisica ricorrente: valutazione da tenere legata al prezzo, non alle ultime prestazioni."
   },
   {
    "nome": "Svilar",
@@ -1802,7 +1841,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Indicato come il migliore portiere del campionato per il fantacalcio secondo i conduttori."
   },
   {
    "nome": "Taylor K.",
@@ -1847,7 +1887,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Apprezzato per media voto alta anche nelle partite senza bonus."
   },
   {
    "nome": "Colombo",
@@ -1892,7 +1933,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Prima punta titolare in coppia con Vitinha; leggermente preferito per i gol attesi (8 gol nella stagione precedente)."
   },
   {
    "nome": "Martinez Jo.",
@@ -1937,7 +1979,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ballottaggio in porta con Provedel (arrivato dalla Lazio) per il posto da titolare: gerarchia ancora da capire a inizio stagione."
   },
   {
    "nome": "Raspadori",
@@ -1982,7 +2025,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gudmundsson A.",
@@ -2027,7 +2071,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Conceicao",
@@ -2072,7 +2117,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ha reso bene nel prestito juventino di due stagioni fa ma ha giocato poco nel periodo successivo: fiducia con qualche dubbio."
   },
   {
    "nome": "Mastantuono",
@@ -2111,7 +2157,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Molto propositivo nelle prime uscite (tanti tiri, scelte ancora acerbe), titolarita pressoche garantita. Il prezzo potrebbe scendere per un avvio difficile della squadra."
   },
   {
    "nome": "Santos A.",
@@ -2156,7 +2203,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Alajbegovic",
@@ -2195,7 +2243,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Butez",
@@ -2240,7 +2289,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Pinamonti",
@@ -2285,7 +2335,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Akanji",
@@ -2330,7 +2381,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Zambo Anguissa",
@@ -2375,7 +2427,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Soulè",
@@ -2420,7 +2473,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Nkunku",
@@ -2465,7 +2519,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Carnesecchi",
@@ -2510,7 +2565,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Indicato tra i portieri preferiti del listone."
   },
   {
    "nome": "Adams A.",
@@ -2549,7 +2605,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Prima punta titolare ma valutazione tiepida come giocatore; la squadra prova a giocare quindi puo avere occasioni."
   },
   {
    "nome": "Diao",
@@ -2594,7 +2651,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Giudicato da prendere nonostante il ruolo da attaccante fuori posto nel contesto Como."
   },
   {
    "nome": "Esposito Se.",
@@ -2639,7 +2697,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Modric",
@@ -2684,7 +2743,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bremer",
@@ -2729,7 +2789,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Maignan",
@@ -2774,7 +2835,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Mancini",
@@ -2819,7 +2881,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Difensore aggiunto in fase offensiva, tra i preferiti nel reparto arretrato; riposa meno degli altri centrali."
   },
   {
    "nome": "Pavlovic",
@@ -2864,7 +2927,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kevin Carlos",
@@ -2903,7 +2967,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Favorito nel ballottaggio da prima punta su Mutandua/Mendy/Borrelli, nonostante zero gol nell'ultima stagione."
   },
   {
    "nome": "Politano",
@@ -2948,7 +3013,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Rrahmani",
@@ -2993,7 +3059,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Tra le certezze difensive della squadra secondo i conduttori."
   },
   {
    "nome": "Solet",
@@ -3038,7 +3105,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 1
+   "au": 1,
+   "note_footbros": "Se resta in rosa, top del reparto difensivo per il fantacalcio."
   },
   {
    "nome": "Kalulu",
@@ -3083,7 +3151,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Lukaku",
@@ -3128,7 +3197,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ederson D.S.",
@@ -3173,7 +3243,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Definito 'semitop': si abbassa leggermente nelle gerarchie per le rotazioni a centrocampo con Samardzic, Gaetano e Kessie."
   },
   {
    "nome": "De Gea",
@@ -3218,7 +3289,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Meret",
@@ -3263,7 +3335,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Tra le certezze difensive della squadra secondo i conduttori."
   },
   {
    "nome": "N'Dicka",
@@ -3308,7 +3381,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bastoni",
@@ -3353,7 +3427,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Tourè E.",
@@ -3398,7 +3473,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Saelemaekers",
@@ -3443,7 +3519,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Konè M.",
@@ -3488,7 +3565,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Samardzic",
@@ -3533,7 +3611,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Diventa una scommessa per la rotazione stretta a centrocampo con Ederson, Gaetano e Kessie: minutaggio incostante atteso."
   },
   {
    "nome": "Ekkelenkamp",
@@ -3578,7 +3657,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Thorstvedt",
@@ -3623,7 +3703,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Thuram K.",
@@ -3668,7 +3749,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Zielinski",
@@ -3713,7 +3795,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 1
+   "au": 1,
+   "note_footbros": "Un gradino sotto Barella nella gerarchia, alternanza attesa a centrocampo."
   },
   {
    "nome": "David",
@@ -3758,7 +3841,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Tra le opzioni offensive dietro Openda, fiducia sul giocatore non altissima rispetto agli altri nomi del reparto."
   },
   {
    "nome": "Ostigard",
@@ -3803,7 +3887,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Difensore centrale affidabile, tra i migliori per gol subiti sotto De Rossi; possibile secondo slot per i gol messi a segno."
   },
   {
    "nome": "Di Lorenzo",
@@ -3848,7 +3933,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Vedi sopra."
   },
   {
    "nome": "Di Gregorio",
@@ -3893,7 +3979,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bowie",
@@ -3938,7 +4025,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Perrone",
@@ -3983,7 +4071,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Stones",
@@ -4022,7 +4111,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Rowe",
@@ -4067,7 +4157,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Diouf",
@@ -4112,7 +4203,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Casadei",
@@ -4157,7 +4249,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Trequartista sinistro non ideale per caratteristiche (piu da tiro che da costruzione); possibile cambio modulo con Adams al suo posto."
   },
   {
    "nome": "Skorupski",
@@ -4202,7 +4295,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bernabè",
@@ -4247,7 +4341,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Centrocampista da buoni voti, media storicamente sul 6.3-6.4."
   },
   {
    "nome": "Vergara",
@@ -4292,7 +4387,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Cutrone",
@@ -4337,7 +4433,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Attaccante presente in rosa ma il reparto offensivo si e affollato di nuovi arrivi: valore in calo."
   },
   {
    "nome": "Bisseck",
@@ -4382,7 +4479,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Nelle prime gerarchie difensive vicino a Stones per minutaggio; Akanji puo giocare anche centrale al suo posto."
   },
   {
    "nome": "Vasquez",
@@ -4427,7 +4525,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Difensore centrale affidabile, meno prolifico di Ostigard ma solido."
   },
   {
    "nome": "Ratkov",
@@ -4472,7 +4571,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Adams C.",
@@ -4517,7 +4617,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Alternativa a Casadei come trequartista sinistro in un possibile 3-4-1-2."
   },
   {
    "nome": "Rodriguez Je.",
@@ -4562,7 +4663,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Esterno offensivo, 9 assist nella stagione precedente: buon fornitore di gioco anche con pochi tiri propri a bersaglio."
   },
   {
    "nome": "Pasalic",
@@ -4607,7 +4709,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Locatelli",
@@ -4652,7 +4755,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ramon",
@@ -4697,7 +4801,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Dia",
@@ -4742,7 +4847,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gila",
@@ -4787,7 +4893,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ghedjemis",
@@ -4826,7 +4933,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Nuovo arrivo offensivo, valutato bene per i movimenti in area; ballottaggio con Raimondo."
   },
   {
    "nome": "Baldanzi",
@@ -4871,7 +4979,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Mantra jolly, utile riempitivo a poco prezzo (nel tuo listone risulta passato al Genoa, non piu alla Roma)."
   },
   {
    "nome": "Dodò",
@@ -4916,7 +5025,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Puo restare titolare a destra nonostante il reparto arretrato indicato come punto debole della squadra."
   },
   {
    "nome": "Mandas",
@@ -4961,7 +5071,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Portiere titolare, puo portare qualche bonus/gol evitati extra."
   },
   {
    "nome": "Cristante",
@@ -5006,7 +5117,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Centrocampista centrale meno appetibile in questo assetto: la squadra cerca di liberare spazio per i trequartisti."
   },
   {
    "nome": "Okoye",
@@ -5051,7 +5163,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Yeboah J.",
@@ -5090,7 +5203,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Esterno offensivo, preferito ad altri nomi del reparto avanzato secondo i conduttori (IBO nel testo originale)."
   },
   {
    "nome": "Cancellieri",
@@ -5135,7 +5249,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Mandragora",
@@ -5180,7 +5295,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Pellegrini Lo.",
@@ -5225,7 +5341,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Rivalutato quest'anno nonostante il calo delle ultime stagioni; prezzo basso lo rende un'opzione interessante."
   },
   {
    "nome": "Scalvini",
@@ -5270,7 +5387,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Fiducia alta come centrale difensivo."
   },
   {
    "nome": "Oristanio",
@@ -5315,7 +5433,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Couto",
@@ -5354,7 +5473,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Carlos Augusto",
@@ -5399,7 +5519,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Cambiaso",
@@ -5444,7 +5565,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 2
+   "au": 2,
+   "note_footbros": "Difensore di fiducia nel gruppo dei preferiti."
   },
   {
    "nome": "Dragusin",
@@ -5483,7 +5605,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Caprile",
@@ -5528,7 +5651,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Sucic P.",
@@ -5573,7 +5697,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Nome nuovo nelle rotazioni di centrocampo, gerarchia ancora da scoprire in stagione."
   },
   {
    "nome": "Chalobah T.",
@@ -5612,7 +5737,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Gutierrez",
@@ -5657,7 +5783,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Hermoso",
@@ -5702,7 +5829,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Un gradino sotto Mancini ma titolare di fiducia di Gasperini; leggero ballottaggio con Kyriakopoulos/altri centrali di rosa."
   },
   {
    "nome": "Geubbels",
@@ -5741,7 +5869,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Boga",
@@ -5786,7 +5915,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Calò",
@@ -5825,7 +5955,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Isaksen",
@@ -5870,7 +6001,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Profilo di stabilita: gol e assist a due cifre combinate l'anno scorso pur senza entusiasmare, prezzo di mercato basso rilevato."
   },
   {
    "nome": "Ndour",
@@ -5915,7 +6047,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Colpani",
@@ -5954,7 +6087,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Ballottaggio con Gong per una maglia da trequartista/esterno, in una squadra che ha aggiunto molti nomi offensivi in estate."
   },
   {
    "nome": "Cambiaghi",
@@ -5999,7 +6133,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Preferito a Orsolini per rapporto titolarita/prezzo dopo la cessione di Bellanova, che gli libera la fascia."
   },
   {
    "nome": "Bartesaghi",
@@ -6044,7 +6179,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 1
+   "au": 1,
+   "note_footbros": null
   },
   {
    "nome": "Falcone",
@@ -6089,7 +6225,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ha salvato la squadra anche l'anno scorso: terzo miglior portiere per gol evitati. Coerente con la nota gia presente nel tuo progetto su Falcone come occasione di mercato."
   },
   {
    "nome": "Raimondo",
@@ -6128,7 +6265,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Prima punta titolare; nell'ultima stagione vista mostra gol ma anche discontinuita. Ballottaggio aperto con Ghedjemis."
   },
   {
    "nome": "Piccoli",
@@ -6173,7 +6311,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gaetano",
@@ -6218,7 +6357,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Valeri",
@@ -6263,7 +6403,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Miranda J.",
@@ -6308,7 +6449,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Esterno affidabile su buoni voti, pochi bonus attesi."
   },
   {
    "nome": "Spinazzola",
@@ -6353,7 +6495,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Valutato bene ma un gradino sotto Meret/Rrahmani/Di Lorenzo."
   },
   {
    "nome": "Zappacosta",
@@ -6398,7 +6541,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Fiducia alta sulla fase offensiva, spinta esterno importante nel modulo di Sarri."
   },
   {
    "nome": "Romagnoli",
@@ -6443,7 +6587,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Dallinga",
@@ -6488,7 +6633,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Unai Gomez",
@@ -6527,7 +6673,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Volpato",
@@ -6572,7 +6719,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ballottaggio con Vasic per una maglia da trequartista, salvo doppio impiego se Volpato si allarga a destra."
   },
   {
    "nome": "Fofana Y.",
@@ -6617,7 +6765,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Nome utile per rotazioni centrocampo/difesa, duttilita apprezzata."
   },
   {
    "nome": "Fagioli",
@@ -6662,7 +6811,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kaiki",
@@ -6701,7 +6851,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Jimenez A.",
@@ -6746,7 +6897,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gabbia",
@@ -6791,7 +6943,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Neres",
@@ -6836,7 +6989,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Tra i tre offensivi di sinistra (con Politano/Lang) tutti classificati come attaccanti puri nel mantra classic: preferito rispetto agli altri due, ma percentuali di utilizzo basse per tutti."
   },
   {
    "nome": "Liberali",
@@ -6881,7 +7035,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Odgaard",
@@ -6926,7 +7081,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Norton-Cuffy",
@@ -6971,7 +7127,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Doekhi",
@@ -7010,7 +7167,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Bonny",
@@ -7055,7 +7213,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Scommessa da ultimi slot, dietro a Thuram ed Esposito nelle gerarchie offensive."
   },
   {
    "nome": "Zalewski",
@@ -7100,7 +7259,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bernardeschi",
@@ -7145,7 +7305,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Delprato",
@@ -7190,7 +7351,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Difensore centrale con margini di miglioramento in una fase difensiva piu propositiva quest'anno."
   },
   {
    "nome": "Celik",
@@ -7235,7 +7397,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Rrahmani Al.",
@@ -7274,7 +7437,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Attenzione: non confondere con Amir Rrahmani (Napoli); qui parliamo di un giocatore diverso, verificare identita prima di usare la nota."
   },
   {
    "nome": "Vitinha O.",
@@ -7319,7 +7483,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Seconda punta titolare in coppia con Colombo, buon contributo di squadra."
   },
   {
    "nome": "Oulai",
@@ -7358,7 +7523,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Konè I.",
@@ -7403,7 +7569,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Karlstrom",
@@ -7448,7 +7615,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Caqueret",
@@ -7493,7 +7661,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Lobotka",
@@ -7538,7 +7707,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Indicato titolare da ultimi slot, buon rendimento e titolarita attesi."
   },
   {
    "nome": "Pessina",
@@ -7577,7 +7747,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Koulierakis",
@@ -7616,7 +7787,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Tomori",
@@ -7661,7 +7833,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Mina",
@@ -7706,7 +7879,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Marusic",
@@ -7751,7 +7925,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Suzuki",
@@ -7796,7 +7971,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Mutandwa",
@@ -7835,7 +8011,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Pierotti",
@@ -7880,7 +8057,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Tra i nuovi titolari offensivi, arrivano da un campionato diverso: incertezza sull'adattamento."
   },
   {
    "nome": "Fazzini",
@@ -7925,7 +8103,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Stesso discorso di Maldini: scommessa a pochi crediti puntata sulla titolarita piu che sui bonus."
   },
   {
    "nome": "Frendrup",
@@ -7970,7 +8149,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Titolare fisso a centrocampo, tra i piu affidabili per minutaggio della rosa."
   },
   {
    "nome": "Basic",
@@ -8015,7 +8195,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": "L'unico centrocampista Venezia che i conduttori terrebbero in considerazione."
   },
   {
    "nome": "Mkhitaryan",
@@ -8060,7 +8241,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Viery",
@@ -8099,7 +8281,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Idzes",
@@ -8144,7 +8327,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Puo essere un buon titolare da ultimi slot; il rendimento dipende molto dalla tenuta difensiva della squadra."
   },
   {
    "nome": "Vojvoda",
@@ -8189,7 +8373,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Centrocampista offensivo apprezzato, alternativa sulle fasce insieme a Camara."
   },
   {
    "nome": "Zortea",
@@ -8234,7 +8419,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Stulic",
@@ -8279,7 +8465,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Prima punta titolare, fiducia fantacalcistica bassa sulla squadra nel complesso."
   },
   {
    "nome": "Camarda",
@@ -8324,7 +8511,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Mota",
@@ -8363,7 +8551,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Zapata D.",
@@ -8408,7 +8597,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Cacciamani",
@@ -8447,7 +8637,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Colpo low cost a centrocampo."
   },
   {
    "nome": "Ondrejka",
@@ -8492,7 +8683,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "El Aynaoui",
@@ -8537,7 +8729,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ellertsson",
@@ -8582,7 +8775,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ferguson",
@@ -8627,7 +8821,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Scommessa a basso costo come mezzala d'inserimento in un possibile 4-2-3-1."
   },
   {
    "nome": "Zhegrova",
@@ -8672,7 +8867,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Esterno offensivo che potrebbe guadagnare spazio dopo l'infortunio di Yildiz."
   },
   {
    "nome": "Nicolussi Caviglia",
@@ -8717,7 +8913,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Valdepenas",
@@ -8756,7 +8953,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Valle",
@@ -8801,7 +8999,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Circati",
@@ -8846,7 +9045,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Difensore centrale, stesso discorso di Delprato: piu spazio quest'anno per variare tra blocco basso e uscita palla al piede."
   },
   {
    "nome": "Coco",
@@ -8891,7 +9091,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Difensore centrale mancino che gioca a sinistra ma di piede destro, arrivato dal calcio spagnolo: risorsa interessante per il reparto arretrato."
   },
   {
    "nome": "Lucumì",
@@ -8936,7 +9137,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ismajli",
@@ -8981,7 +9183,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Pavard",
@@ -9026,7 +9229,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Buongiorno",
@@ -9071,7 +9275,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bijlow",
@@ -9116,7 +9321,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Noslin",
@@ -9161,7 +9367,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Pisilli",
@@ -9206,7 +9413,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bernasconi",
@@ -9251,7 +9459,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Tiago Gabriel",
@@ -9296,7 +9505,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 1
+   "au": 1,
+   "note_footbros": null
   },
   {
    "nome": "Tavares N.",
@@ -9341,7 +9551,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ballottaggio sulla fascia sinistra difensiva, situazione da monitorare."
   },
   {
    "nome": "Sulemana K.",
@@ -9386,7 +9597,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bakola",
@@ -9431,7 +9643,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Akinsanmiro",
@@ -9476,7 +9689,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Berisha M.",
@@ -9521,7 +9735,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Rovella",
@@ -9566,7 +9781,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Titolare a centrocampo, mantra utile."
   },
   {
    "nome": "Rensch",
@@ -9611,7 +9827,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ahanor",
@@ -9656,7 +9873,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Beukema",
@@ -9701,7 +9919,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Hien",
@@ -9746,7 +9965,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 1
+   "au": 1,
+   "note_footbros": null
   },
   {
    "nome": "Djimsiti",
@@ -9791,7 +10011,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kvernadze",
@@ -9830,7 +10051,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Esterno offensivo, tra le scommesse a basso costo del reparto avanzato."
   },
   {
    "nome": "Piotrowski",
@@ -9875,7 +10097,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Keita M.",
@@ -9920,7 +10143,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 1
+   "au": 1,
+   "note_footbros": null
   },
   {
    "nome": "Matic",
@@ -9965,7 +10189,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Mangas",
@@ -10004,7 +10229,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Uno dei pochi nomi su cui viene espressa fiducia relativa nella rosa Monza."
   },
   {
    "nome": "Heggem",
@@ -10049,7 +10275,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kristensen T.",
@@ -10094,7 +10321,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bellanova",
@@ -10139,7 +10367,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Nuovo arrivo, fiducia alta come esterno offensivo; ha preso il posto lasciato da Raspadori (girato al Bologna)."
   },
   {
    "nome": "Pedraza",
@@ -10178,7 +10407,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Martin",
@@ -10223,7 +10453,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Muric",
@@ -10268,7 +10499,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gimenez",
@@ -10313,7 +10545,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Maldini",
@@ -10358,7 +10591,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Scommessa di centrocampo/trequarti puntata sulla titolarita, non sui bonus attesi."
   },
   {
    "nome": "Adorante",
@@ -10397,7 +10631,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Milla",
@@ -10436,7 +10671,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Meichtry",
@@ -10475,7 +10711,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Gandelman",
@@ -10520,7 +10757,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Perez K.",
@@ -10559,7 +10797,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Adzic",
@@ -10604,7 +10843,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Almqvist",
@@ -10649,7 +10889,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Sow",
@@ -10688,7 +10929,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Koopmeiners",
@@ -10733,7 +10975,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Busio",
@@ -10772,7 +11015,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Centrocampista di columna, non prioritario secondo i conduttori."
   },
   {
    "nome": "Coulibaly L.",
@@ -10817,7 +11061,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Titolare da ultimo slot, rendimento atteso solido ma senza grandi bonus."
   },
   {
    "nome": "Sohm",
@@ -10862,7 +11107,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Pobega",
@@ -10907,7 +11153,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Stesso profilo di Ferguson: scommessa low cost a centrocampo."
   },
   {
    "nome": "Winks",
@@ -10946,7 +11193,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Obert",
@@ -10991,7 +11239,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Monterisi",
@@ -11030,7 +11279,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Difensore centrale con qualche indicazione positiva; reparto arretrato comunque incerto nel complesso."
   },
   {
    "nome": "Stankovic F.",
@@ -11069,7 +11319,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Portiere low cost, tra i piu presi nei gol evitati se la difesa regge (modulo 3-5-2 abbastanza offensivo in transizione)."
   },
   {
    "nome": "Frigan",
@@ -11114,7 +11365,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Fitz-Jim",
@@ -11153,7 +11405,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Dele-Bashiru",
@@ -11198,7 +11451,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gineitis",
@@ -11243,7 +11497,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Zerbin",
@@ -11288,7 +11543,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Luis Henrique",
@@ -11333,7 +11589,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Adopo",
@@ -11378,7 +11635,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Frattesi",
@@ -11423,7 +11681,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bella-Kotchap",
@@ -11468,7 +11727,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kempf",
@@ -11513,7 +11773,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kelly L.",
@@ -11558,7 +11819,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Marcandalli",
@@ -11603,7 +11865,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Opzione low cost in difesa centrale."
   },
   {
    "nome": "Pedersen",
@@ -11648,7 +11911,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Doig",
@@ -11693,7 +11957,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Terzino titolare a sinistra."
   },
   {
    "nome": "Olivera",
@@ -11738,7 +12003,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Holm",
@@ -11783,7 +12049,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gallo",
@@ -11828,7 +12095,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Diallo O.",
@@ -11867,7 +12135,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Amondarain",
@@ -11906,7 +12175,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Koutsoupias",
@@ -11945,7 +12215,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Romano",
@@ -11984,7 +12255,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Sorensen O.",
@@ -12029,7 +12301,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Miller L.",
@@ -12074,7 +12347,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Njie",
@@ -12119,7 +12393,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Douglas Luiz",
@@ -12164,7 +12439,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Cataldi",
@@ -12209,7 +12485,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Nome secondario a centrocampo rispetto a Rovella."
   },
   {
    "nome": "De Roon",
@@ -12254,7 +12531,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Siebert",
@@ -12299,7 +12577,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Floriani Mussolini",
@@ -12344,7 +12623,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Candè",
@@ -12389,7 +12669,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Lucchesi",
@@ -12428,7 +12709,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Gaspar K.",
@@ -12473,7 +12755,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Oyono A.",
@@ -12512,7 +12795,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Birindelli",
@@ -12551,7 +12835,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Ruolo incerto tra braccetto ed esterno, ma comunque titolare; poco impatto sul voto puro atteso."
   },
   {
    "nome": "De Winter",
@@ -12596,7 +12881,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kamara H.",
@@ -12641,7 +12927,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Parisi",
@@ -12686,7 +12973,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 1
+   "au": 1,
+   "note_footbros": null
   },
   {
    "nome": "Correia T.",
@@ -12725,7 +13013,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Angelino",
@@ -12770,7 +13059,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kolasinac",
@@ -12815,7 +13105,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Thiam",
@@ -12854,7 +13145,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Elphege",
@@ -12899,7 +13191,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Cichella",
@@ -12938,7 +13231,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Amorim",
@@ -12983,7 +13277,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ngom",
@@ -13028,7 +13323,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Jashari",
@@ -13073,7 +13369,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Miretti",
@@ -13118,7 +13415,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ricci S.",
@@ -13163,7 +13461,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Centrocampista centrale titolare nelle gerarchie viste."
   },
   {
    "nome": "Chukwueze",
@@ -13208,7 +13507,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ballottaggio aperto sulla fascia destra d'attacco con Athekame e Moreira."
   },
   {
    "nome": "Loftus-Cheek",
@@ -13253,7 +13553,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Traorè Hj.",
@@ -13292,7 +13593,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Kofler",
@@ -13331,7 +13633,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Bracaglia",
@@ -13370,7 +13673,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Terzino con inserimenti offensivi, si muove bene alle spalle dei difensori avversari; nome da tenere d'occhio in fase realizzativa nonostante il ruolo."
   },
   {
    "nome": "Zè Pedro",
@@ -13415,7 +13719,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Vitik",
@@ -13460,7 +13765,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Veiga D.",
@@ -13505,7 +13811,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Moreno M.",
@@ -13544,7 +13851,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Comuzzo",
@@ -13589,7 +13897,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 1
+   "au": 1,
+   "note_footbros": "Titolare da ultimissimi slot in difesa."
   },
   {
    "nome": "Haps",
@@ -13628,7 +13937,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Difensore di rotazione, nome minore nella guida."
   },
   {
    "nome": "Delli Carri",
@@ -13667,7 +13977,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Robinson J.",
@@ -13706,7 +14017,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Giovane",
@@ -13751,7 +14063,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Lang",
@@ -13796,7 +14109,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ekhator",
@@ -13841,7 +14155,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Lucca",
@@ -13886,7 +14201,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Morata",
@@ -13931,7 +14247,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Addai",
@@ -13976,7 +14293,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Felici",
@@ -14021,7 +14339,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Stankovic A.",
@@ -14060,7 +14379,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Folorunsho",
@@ -14105,7 +14425,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Moro N.",
@@ -14150,7 +14471,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ilkhan",
@@ -14195,7 +14517,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Halhal",
@@ -14234,7 +14557,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Comert",
@@ -14273,7 +14597,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Calvani",
@@ -14312,7 +14637,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Rodriguez Ju.",
@@ -14357,7 +14683,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Difensore centrale titolare, indicato come scommessa interessante nel pacchetto arretrato."
   },
   {
    "nome": "Britschgi",
@@ -14402,7 +14729,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Smolcic I.",
@@ -14447,7 +14775,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Provstgaard",
@@ -14492,7 +14821,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ghilardi",
@@ -14537,7 +14867,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gatti",
@@ -14582,7 +14913,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bertola",
@@ -14627,7 +14959,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Zanoli",
@@ -14672,7 +15005,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Valenti",
@@ -14717,7 +15051,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Walukiewicz",
@@ -14762,7 +15097,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Milinkovic-Savic V.",
@@ -14807,7 +15143,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Perin",
@@ -14852,7 +15189,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Havel",
@@ -14891,7 +15229,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Mendy P.",
@@ -14936,7 +15275,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Alternativa nel ballottaggio da prima punta, fiducia bassa sul reparto offensivo in generale."
   },
   {
    "nome": "Kulenovic",
@@ -14981,7 +15321,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "N'Dri",
@@ -15026,7 +15367,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Borrelli",
@@ -15071,7 +15413,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Alternativa nel ballottaggio da prima punta, fiducia bassa sul reparto offensivo in generale."
   },
   {
    "nome": "Fini",
@@ -15116,7 +15459,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gilmour",
@@ -15161,7 +15505,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Mitaj",
@@ -15200,7 +15545,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Kouadio",
@@ -15245,7 +15591,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Estupinan",
@@ -15290,7 +15637,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Carboni A.",
@@ -15329,7 +15677,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Zappa",
@@ -15374,7 +15723,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kabasele",
@@ -15419,7 +15769,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Difensore centrale di rotazione."
   },
   {
    "nome": "Dominguez B.",
@@ -15464,7 +15815,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gelli F.",
@@ -15503,7 +15855,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Fabbian",
@@ -15548,7 +15901,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Messias",
@@ -15593,7 +15947,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Deiola",
@@ -15638,7 +15993,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Cuenca A.",
@@ -15677,7 +16033,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Arizala",
@@ -15722,7 +16079,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Troilo",
@@ -15767,7 +16125,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 2,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Athekame",
@@ -15812,7 +16171,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ballottaggio aperto sulla fascia destra d'attacco con Chukwueze e Moreira."
   },
   {
    "nome": "Cittadini",
@@ -15851,7 +16211,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Pongracic",
@@ -15896,7 +16257,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Lazzari",
@@ -15941,7 +16303,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Desplanches",
@@ -15980,7 +16343,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Palmisani",
@@ -16019,7 +16383,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Varela G.",
@@ -16058,7 +16423,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Ultimissimo slot: due gol nelle prime uscite ma affidabilita bassa nel lungo periodo."
   },
   {
    "nome": "Gueye",
@@ -16103,7 +16469,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Colombo L.",
@@ -16142,7 +16509,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Prati",
@@ -16187,7 +16555,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Sulemana I.",
@@ -16232,7 +16601,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Helgason",
@@ -16277,7 +16647,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Brescianini",
@@ -16322,7 +16693,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Akpoguma",
@@ -16361,7 +16733,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Puczka",
@@ -16400,7 +16773,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Joao Mario",
@@ -16445,7 +16819,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Idrissi R.",
@@ -16490,7 +16865,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Schingtienne",
@@ -16529,7 +16905,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Hainaut",
@@ -16574,7 +16951,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Sverko",
@@ -16613,7 +16991,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Difensore di rotazione, nome minore nella guida."
   },
   {
    "nome": "Kossounou",
@@ -16658,7 +17037,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ranieri L.",
@@ -16703,7 +17083,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Uno dei pochi nomi difensivi su cui viene espressa fiducia (rendimento medio-alto)."
   },
   {
    "nome": "Chakvetadze",
@@ -16742,7 +17123,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Venturino",
@@ -16787,7 +17169,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ciurria",
@@ -16826,7 +17209,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Musah",
@@ -16871,7 +17255,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Alhassane",
@@ -16910,7 +17295,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Marin R.",
@@ -16949,7 +17335,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Casale",
@@ -16994,7 +17381,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kuhn",
@@ -17039,7 +17427,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Petagna",
@@ -17078,7 +17467,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Przyborek",
@@ -17123,7 +17513,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Aboukhlal",
@@ -17168,7 +17559,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ordonez C.",
@@ -17213,7 +17605,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Hasa",
@@ -17252,7 +17645,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Lipani",
@@ -17297,7 +17691,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Boloca",
@@ -17342,7 +17737,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Belahyane",
@@ -17387,7 +17783,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Maleh",
@@ -17432,7 +17829,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Aurelio",
@@ -17471,7 +17869,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Helland",
@@ -17516,7 +17915,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Otoa",
@@ -17561,7 +17961,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 1
+   "au": 1,
+   "note_footbros": null
   },
   {
    "nome": "Palma",
@@ -17606,7 +18007,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Colpo da un credito in difesa, rischio/rendimento basso ma titolare occasionale."
   },
   {
    "nome": "Van Der Brempt",
@@ -17651,7 +18053,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Marianucci",
@@ -17696,7 +18099,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Pellegrini Lu.",
@@ -17741,7 +18145,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Sabelli",
@@ -17786,7 +18191,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 1
+   "au": 1,
+   "note_footbros": null
   },
   {
    "nome": "Biraghi",
@@ -17831,7 +18237,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Daffara",
@@ -17870,7 +18277,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Provedel",
@@ -17915,7 +18323,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Ballottaggio in porta con Josep Martinez. Abituato a fare il titolare a un livello importante nelle ultime stagioni con la Lazio."
   },
   {
    "nome": "Buksa",
@@ -17960,7 +18369,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Vaz",
@@ -18005,7 +18415,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Masini",
@@ -18050,7 +18461,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Anjorin",
@@ -18095,7 +18507,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "El Azzouzi O.",
@@ -18134,7 +18547,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Zarraga",
@@ -18179,7 +18593,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": "Nome di rotazione a centrocampo/difesa, minutaggio da verificare."
   },
   {
    "nome": "Ilic",
@@ -18224,7 +18639,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Duncan",
@@ -18263,7 +18679,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Diawara S.",
@@ -18302,7 +18719,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Franjic",
@@ -18341,7 +18759,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Bakoune",
@@ -18380,7 +18799,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Ndiaye",
@@ -18425,7 +18845,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ndaba",
@@ -18470,7 +18891,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Jean",
@@ -18515,7 +18937,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Sagrado",
@@ -18554,7 +18977,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Difensore di rotazione, nome minore nella guida."
   },
   {
    "nome": "Cabal",
@@ -18599,7 +19023,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ebosse",
@@ -18644,7 +19069,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "De Silvestri",
@@ -18689,7 +19115,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Patric",
@@ -18734,7 +19161,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Bayo V.",
@@ -18779,7 +19207,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "El Azzouzi A.",
@@ -18818,7 +19247,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Camara A.",
@@ -18857,7 +19287,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": "Buona alternativa/titolare sulle fasce, nessuna vera alternativa credibile dietro di lui."
   },
   {
    "nome": "Cremaschi",
@@ -18902,7 +19333,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gorter",
@@ -18947,7 +19379,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Fadera",
@@ -18992,7 +19425,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kone B.",
@@ -19031,7 +19465,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Bjarkason",
@@ -19070,7 +19505,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Corrado",
@@ -19109,7 +19545,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Oyono J.",
@@ -19148,7 +19585,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Mlacic",
@@ -19193,7 +19631,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Carboni F.",
@@ -19238,7 +19677,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Abankwah",
@@ -19277,7 +19717,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Mazzocchi",
@@ -19322,7 +19763,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 1,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Rugani",
@@ -19367,7 +19809,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Turati",
@@ -19412,7 +19855,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Trepy",
@@ -19457,7 +19901,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Kaba",
@@ -19502,7 +19947,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ziolkowski",
@@ -19547,7 +19993,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Vogliacco",
@@ -19592,7 +20039,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Matturro",
@@ -19631,7 +20079,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Missori",
@@ -19676,7 +20125,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Antov",
@@ -19715,7 +20165,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Lauberbach",
@@ -19754,7 +20205,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Lisman",
@@ -19793,7 +20245,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Albarracin",
@@ -19838,7 +20291,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Moro L.",
@@ -19883,7 +20337,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Azon",
@@ -19928,7 +20383,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Dagasso",
@@ -19967,7 +20423,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Lahdo",
@@ -20012,7 +20469,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Fofana Sa.",
@@ -20057,7 +20515,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Liteta",
@@ -20102,7 +20561,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Iannoni",
@@ -20147,7 +20607,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gelli J.",
@@ -20186,7 +20647,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Gomes",
@@ -20225,7 +20687,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Raterink",
@@ -20270,7 +20733,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Perez M.",
@@ -20315,7 +20779,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Pieragnolo",
@@ -20360,7 +20825,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Amey",
@@ -20399,7 +20865,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Goldaniga",
@@ -20444,7 +20911,8 @@
    "integrita": 1,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Vismara",
@@ -20483,7 +20951,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Renzetti",
@@ -20522,7 +20991,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Happonen",
@@ -20561,7 +21031,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Pozzi",
@@ -20600,7 +21071,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Strajnar",
@@ -20639,7 +21111,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Lolic",
@@ -20678,7 +21151,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Mascardi",
@@ -20717,7 +21191,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Siviero",
@@ -20762,7 +21237,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Motta",
@@ -20807,7 +21283,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Tornqvist",
@@ -20852,7 +21329,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Pessina Mas.",
@@ -20897,7 +21375,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "De Marzi",
@@ -20936,7 +21415,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Torriani",
@@ -20981,7 +21461,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Pizzignacco",
@@ -21020,7 +21501,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Grandi",
@@ -21059,7 +21541,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Corvi",
@@ -21104,7 +21587,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Sherri",
@@ -21149,7 +21633,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Stolz",
@@ -21188,7 +21673,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Samooja",
@@ -21233,7 +21719,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Christensen O.",
@@ -21278,7 +21765,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Piana",
@@ -21317,7 +21805,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": null,
-   "au": null
+   "au": null,
+   "note_footbros": null
   },
   {
    "nome": "Paleari",
@@ -21362,7 +21851,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Ciocci",
@@ -21407,7 +21897,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Russo A.",
@@ -21452,7 +21943,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Contini",
@@ -21497,7 +21989,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Terracciano",
@@ -21542,7 +22035,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Vigorito",
@@ -21587,7 +22081,8 @@
    "integrita": 4,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Fruchtl",
@@ -21632,7 +22127,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Rossi F.",
@@ -21677,7 +22173,8 @@
    "integrita": null,
    "fonti_prezzo_disponibili": 0,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Satalino",
@@ -21722,7 +22219,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Pinsoglio",
@@ -21767,7 +22265,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Di Gennaro",
@@ -21812,7 +22311,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Gollini",
@@ -21857,7 +22357,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Padelli",
@@ -21902,7 +22403,8 @@
    "integrita": 3,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Sommariva",
@@ -21947,7 +22449,8 @@
    "integrita": 5,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Lezzerini",
@@ -21992,7 +22495,8 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   },
   {
    "nome": "Sportiello",
@@ -22037,7 +22541,9 @@
    "integrita": 2,
    "fonti_prezzo_disponibili": 2,
    "esp": 0,
-   "au": 0
+   "au": 0,
+   "note_footbros": null
   }
- ]
+ ],
+ "nota_footbros": "Campo 'note_footbros' aggiunto il 2026-09-01: sintesi (non trascrizione letterale) della guida all'asta live Footbros 2026/27. Percentuali di ballottaggio della fonte originale volutamente omesse su richiesta. Attenzione: i giudizi sui difensori/portieri riflettono una lega classic senza modificatore difesa, vanno pesati con cautela per FantaHydra (vedi PROGETTO-FantaHydra.md, sezione 2)."
 }

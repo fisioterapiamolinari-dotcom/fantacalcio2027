@@ -1,0 +1,65 @@
+{
+  "aggiornato": "2026-09-01",
+  "fonte": "Fantacalcio.it - https://www.fantacalcio.it/infortunati-serie-a (letta il 01/09/2026, situazione prima della 3a giornata)",
+  "nota_schema": "'nome' e 'squadra' scritti come in giocatori.json per permettere il join: il sito puo' recuperare da li' ruolo e prezzo aggiornati, qui non li ripetiamo per evitare dati doppi che poi disallineano. Le squadre senza infortunati in elenco (Frosinone, Genoa, Inter, Milan al 01/09) sono omesse: nessuna voce = rosa pulita alla data di aggiornamento.",
+  "infortunati": [
+    { "nome": "Sulemana K.", "squadra": "Atalanta", "tipo_infortunio": "lesione collaterale mediale ginocchio sinistro (grado 2), da amichevole dell'8/8", "rientro_previsto": "inizio ottobre", "note": "" },
+    { "nome": "Hien", "squadra": "Atalanta", "tipo_infortunio": "operato a fine giugno per lesione tendine prossimale semimembranoso coscia sinistra", "rientro_previsto": "inizio ottobre", "note": "in fase di recupero" },
+    { "nome": "Kristensen T.", "squadra": "Atalanta", "tipo_infortunio": "problema alla caviglia", "rientro_previsto": "da valutare", "note": "saltate Sassuolo e Bologna, a rischio anche per la 3a (Roma)" },
+
+    { "nome": "Orsolini", "squadra": "Bologna", "tipo_infortunio": "risentimento ai flessori coscia sinistra (dal 31/8)", "rientro_previsto": "da valutare con esami", "note": "sicuramente assente nella 3a giornata vs Sassuolo" },
+    { "nome": "El Azzouzi O.", "squadra": "Bologna", "tipo_infortunio": "lesione bicipite femorale coscia sinistra", "rientro_previsto": "seconda meta' di settembre", "note": "" },
+
+    { "nome": "Idrissi R.", "squadra": "Cagliari", "tipo_infortunio": "rottura del legamento crociato", "rientro_previsto": "fine ottobre", "note": "" },
+    { "nome": "Trepy", "squadra": "Cagliari", "tipo_infortunio": "ricoverato il 16/8 (quasi annegamento), dimesso il 28/8", "rientro_previsto": "da valutare", "note": "assente nel prossimo turno" },
+    { "nome": "Mina", "squadra": "Cagliari", "tipo_infortunio": "affaticamento muscolare al polpaccio (29/8)", "rientro_previsto": "da valutare", "note": "out vs Inter, a rischio per la 3a vs Lecce" },
+
+    { "nome": "Addai", "squadra": "Como", "tipo_infortunio": "rottura del tendine d'Achille", "rientro_previsto": "seconda meta' di settembre", "note": "" },
+
+    { "nome": "Parisi", "squadra": "Fiorentina", "tipo_infortunio": "recupero da infortunio al legamento crociato del ginocchio", "rientro_previsto": "novembre", "note": "" },
+
+    { "nome": "McKennie", "squadra": "Juventus", "tipo_infortunio": "affaticamento muscolare alla gamba (dal 27/8)", "rientro_previsto": "da valutare", "note": "saltata Parma, a rischio per Milan (3a)" },
+    { "nome": "Thuram K.", "squadra": "Juventus", "tipo_infortunio": "sindrome femoro-rotulea", "rientro_previsto": "da valutare", "note": "non convocato vs Parma, da valutare per Milan (3a)" },
+    { "nome": "Ekhator", "squadra": "Juventus", "tipo_infortunio": "lesione di medio grado al semitendinoso", "rientro_previsto": "ipotesi fine ottobre, in attesa di nuovi esami a meta' settembre", "note": "" },
+    { "nome": "Yildiz", "squadra": "Juventus", "tipo_infortunio": "operato il 31/8 per frattura alla base del V metatarso del piede sinistro", "rientro_previsto": "fine novembre (stop di circa 3 mesi)", "note": "infortunio rimediato nella gara col Frosinone del 23/8" },
+
+    { "nome": "Dele-Bashiru", "squadra": "Lazio", "tipo_infortunio": "problema muscolare alla gamba (dal 24/8)", "rientro_previsto": "meta' settembre", "note": "" },
+    { "nome": "Rovella", "squadra": "Lazio", "tipo_infortunio": "problema muscolare al polpaccio (30/8 vs Genoa)", "rientro_previsto": "da valutare", "note": "assente nel prossimo turno" },
+    { "nome": "Cataldi", "squadra": "Lazio", "tipo_infortunio": "ernia bilaterale, ha ripreso ad allenarsi in campo", "rientro_previsto": "meta' settembre", "note": "" },
+    { "nome": "Marusic", "squadra": "Lazio", "tipo_infortunio": "lesione muscolare alla coscia (24/8 a Bologna)", "rientro_previsto": "ipotesi inizio ottobre", "note": "" },
+    { "nome": "Patric", "squadra": "Lazio", "tipo_infortunio": "problema fisico", "rientro_previsto": "da valutare", "note": "out nella 3a vs Udinese" },
+
+    { "nome": "Geubbels", "squadra": "Lecce", "tipo_infortunio": "distorsione alla caviglia (31/8 vs Roma)", "rientro_previsto": "da valutare", "note": "salta la trasferta di Cagliari" },
+
+    { "nome": "Ciurria", "squadra": "Monza", "tipo_infortunio": "noie fisiche", "rientro_previsto": "da valutare", "note": "salta Parma" },
+    { "nome": "Pessina", "squadra": "Monza", "tipo_infortunio": "lussazione della rotula ginocchio destro (inizio agosto)", "rientro_previsto": "ipotesi inizio novembre", "note": "" },
+    { "nome": "Varela G.", "squadra": "Monza", "tipo_infortunio": "fastidio muscolare all'adduttore (30/8)", "rientro_previsto": "da valutare", "note": "salta Parma" },
+
+    { "nome": "Buongiorno", "squadra": "Napoli", "tipo_infortunio": "operato al menisco ginocchio destro (meta' luglio)", "rientro_previsto": "ipotesi meta' novembre, recupero lento", "note": "" },
+    { "nome": "Marianucci", "squadra": "Napoli", "tipo_infortunio": "lesione di alto grado al collaterale mediale ginocchio sinistro (8/8, amichevole)", "rientro_previsto": "almeno due mesi", "note": "" },
+    { "nome": "McTominay", "squadra": "Napoli", "tipo_infortunio": "ablazione per lieve aritmia benigna (operato l'1/9)", "rientro_previsto": "inizio ottobre", "note": "" },
+
+    { "nome": "Nicolussi Caviglia", "squadra": "Parma", "tipo_infortunio": "lesione di medio grado alla coscia destra, operato a fine agosto", "rientro_previsto": "ipotesi novembre", "note": "" },
+
+    { "nome": "Rensch", "squadra": "Roma", "tipo_infortunio": "risentimento al flessore sinistro", "rientro_previsto": "da valutare", "note": "saltate Fiorentina e Lecce, da valutare per Atalanta (3a)" },
+    { "nome": "N'Dicka", "squadra": "Roma", "tipo_infortunio": "fastidio all'adduttore (riscaldamento pre-gara a Lecce, 31/8)", "rientro_previsto": "da valutare", "note": "a rischio per Atalanta (3a)" },
+
+    { "nome": "Walukiewicz", "squadra": "Sassuolo", "tipo_infortunio": "forte trauma contusivo alla gamba destra", "rientro_previsto": "da valutare, ipotesi meta' settembre", "note": "" },
+    { "nome": "Candè", "squadra": "Sassuolo", "tipo_infortunio": "rottura del crociato anteriore ginocchio destro (gennaio)", "rientro_previsto": "ipotesi meta' settembre", "note": "" },
+    { "nome": "Pieragnolo", "squadra": "Sassuolo", "tipo_infortunio": "recupero da rottura crociato anteriore gamba destra", "rientro_previsto": "ipotesi ottobre", "note": "" },
+    { "nome": "Boloca", "squadra": "Sassuolo", "tipo_infortunio": "problema al ginocchio", "rientro_previsto": "ipotesi fine settembre", "note": "" },
+    { "nome": "Konè I.", "squadra": "Sassuolo", "tipo_infortunio": "rottura tibia e perone (giugno, ai Mondiali per club), operato", "rientro_previsto": "ipotesi dicembre", "note": "" },
+
+    { "nome": "Casadei", "squadra": "Torino", "tipo_infortunio": "affaticamento muscolare alla gamba", "rientro_previsto": "da valutare", "note": "a rischio per Fiorentina (3a)" },
+
+    { "nome": "Palma", "squadra": "Udinese", "tipo_infortunio": "problema muscolare all'adduttore coscia destra (1a giornata vs Como)", "rientro_previsto": "meta' settembre", "note": "" },
+    { "nome": "Zanoli", "squadra": "Udinese", "tipo_infortunio": "recupero da rottura crociato anteriore ginocchio destro (operato fine gennaio)", "rientro_previsto": "ipotesi ottobre", "note": "" },
+    { "nome": "Chakvetadze", "squadra": "Udinese", "tipo_infortunio": "frattura al terzo metatarso piede destro (inizio luglio)", "rientro_previsto": "ipotesi prima meta' settembre", "note": "" },
+    { "nome": "Zaniolo", "squadra": "Udinese", "tipo_infortunio": "lesione muscolare bicipite femorale coscia destra (1a giornata vs Como)", "rientro_previsto": "ipotesi seconda meta' settembre (stop ~25gg)", "note": "" },
+
+    { "nome": "Moreno M.", "squadra": "Venezia", "tipo_infortunio": "noie fisiche", "rientro_previsto": "punta a inizio settembre", "note": "saltate Lecce e Milan, da valutare per Frosinone" },
+    { "nome": "Sverko", "squadra": "Venezia", "tipo_infortunio": "operato in estate per problema all'anca", "rientro_previsto": "ipotesi fine ottobre", "note": "" },
+    { "nome": "Franjic", "squadra": "Venezia", "tipo_infortunio": "guaio fisico (uscito a Milano vs Milan)", "rientro_previsto": "da valutare", "note": "salta Frosinone" },
+    { "nome": "Adorante", "squadra": "Venezia", "tipo_infortunio": "operato per problema alla schiena (fine luglio)", "rientro_previsto": "ipotesi ottobre, fuori per buona parte del girone d'andata", "note": "" }
+  ]
+}
