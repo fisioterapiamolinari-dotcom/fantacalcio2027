@@ -439,6 +439,18 @@ select option{background:#0A1730}
 .bidnum input::-webkit-outer-spin-button,.bidnum input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
 .bidnum input:focus{outline:none;background:none}
 
+.mini-listoni{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:6px}
+.mini-listoni .mst{background:rgba(255,255,255,.045);border-radius:6px;padding:4px 6px;min-width:0}
+.mini-listoni .mst .k{font-size:7px;letter-spacing:.03em;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mini-listoni .mst .v{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--ink);line-height:1.15;margin-top:1px}
+
+.actionrow{display:flex;gap:4px;align-items:stretch;margin-top:6px;flex-wrap:wrap}
+.actionrow .bid{flex:0 0 auto;min-width:26px;padding:0 7px;min-height:24px;font-size:10px;border-radius:6px}
+.actionrow .bid.minus{font-size:9px}
+.actionrow select{flex:1 1 110px;min-width:90px;width:auto;padding:4px 7px;font-size:10px;border-radius:6px;height:24px}
+.actionrow .assign{padding:0 10px;font-size:10px;border-radius:6px;flex:0 0 auto;min-height:24px}
+.actionrow .ghostbtn{padding:0 9px;font-size:9.5px;border-radius:6px;flex:0 0 auto;min-height:24px}
+
 .bidrow{display:grid;grid-template-columns:.72fr 1fr 1fr 1fr;gap:6px;align-items:stretch}
 .bid{background:var(--s2);border:1px solid var(--line);color:var(--ink);font-family:var(--mono);
   font-size:14px;font-weight:600;padding:0;border-radius:8px;cursor:pointer;transition:.12s;
@@ -852,11 +864,15 @@ table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
               <div class="who" id="who"></div>
               <div class="bidnum"><span class="coin" aria-hidden="true">💰</span><input type="number" id="price" min="1" value="1" aria-label="Prezzo attuale"></div>
             </div>
-            <div class="bidrow">
+            <div class="mini-listoni" id="miniListoni"></div>
+            <div class="actionrow">
               <button class="bid minus" id="bm" type="button">−1</button>
               <button class="bid" id="b1" type="button">+1</button>
               <button class="bid" id="b5" type="button">+5</button>
               <button class="bid" id="b10" type="button">+10</button>
+              <select id="team" aria-label="Se l'è aggiudicato"><option value="">— scegli la squadra —</option></select>
+              <button class="assign" id="assign" type="button">Aggiudica</button>
+              <button class="ghostbtn" id="clear" type="button">Annulla</button>
             </div>
           </div>
         </div>
@@ -865,15 +881,6 @@ table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
         <div class="dossier" id="dossier"></div>
 
         <div class="hint" id="hint"></div>
-
-        <div class="closerow">
-          <div class="field">
-            <label class="lbl" for="team">Se l'è aggiudicato</label>
-            <select id="team"><option value="">— scegli la squadra —</option></select>
-          </div>
-          <button class="assign" id="assign" type="button">Aggiudica</button>
-          <button class="ghostbtn" id="clear" type="button">Annulla</button>
-        </div>
       </div>
 
       <div class="panel">
@@ -1051,6 +1058,13 @@ var CFG={crediti:1000,rosa:{POR:3,DC:8,CC:8,ATT:6},squadre:[],mia:''};
 var PLAYERS=[],BY={},BYC={},STRAT=null,GRID=null,LST=null;
 var lstTab='POR';
 function lst(p){ return (LST&&p)?(LST.giocatori[p._k]||null):null; }
+function renderMiniListoni(p){
+  var box=$('miniListoni'); if(!box) return;
+  var L=lst(p);
+  if(!p||!L){ box.innerHTML=''; return; }
+  function mst(k,v){return '<div class="mst"><div class="k">'+k+'</div><div class="v">'+(v==null?'—':v)+'</div></div>';}
+  box.innerHTML=mst('Profeta',L.pr)+mst('RECOSTA',L.re)+mst('Media',L.med)+mst('Mercato',L.mkt);
+}
 var state={role:'POR',picks:[]};
 var sel=null,memory=null;
 
@@ -1195,9 +1209,7 @@ function dossier(p){
       var cats=Object.keys(L.cat||{}).map(function(k){
         return '<div class="rowline"><span>'+esc(k)+'</span><b>'+esc(L.cat[k])+'</b></div>'; }).join('');
       return '<div class="dgrid2">'+
-      '<div class="dsec"><div class="dlab">Nei listoni</div><div class="grid2">'+
-        pz('Profeta',L.pr)+pz('RECOSTA',L.re)+pz('Media',L.med)+pz('Mercato (6 fonti)',L.mkt)+
-      '</div>'+
+      '<div class="dsec"><div class="dlab">Nei listoni</div>'+
       (p.pagato25!=null
         ? '<div class="rowline"><span>Asta 25/26</span><b>'+
             (p.presa25?'<span style="color:var(--mute)">'+esc(p.presa25)+'</span> ':'')+
@@ -1446,7 +1458,7 @@ function initials(name){
   return (parts[0].charAt(0)+parts[parts.length-1].charAt(0)).toUpperCase();
 }
 function select(p,soft){
-  sel=p; dossier(p);
+  sel=p; dossier(p); renderMiniListoni(p);
   var w=$('who');
   if(!p){ w.innerHTML=''; return; }
   var bits=[];
