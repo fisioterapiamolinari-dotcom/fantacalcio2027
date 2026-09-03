@@ -326,13 +326,16 @@ nav button:focus-visible{outline:2px solid var(--brass);outline-offset:1px}
 .main{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:18px;margin-top:14px;align-items:start}
 
 /* ---- banco a tre colonne: rivali | prezzo | giocatore ---- */
-.deck{display:grid;grid-template-columns:216px minmax(0,1fr) 340px;gap:14px;margin-top:14px;align-items:start}
+.deck{display:grid;grid-template-columns:230px minmax(0,1fr) 320px;gap:14px;margin-top:14px;align-items:start}
 .col-left{position:sticky;top:74px;background:var(--s1);border:1px solid rgba(255,255,255,.075);
   border-radius:13px;padding:13px}
 .colhead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;font-size:9.5px;
   letter-spacing:.18em;text-transform:uppercase;color:var(--brass);font-weight:600;
   padding-bottom:9px;border-bottom:1px solid var(--line)}
 .colhead em{font-style:normal;letter-spacing:.02em;text-transform:none;font-size:10.5px;color:var(--faint);font-weight:400}
+.colhead .hidepresi{display:flex;align-items:center;gap:5px;font-style:normal;letter-spacing:.02em;
+  text-transform:none;font-size:11px;color:var(--faint);font-weight:400;cursor:pointer}
+.colhead .hidepresi input{margin:0;accent-color:var(--brass)}
 .col-left .chips{flex-direction:column;gap:3px;margin-top:8px}
 .col-left .chip{width:100%;justify-content:space-between;gap:8px;padding:7px 10px;border:none;
   background:rgba(255,255,255,.04);border-radius:7px;font-size:13px;text-align:left}
@@ -342,13 +345,46 @@ nav button:focus-visible{outline:2px solid var(--brass);outline-offset:1px}
   border-top:1px solid var(--line)}
 .col-left .mk{padding:7px 8px}
 .col-left .mk .v{font-size:13px}
-.col-right{position:sticky;top:74px;display:flex;flex-direction:column;gap:12px;align-items:stretch}
-.col-right .fair{flex:0 0 auto;margin:0;align-self:flex-start;width:100%}
+
+/* la mia squadra */
+.mia-budget{display:flex;align-items:baseline;gap:8px;margin:10px 0 12px;flex-wrap:wrap}
+.mia-budget .tot{font-family:var(--mono);font-size:22px;font-weight:700;color:var(--ink)}
+.mia-budget .max{font-family:var(--mono);font-size:11.5px;color:var(--faint)}
+.mia-roles{display:flex;flex-direction:column;gap:10px}
+.mia-role-head{display:flex;justify-content:space-between;align-items:baseline;font-family:var(--mono);font-size:11px}
+.mia-role-head .rn{font-weight:600}
+.mia-role-head .rn.por{color:var(--por)} .mia-role-head .rn.dc{color:var(--dc)}
+.mia-role-head .rn.cc{color:var(--cc)} .mia-role-head .rn.att{color:var(--att)}
+.mia-role-head .rp{color:var(--faint)}
+.mia-slot{font-size:12.5px;padding:4px 0;color:var(--ink);border-bottom:1px solid rgba(255,255,255,.05)}
+.mia-slot:last-child{border-bottom:none}
+.mia-slot.empty{color:var(--faint)}
+.mia-slot .pr{float:right;font-family:var(--mono);color:var(--faint)}
+
+.col-right{position:sticky;top:74px;background:var(--s1);border:1px solid rgba(255,255,255,.075);
+  border-radius:13px;padding:13px;display:flex;flex-direction:column;max-height:calc(100vh - 100px)}
+#listoneLive{overflow-y:auto;margin-top:8px}
+.llrow{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 4px;
+  font-size:13px;border-bottom:1px solid rgba(255,255,255,.05);cursor:pointer;border-radius:6px}
+.llrow:hover{background:rgba(255,255,255,.05)}
+.llrow .n{color:var(--ink)}
+.llrow .t{font-family:var(--mono);font-size:10.5px;color:var(--faint)}
+.llrow.taken{opacity:.4}
+.llrow.taken .n{text-decoration:line-through}
+.llrow.mine .t{color:var(--pos)}
+
+/* avversari */
+.avv-panel{margin-top:16px}
+.avvgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px;margin-top:12px}
+.avvcard{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.avvcard .an{font-size:13px;color:var(--mute);margin-bottom:2px}
+.avvcard .ab{font-family:var(--mono);font-size:24px;font-weight:700;color:var(--ink)}
+.avvcard .apips{display:flex;gap:6px;margin:8px 0;font-family:var(--mono);font-size:11px;color:var(--faint)}
+.avvcard .apips b{color:var(--ink);font-weight:600}
+.avvcard .asp{font-size:11px;color:var(--faint)}
 @media(max-width:1280px){
-  .deck{grid-template-columns:190px minmax(0,1fr)}
-  .col-right{grid-column:1/-1;position:static;flex-direction:row;flex-wrap:wrap;align-items:flex-start}
-  .col-right .fair{flex:1 1 300px;width:auto}
-  .col-right .dossier{flex:1 1 420px}
+  .deck{grid-template-columns:200px minmax(0,1fr)}
+  .col-right{grid-column:1/-1;position:static;max-height:420px}
 }
 @media(max-width:900px){
   .deck{grid-template-columns:1fr}
@@ -452,8 +488,6 @@ select option{background:#0A1730}
 .chip:hover{color:var(--ink);border-color:var(--accent)}
 .chip.on{background:var(--accent);color:#08152C;border-color:transparent;font-weight:600}
 .chip.full{opacity:.32;text-decoration:line-through}
-#teamChips .chip span[style]{color:var(--ink)!important;font-family:var(--mono);font-size:15px;font-weight:600}
-#teamChips .chip.full span[style]{color:var(--mute)!important}
 
 .mkt{display:grid;grid-template-columns:repeat(auto-fit,minmax(104px,1fr));gap:8px;margin-top:16px}
 .mk{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.055);border-radius:9px;padding:8px 10px;text-align:center}
@@ -546,10 +580,15 @@ tr.clickable{cursor:pointer} tr.clickable:hover td{background:rgba(255,255,255,.
 .ccard.note{background:var(--s2)}
 .ccard.note p{margin:0;font-size:13px;line-height:1.65;color:var(--mute)}
 .ccard h3{font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin:0 0 14px}
+.ccard h3 .chint{font-size:10px;font-weight:400;letter-spacing:0;text-transform:none;color:var(--faint);margin-left:6px}
+.ccard.note textarea{width:100%;background:transparent;border:none;outline:none;resize:vertical;
+  min-height:70px;font-family:var(--sans);font-size:13.5px;line-height:1.6;color:var(--ink);padding:0}
+.ccard.note textarea::placeholder{color:var(--faint)}
 .crow{display:grid;grid-template-columns:120px 1fr;row-gap:10px;font-size:14px;align-items:start}
 .crow .lab{color:var(--mute)}
 .crow .val{color:var(--ink)}
 .crow .val.mono{font-family:var(--mono)}
+.crow .val .arr{color:var(--faint);margin:0 6px;font-weight:400}
 .crow .rolelab{font-weight:600}
 .crow .rolelab.por{color:var(--por)} .crow .rolelab.dc{color:var(--dc)}
 .crow .rolelab.cc{color:var(--cc)} .crow .rolelab.att{color:var(--att)}
@@ -787,15 +826,15 @@ table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
 
   <div class="deck">
     <aside class="col-left">
-      <div class="colhead">Squadre <em id="deckHint">crediti residui</em></div>
-      <div class="chips" id="teamChips"></div>
+      <div class="colhead">La mia squadra <em id="miaBudget"></em></div>
+      <div id="miaSquadra"></div>
       <div class="mkt" id="mkt"></div>
     </aside>
 
     <div class="col-mid">
       <div class="live">
         <div class="field">
-          <label class="lbl" for="name">Giocatore in chiamata</label>
+          <label class="lbl" for="name">Chi è stato chiamato?</label>
           <input type="text" id="name" autocomplete="off" placeholder="Cognome, nome completo o squadra (es. Inter)">
           <div class="ac" id="ac"></div>
         </div>
@@ -814,6 +853,9 @@ table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
             </div>
           </div>
         </div>
+
+        <div class="fair" id="fair" style="display:none"></div>
+        <div class="dossier" id="dossier"></div>
 
         <div class="hint" id="hint"></div>
 
@@ -834,9 +876,14 @@ table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
     </div>
 
     <aside class="col-right">
-      <div class="fair" id="fair" style="display:none"></div>
-      <div class="dossier" id="dossier"></div>
+      <div class="colhead">Listone <label class="hidepresi"><input type="checkbox" id="hideTaken"> nascondi presi</label></div>
+      <div id="listoneLive"></div>
     </aside>
+  </div>
+
+  <div class="panel avv-panel">
+    <h2>Avversari <em>il numero grande è l'offerta massima</em></h2>
+    <div class="avvgrid" id="avvGrid"></div>
   </div>
 </section>
 
@@ -940,88 +987,54 @@ var MANTRA={Por:'Portiere',Dc:'Difensore centrale',Ds:'Terzino sinistro',Dd:'Ter
 var CONSIGLI={"carnesecchi": {"t": "Top portiere insieme a Svilar."},"kristensen t.": {"t": "Top difesa, ma massimo 4%.","max": 40},"scalvini": {"t": "Un po' fragile."},"zappacosta": {"t": "Ottimo l'anno scorso ma ora l'Atalanta è passata alla difesa a 4."},"samardzic": {"t": "3-4%.","min": 30,"max": 40},"gaetano": {"t": "Probabile trappola perché molto difensivo. Però titolare fisso: da prendere a 1%.","max": 10},"ederson d.s.": {"t": "Sotto il 4%. Rendimento da media voto, 4-5 gol secondo il Profeta.","max": 40},"de ketelaere": {"t": "Probabile trappola."},"krstovic": {"t": "10%.","max": 100},"scamacca": {"t": "13% e per me è top, anche 15-17%. Non prendere la coppia con Krstovic.","min": 130,"max": 170},"butez": {"t": "Top portiere, 10%.","max": 100},"kempf": {"t": "In ballottaggio ma ottimo."},"kaiki": {"t": "Coppia economica con Valle, 2-3%.","min": 20,"max": 30},"valle": {"t": "Coppia economica con Kaiki, 2-3%.","min": 20,"max": 30},"ramon": {"t": "5%, massimo 6%.","min": 50,"max": 60},"da cunha": {"t": "7-8% è il prezzo giusto. Oltre il 10% è troppo.","min": 70,"max": 100},"paz n.": {"t": "Sotto il 18%: con la Champions avrà anche turnover.","max": 180},"baturina": {"t": "9-11%, buono.","min": 90,"max": 110},"caqueret": {"t": "A poco è ottimo, ma non sempre titolare."},"douvikas": {"t": "15-18% da attaccante titolare top, ma potrebbe arrivare un altro attaccante.","min": 150,"max": 180},"perrone": {"t": "3-4%.","min": 30,"max": 40},"hojlund": {"t": "Doppia cifra di gol sicura."},"santos a.": {"t": "Meglio di Neres perché non ha Politano davanti."},"vergara": {"t": "1%, jolly.","max": 10},"mctominay": {"t": "16-17%: rapporto qualità prezzo non ottimo.","min": 160,"max": 170},"rrahmani": {"t": "Dovrebbe essere il centrale che fa bene con Allegri."},"di lorenzo": {"t": "Sotto il 4% è ottimo.","max": 40},"zambo anguissa": {"t": "2%, ottimo ma non titolare.","max": 20},"lucca": {"t": "A 1 credito se cambia squadra."},"solet": {"t": "5% massimo. Meglio i centrali di altre squadre: l'Udinese potrebbe prendere qualche gol in più.","max": 50},"vojvoda": {"t": "Interessante."},"ekkelenkamp": {"t": "5%, sopra è forse troppo. 5-7 gol.","max": 50},"zaniolo": {"t": "9-10 gol, fino al 10%.","max": 100},"davis k.": {"t": "12-13 gol, 12-13%, ma non sopra il 15%: piuttosto rischio Douvikas o Kean.","min": 120,"max": 150},"kelly l.": {"t": "Ottimissimo a pochissimi crediti.","max": 30},"bremer": {"t": "Da prendere."},"locatelli": {"t": "Pochi crediti, titolare, da prendere."},"calo": {"t": "3-4%.","min": 30,"max": 40},"raimondo": {"t": "2-3%.","min": 20,"max": 30},"kone m.": {"t": "3-4%, ottimo.","min": 30,"max": 40},"gudmundsson a.": {"t": "Certezza dei rigori, all'8% è ottimo.","max": 80},"zaccagni": {"t": "Anche 8%, forse rigorista.","max": 80},"kolasinac": {"t": "1%, scommessa.","max": 10},"zalewski": {"t": "1%, scommessa.","max": 10},"lucumi": {"t": "1%.","max": 10},"zortea": {"t": "1%, forse un po' di più.","max": 20},"miranda j.": {"t": "1%.","max": 10},"vitik": {"t": "1%.","max": 10},"viery": {"t": "1%.","max": 10},"valdepenas": {"t": "1%.","max": 10},"ndour": {"t": "1%, da verificare.","max": 10},"monterisi": {"t": "1%, titolare e forte di testa.","max": 10},"marusic": {"t": "1%.","max": 10},"cancellieri": {"t": "1%, listato centrocampista.","max": 10},"gabbia": {"t": "1%, dovrebbe essere titolare.","max": 10},"tomori": {"t": "1%.","max": 10},"pessina": {"t": "3-4%.","min": 30,"max": 40},"birindelli": {"t": "1%.","max": 10},"colpani": {"t": "1%?","max": 10},"cutrone": {"t": "1-2%, titolare.","min": 10,"max": 20},"lobotka": {"t": "1%.","max": 10},"valenti": {"t": "1%.","max": 10},"circati": {"t": "1%.","max": 10},"troilo": {"t": "1%.","max": 10},"coco": {"t": "1%.","max": 10},"ismajli": {"t": "1%.","max": 10},"comuzzo": {"t": "1%, titolare buono per il modificatore.","max": 10},"basic": {"t": "1%.","max": 10},"busio": {"t": "1%.","max": 10},"adopo": {"t": "1%.","max": 10},"frendrup": {"t": "1%.","max": 10},"pisilli": {"t": "1%, anche qualche credito in più.","max": 20},"couto": {"t": "3-4%, terzino di spinta.","min": 30,"max": 40},"oulai": {"t": "1%, da verificare.","max": 10},"bracaglia": {"t": "1%.","max": 10},"koutsoupias": {"t": "1%.","max": 10},"chalobah t.": {"t": "Forse non titolare, e debole."},"correia t.": {"t": "1%, scommessa.","max": 10}};
 var TOP_DIFESE=['Roma','Inter','Como','Napoli','Juventus'];
 
-/* Appunti di stile/formazione per squadra — dati creati con Claude Design.
-   Struttura pensata per finire in squadre.json (chiave = nome squadra):
-   { modulo, allenatore, stato, consigliati, sconsigliati, scommesse,
-     rigori, punizioni, corner (stringhe con "›" tra i nomi),
-     f_portiere/f_difesa/f_centrocampo/f_attacco, nota,
-     c_portiere/c_difesa/c_centrocampo/c_attacco }
-   Finché non è in squadre.json, resta qui come TODO per le squadre mancanti. */
-var CLUB_INFO={
-  "Atalanta":{modulo:"4-3-3",allenatore:"Maurizio Sarri",stato:"IN MOVIMENTO",
-    consigliati:"Scalvini, Ederson D.S.",
-    sconsigliati:"Zappacosta, Bellanova, Scamacca",
-    scommesse:"Ahanor, De Ketelaere",
-    rigori:"Scamacca › De Ketelaere › Ederson D.S.",
-    punizioni:"Samardzic › Gaetano › Ederson D.S. › De Ketelaere",
-    corner:"Bernasconi › Ahanor › Bellanova › Raspadori",
-    f_portiere:"Carnesecchi", f_difesa:"Zappacosta, Scalvini, Ahanor",
-    f_centrocampo:"Ederson D.S., Gaetano, Samardzic", f_attacco:"De Ketelaere, Scamacca, Raspadori",
-    nota:"Cambio di sistema profondo: Sarri lascia la difesa a tre per la linea a quattro. Hien infortunato fino all'autunno, al centro Scalvini o Kolasinac. A destra Zappacosta davanti a Bellanova. Davanti Scamacca su Krstovic.",
-    c_portiere:"Sportiello", c_difesa:"Bellanova, Kossounou, Kolasinac, Hien",
-    c_centrocampo:"De Roon, Pasalic", c_attacco:"Krstovic, Zalewski"},
-  "Inter":{modulo:"3-5-2",allenatore:"Chivu",stato:"IN MOVIMENTO",
-    consigliati:"Martinez L., Thuram, Barella",
-    sconsigliati:"Correa, Arnautovic",
-    scommesse:"Zielinski, Frattesi",
-    rigori:"Martinez L. › Calhanoglu",
-    punizioni:"Calhanoglu › Dimarco",
-    corner:"Dimarco › Calhanoglu",
-    f_portiere:"Sommer", f_difesa:"Bastoni, Acerbi, Pavard",
-    f_centrocampo:"Dumfries, Barella, Calhanoglu, Mkhitaryan, Dimarco", f_attacco:"Martinez L., Thuram",
-    nota:"Chivu ruota molto in vista degli impegni di Champions League: Pavard è rientrato da poco e parte favorito su Bisseck, mentre Frattesi scalpita per una maglia da titolare a centrocampo. Il modulo resta il 3-5-2 ma non è escluso qualche cambio a gara in corso.",
-    c_portiere:"Martinez J.", c_difesa:"Bisseck, De Vrij",
-    c_centrocampo:"Zielinski, Frattesi", c_attacco:"Correa, Taremi"},
-  "Juventus":{modulo:"4-3-3",allenatore:"Tudor",stato:"STABILE",
-    consigliati:"Yildiz, Vlahovic, Kolo Muani",
-    sconsigliati:"Rugani, Cambiaso (rientro)",
-    scommesse:"McKennie, Conceição",
-    rigori:"Vlahovic › Yildiz › Locatelli",
-    punizioni:"Yildiz › Kostic",
-    corner:"Kostic › Cambiaso",
-    f_portiere:"Di Gregorio", f_difesa:"Kalulu, Gatti, Bremer, Cambiaso",
-    f_centrocampo:"Locatelli, Thuram, McKennie", f_attacco:"Yildiz, Vlahovic, Conceição",
-    nota:"Vlahovic gioca l'ultimo anno di contratto e resta il titolare designato davanti, con Kolo Muani pronto a subentrare in caso di calo di condizione. Cambiaso è rientrato dall'infortunio e non è ancora al 100%: possibile turno di riposo nelle prossime giornate.",
-    c_portiere:"Perin", c_difesa:"Rugani, Kelly",
-    c_centrocampo:"Fagioli, Miretti", c_attacco:"Openda, Mbangula"},
-  "Milan":{modulo:"4-2-3-1",allenatore:"Allegri",stato:"STABILE",
-    consigliati:"Pulisic, Leao, Gimenez",
-    sconsigliati:"Jovic, Chukwueze",
-    scommesse:"Loftus-Cheek, Fofana",
-    rigori:"Pulisic › Leao",
-    punizioni:"Leao › Pulisic",
-    corner:"Leao › Pulisic",
-    f_portiere:"Maignan", f_difesa:"Calabria, Tomori, Gabbia, Hernandez",
-    f_centrocampo:"Fofana, Modric", f_attacco:"Pulisic, Loftus-Cheek, Leao, Gimenez",
-    nota:"Allegri alterna Gimenez e Jovic come riferimento offensivo in base allo stato di forma: al momento il messicano è avanti nelle rotazioni. Leao resta il faro della manovra sulla sinistra, mentre Loftus-Cheek si gioca il posto da trequartista con Chukwueze.",
-    c_portiere:"Sportiello", c_difesa:"Pavlovic, Zeroli",
-    c_centrocampo:"Bennacer, Adli", c_attacco:"Chukwueze, Jovic"},
-  "Napoli":{modulo:"4-3-3",allenatore:"Conte",stato:"IN CRESCITA",
-    consigliati:"Lukaku, McTominay, Politano",
-    sconsigliati:"Lucca, Ngonge",
-    scommesse:"Neres, Gilmour",
-    rigori:"Lukaku › McTominay",
-    punizioni:"Politano › Di Lorenzo",
-    corner:"Politano › Neres",
-    f_portiere:"Meret", f_difesa:"Di Lorenzo, Rrahmani, Buongiorno, Spinazzola",
-    f_centrocampo:"Lobotka, McTominay, Anguissa", f_attacco:"Politano, Lukaku, Neres",
-    nota:"Conte tiene il 4-3-3 come base ma il ballottaggio in attacco tra Lukaku e Lucca resta apertissimo: il belga parte avanti per esperienza, ma Lucca è pronto se serve più fisicità. Anguissa gestisce le energie in vista degli impegni ravvicinati con la Champions League.",
-    c_portiere:"Caprile", c_difesa:"Juan Jesus, Mazzocchi",
-    c_centrocampo:"Gilmour, Elmas", c_attacco:"Ngonge, Lucca"}
-};
-/* Modulo delle squadre senza ancora appunti completi (elenco Serie A 2026/27) */
-var MODULI={Bologna:"4-2-3-1",Cagliari:"3-5-2",Como:"4-3-3",Cremonese:"3-5-2",
-  Fiorentina:"4-2-3-1",Genoa:"3-5-2",Lazio:"4-2-3-1",Lecce:"4-3-3",Parma:"3-4-1-2",
-  "Parma Calcio 1913":"3-4-1-2",Pisa:"3-5-2",Roma:"3-4-2-1",Sassuolo:"4-3-3",
-  Torino:"3-4-2-1",Udinese:"3-5-2",Verona:"3-4-2-1"};
-function infoClub(s){ return CLUB_INFO[s]||null; }
-function crow(lab,val,cls){
-  if(!val) return '';
-  return '<div class="crow"><div class="lab">'+esc(lab)+'</div><div class="val'+(cls?' '+cls:'')+'">'+esc(val)+'</div></div>';
+/* ---------- Formazione/rigoristi/coperture: SOLO dati reali da giocatori.json ----------
+   Niente più squadre "esempio" scritte a mano: tutto si ricalcola dal campo titolarita
+   (5=titolare certo, 4=titolare probabile, presenti nel listone) e dal campo rigorista
+   (ordine 1/2/3) che ogni giocatore già porta con sé in giocatori.json.
+   Punizioni/corner e allenatore NON sono nel listone: non li mostriamo per non inventarli. */
+function playersOf(s,r){ return PLAYERS.filter(function(p){return p.squadra===s&&p.ruolo===r;}); }
+function titolariReali(s,r){
+  return playersOf(s,r).filter(function(p){return (p.titolarita||0)>=4;})
+    .sort(function(a,b){return (b.titolarita||0)-(a.titolarita||0)||(b.mercato||b.fvm||0)-(a.mercato||a.fvm||0);});
 }
-function crowRole(lab,roleKey,val){
-  if(!val) return '';
-  return '<div class="crow"><div class="lab rolelab '+roleKey+'">'+esc(lab)+'</div><div class="val">'+esc(val)+'</div></div>';
+function copertureReali(s,r){
+  return playersOf(s,r).filter(function(p){return p.titolarita!=null&&p.titolarita>0&&p.titolarita<4;})
+    .sort(function(a,b){return (b.titolarita||0)-(a.titolarita||0)||(b.mercato||b.fvm||0)-(a.mercato||a.fvm||0);})
+    .slice(0,3);
+}
+function rigoristiReali(s){
+  return PLAYERS.filter(function(p){return p.squadra===s&&p.rigorista;})
+    .sort(function(a,b){return (a.rigorista||9)-(b.rigorista||9);});
+}
+/* Consigliati/sconsigliati: stesso criterio (affidabilità/integrità del listone) già usato
+   altrove nel sito per le scommesse — non è un giudizio editoriale, è calcolato dal listone. */
+function consigliatiReali(s){
+  var out=[];
+  ['DC','CC','ATT'].forEach(function(r){
+    playersOf(s,r).filter(function(p){return (p.titolarita||0)>=4&&(p.affidabilita==null||p.affidabilita>=4)&&(p.integrita==null||p.integrita>=4);})
+      .forEach(function(p){out.push(p);});
+  });
+  return out.sort(function(a,b){return (b.mercato||b.fvm||0)-(a.mercato||a.fvm||0);}).slice(0,3);
+}
+function sconsigliatiReali(s){
+  var out=[];
+  ['DC','CC','ATT'].forEach(function(r){
+    playersOf(s,r).filter(function(p){return (p.titolarita||0)>=4&&((p.affidabilita!=null&&p.affidabilita<=3)||(p.integrita!=null&&p.integrita<=2));})
+      .forEach(function(p){out.push(p);});
+  });
+  return out.sort(function(a,b){return (b.mercato||b.fvm||0)-(a.mercato||a.fvm||0);}).slice(0,3);
+}
+function nameList(arr){
+  /* in grassetto chi ha titolarità 5/5 (il grado più alto), normale chi ha 4/5 */
+  return arr.map(function(p){return p.titolarita===5?'<b>'+esc(p.nome)+'</b>':esc(p.nome);}).join(', ');
+}
+function crow(lab,valHtml,cls){
+  if(!valHtml) return '';
+  return '<div class="crow"><div class="lab">'+esc(lab)+'</div><div class="val'+(cls?' '+cls:'')+'">'+valHtml+'</div></div>';
+}
+function crowRole(lab,roleKey,valHtml){
+  if(!valHtml) return '';
+  return '<div class="crow"><div class="lab rolelab '+roleKey+'">'+esc(lab)+'</div><div class="val">'+valHtml+'</div></div>';
 }
 var MODULO={POR:1,DC:4,CC:4,ATT:2};
 var clubSel=null, clubData={};
@@ -1123,7 +1136,7 @@ document.querySelectorAll('.role').forEach(function(b){
 function dossier(p){
   var box=$('dossier');
   if(!p){ box.innerHTML='<div class="dempty"><b>Nessun giocatore selezionato</b>'+
-    'Scrivi le prime lettere di un cognome qui a sinistra e la scheda compare qui.</div>'; return; }
+    'Cerca il giocatore chiamato per vedere la sua scheda.</div>'; return; }
   var taken=state.picks.filter(function(x){return pkKey(x)===p._k;})[0];
   var mant=p.mantra?p.mantra.split('/').map(function(m){return MANTRA[m]||m;}).join(' / '):null;
   var per90=p.min?((p.g+p.a)/p.min*90):null;
@@ -1264,8 +1277,7 @@ function renderClub(){
     var tot=PLAYERS.filter(function(p){return p.squadra===s;}).length;
     var lib=PLAYERS.filter(function(p){return p.squadra===s&&!taken[p._k];}).length;
     var top=TOP_DIFESE.indexOf(s)>=0;
-    var info=infoClub(s);
-    var tag=info?info.modulo:(MODULI[s]||(lib+'/'+tot+' liberi'+(top?' · difesa top':'')));
+    var tag=lib+'/'+tot+' liberi'+(top?' · difesa top':'');
     return '<button class="clubbtn'+(clubSel===s?' on':'')+'" data-c="'+esc(s)+'" type="button">'+
       '<b>'+esc(s)+'</b><span>'+esc(tag)+'</span></button>';
   }).join('');
@@ -1275,11 +1287,6 @@ function renderClub(){
 
   if(!clubSel){ $('clubBody').innerHTML=''; return; }
 
-  var d=datiClub(clubSel);
-  function campo(id,lab,val,ph){
-    return '<div class="cfield"><label for="'+id+'">'+lab+'</label>'+
-      '<textarea id="'+id+'" placeholder="'+ph+'">'+esc(val)+'</textarea></div>';
-  }
   /* media del modificatore: portiere più i tre difensori con la MV più alta */
   var gk=rosaClub(clubSel,'POR').slice().sort(function(a,b){return (b.mv||0)-(a.mv||0);})[0];
   var dcs=rosaClub(clubSel,'DC').slice().sort(function(a,b){return (b.mv||0)-(a.mv||0);}).slice(0,3);
@@ -1309,45 +1316,42 @@ function renderClub(){
       }).join('')+'</tbody></table></div>';
   }
 
-  var info=infoClub(clubSel);
-  var headHtml = info
-    ? '<div class="club-head"><h2>'+esc(clubSel)+'</h2>'+
-        '<span class="mod">'+esc(info.modulo)+'</span>'+
-        '<span class="coach">'+esc(info.allenatore)+'</span>'+
-        '<span class="status">'+esc(info.stato)+'</span></div>'+
-      '<div class="ccard"><h3>Da prendere, da lasciare</h3>'+
-        crow('Consigliati',info.consigliati)+
-        crow('Sconsigliati',info.sconsigliati)+
-        crow('Scommesse',info.scommesse)+
-      '</div>'+
-      '<div class="ccard"><h3>Piazzati</h3>'+
-        crow('Rigori',info.rigori,'mono')+
-        crow('Punizioni',info.punizioni,'mono')+
-        crow('Corner',info.corner,'mono')+
-      '</div>'+
-      '<div class="ccard"><h3>Formazione prevista</h3>'+
-        crowRole('Portiere','por',info.f_portiere)+
-        crowRole('Difesa','dc',info.f_difesa)+
-        crowRole('Centrocampo','cc',info.f_centrocampo)+
-        crowRole('Attacco','att',info.f_attacco)+
-      '</div>'+
-      (info.nota?'<div class="ccard note"><p>'+esc(info.nota)+'</p></div>':'')+
-      '<div class="ccard"><h3>Chi copre</h3>'+
-        crowRole('Portiere','por',info.c_portiere)+
-        crowRole('Difesa','dc',info.c_difesa)+
-        crowRole('Centrocampo','cc',info.c_centrocampo)+
-        crowRole('Attacco','att',info.c_attacco)+
-      '</div>'
-    : '<div class="club-head"><h2>'+esc(clubSel)+'</h2>'+
-        (media!=null?'<span class="mod">modificatore atteso '+n2(media)+' → fascia '+(fascia>0?'+'+fascia:'0')+'</span>':'')+
-        '<span class="status">Appunti non ancora inseriti</span></div>'+
-      '<div class="cbox">'+
-        '<div>'+campo('cF','Probabile formazione',d.formazione,'Portiere, difensori, centrocampisti, attaccanti')+
-               campo('cP','Panchina',d.panchina,'Chi subentra')+'</div>'+
-        '<div>'+campo('cT','Titolarissimi',d.titolari,'Chi gioca sempre')+
-               campo('cS','Scommesse',d.scommesse,'Chi costa poco e può esplodere')+'</div>'+
-      '</div>'+
-      (d.auto?'<p style="font-size:12px;color:var(--faint);margin:0;line-height:1.6">Bozza automatica dal fantavalore del listone e dalle presenze 2025/26. Scrivici sopra: da quel momento resta la tua.</p>':'');
+  var f_por=titolariReali(clubSel,'POR'), f_dc=titolariReali(clubSel,'DC'),
+      f_cc=titolariReali(clubSel,'CC'), f_att=titolariReali(clubSel,'ATT');
+  var c_por=copertureReali(clubSel,'POR'), c_dc=copertureReali(clubSel,'DC'),
+      c_cc=copertureReali(clubSel,'CC'), c_att=copertureReali(clubSel,'ATT');
+  var rig=rigoristiReali(clubSel);
+  var cons=consigliatiReali(clubSel), scons=sconsigliatiReali(clubSel);
+  var scommStr=scommesseAuto(clubSel);
+  var notaSalvata=(clubData[clubSel]&&clubData[clubSel].notaSquadra)||'';
+
+  var headHtml =
+    '<div class="club-head"><h2>'+esc(clubSel)+'</h2>'+
+      (media!=null?'<span class="mod">modificatore atteso '+n2(media)+' → fascia '+(fascia>0?'+'+fascia:'0')+'</span>':'')+
+    '</div>'+
+    '<div class="ccard"><h3>Da prendere, da lasciare <span class="chint">generato dal listone</span></h3>'+
+      crow('Consigliati',nameList(cons))+
+      crow('Sconsigliati',nameList(scons))+
+      crow('Scommesse',scommStr?esc(scommStr):'')+
+    '</div>'+
+    (rig.length?('<div class="ccard"><h3>Rigoristi</h3>'+
+      crow('Ordine',rig.map(function(p){return esc(p.nome);}).join('<span class="arr">›</span>'),'mono')+
+    '</div>'):'')+
+    '<div class="ccard"><h3>Formazione prevista <span class="chint">titolarità ≥4 sul listone, grassetto = 5/5</span></h3>'+
+      crowRole('Portiere','por',nameList(f_por))+
+      crowRole('Difesa','dc',nameList(f_dc))+
+      crowRole('Centrocampo','cc',nameList(f_cc))+
+      crowRole('Attacco','att',nameList(f_att))+
+    '</div>'+
+    '<div class="ccard note"><h3>Nota tua</h3>'+
+      '<textarea id="cNota" placeholder="Ballottaggi, mercato, impressioni... (si salva da sola)">'+esc(notaSalvata)+'</textarea>'+
+    '</div>'+
+    '<div class="ccard"><h3>Chi copre <span class="chint">titolarità 1-3 sul listone</span></h3>'+
+      crowRole('Portiere','por',nameList(c_por))+
+      crowRole('Difesa','dc',nameList(c_dc))+
+      crowRole('Centrocampo','cc',nameList(c_cc))+
+      crowRole('Attacco','att',nameList(c_att))+
+    '</div>';
 
   $('clubBody').innerHTML=
     '<div class="panel">'+headHtml+'</div>'+
@@ -1356,12 +1360,10 @@ function renderClub(){
       '<p style="font-size:12px;color:var(--faint);margin:12px 0 0;line-height:1.6">A destra la quotazione del listone, oppure <span class="ctetto">in blu</span> il tetto in crediti che ti sei dato tu. Tocca un nome per aprirlo nella scheda dell\'asta.</p>'+
     '</div>';
 
-  [['cF','formazione'],['cP','panchina'],['cT','titolari'],['cS','scommesse']].forEach(function(a){
-    var e=$(a[0]); if(!e) return;
-    e.addEventListener('change',function(){
-      if(!clubData[clubSel]) clubData[clubSel]={};
-      clubData[clubSel][a[1]]=e.value; save(); renderClub();
-    });
+  var notaEl=$('cNota');
+  if(notaEl) notaEl.addEventListener('change',function(){
+    if(!clubData[clubSel]) clubData[clubSel]={};
+    clubData[clubSel].notaSquadra=notaEl.value; save();
   });
   Array.prototype.forEach.call($('clubBody').querySelectorAll('[data-cp]'),function(b){
     b.addEventListener('click',function(){
@@ -1696,6 +1698,66 @@ function wire(box){
   });
 }
 
+/* ---------- Asta live: la mia squadra / avversari / listone filtrabile ---------- */
+var ROLE_LAB={POR:'P',DC:'D',CC:'C',ATT:'A'};
+var ROLE_CLS={POR:'por',DC:'dc',CC:'cc',ATT:'att'};
+function renderMiaSquadra(st,B,TOT){
+  var box=$('miaSquadra'); if(!box) return;
+  var mia=st.filter(function(t){return nrm(t.team)===nrm(CFG.mia||'');})[0];
+  var list=mia?mia.list.slice():[];
+  var spent=mia?mia.spent:0, n=mia?mia.n:0;
+  var maxNext=Math.max(0,B-spent-Math.max(0,TOT-n-1));
+  var out='<div class="mia-budget"><span class="tot">'+(B-spent)+'</span>'+
+    '<span class="max">max '+maxNext+' · '+n+'/'+TOT+'</span></div>'+
+    '<div class="mia-roles">';
+  ROLES.forEach(function(r){
+    var have=list.filter(function(p){return p.role===r;});
+    var roleSpent=have.reduce(function(s,p){return s+p.price;},0);
+    var pct=B?Math.round(roleSpent/B*100):0;
+    out+='<div><div class="mia-role-head"><span class="rn '+ROLE_CLS[r]+'">'+ROLE_LAB[r]+' '+have.length+'/'+CFG.rosa[r]+'</span>'+
+      '<span class="rp">'+roleSpent+' · '+pct+'%</span></div>';
+    for(var i=0;i<CFG.rosa[r];i++){
+      var p=have[i];
+      out+=p?('<div class="mia-slot">'+esc(p.name)+'<span class="pr">'+p.price+' cr</span></div>')
+            :'<div class="mia-slot empty">—</div>';
+    }
+    out+='</div>';
+  });
+  box.innerHTML=out+'</div>';
+  if(!CFG.mia) $('miaBudget').textContent='imposta "mia" in squadre.json';
+}
+function renderAvversari(st,B){
+  var box=$('avvGrid'); if(!box) return;
+  var others=st.filter(function(t){return nrm(t.team)!==nrm(CFG.mia||'');});
+  if(!others.length){ box.innerHTML='<div class="empty"><b>Nessun avversario</b>Configura le squadre in squadre.json.</div>'; return; }
+  box.innerHTML=others.map(function(t){
+    var rem=B-t.spent;
+    var pips=ROLES.map(function(r){return ROLE_LAB[r]+' <b>'+t[r]+'</b>/'+CFG.rosa[r];}).join(' &nbsp; ');
+    return '<div class="avvcard"><div class="an">'+esc(t.team)+'</div><div class="ab">'+rem+'</div>'+
+      '<div class="apips">'+pips+'</div><div class="asp">'+t.spent+' cr spesi</div></div>';
+  }).join('');
+}
+function renderListoneLive(){
+  var box=$('listoneLive'); if(!box) return;
+  var hide=$('hideTaken')&&$('hideTaken').checked;
+  var taken={}; state.picks.forEach(function(p){taken[pkKey(p)]=1;});
+  var list=PLAYERS.filter(function(p){return p.ruolo===state.role;})
+    .sort(function(a,b){return (b.mercato||b.fvm||0)-(a.mercato||a.fvm||0);});
+  if(hide) list=list.filter(function(p){return !taken[p._k];});
+  if(!list.length){ box.innerHTML='<div class="empty"><b>Nessun giocatore</b></div>'; return; }
+  box.innerHTML=list.map(function(p){
+    var t=taken[p._k];
+    return '<div class="llrow'+(t?' taken':'')+'" data-k="'+esc(p._k)+'">'+
+      '<span class="n">'+esc(p.nome)+'</span><span class="t">'+esc(p.squadra||'')+'</span></div>';
+  }).join('');
+  Array.prototype.forEach.call(box.querySelectorAll('.llrow'),function(row){
+    row.addEventListener('click',function(){
+      var p=BY[row.dataset.k]; if(!p) return;
+      $('name').value=p._disp||p.nome; select(p); $('price').focus();
+    });
+  });
+}
+
 function render(){
   var B=CFG.crediti,TOT=totalSlots(),st=stats();
 
@@ -1712,14 +1774,9 @@ function render(){
   }).join('');
   tsel.value=keep;
 
-  $('teamChips').innerHTML=st.map(function(t){
-    var full=t[state.role]>=CFG.rosa[state.role];
-    return '<button class="chip'+(full?' full':'')+'" type="button" data-t="'+esc(t.team)+'">'+
-      esc(t.team)+' <span style="color:var(--faint)">'+(B-t.spent)+'</span></button>';
-  }).join('');
-  $('teamChips').querySelectorAll('.chip').forEach(function(c){
-    c.addEventListener('click',function(){ $('team').value=c.dataset.t; });
-  });
+  renderMiaSquadra(st,B,TOT);
+  renderAvversari(st,B);
+  renderListoneLive();
 
   /* ultime aggiudicazioni */
   var last=state.picks.slice(0,8);
@@ -1774,6 +1831,7 @@ function render(){
 }
 $('search').addEventListener('input',render);
 $('lstFilter').addEventListener('input',function(){ if(LST) renderListone(); });
+$('hideTaken').addEventListener('change',renderListoneLive);
 
 /* ---------- strategia ---------- */
 function renderStrat(){
