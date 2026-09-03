@@ -1084,6 +1084,10 @@ function loadData(){
   return fetch('./squadre.json',{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).then(function(d){
     if(d){ if(d.crediti)CFG.crediti=d.crediti; if(d.rosa)CFG.rosa=d.rosa;
       if(d.squadre&&d.squadre.length)CFG.squadre=d.squadre;
+      CFG.squadre=CFG.squadre.filter(function(s){
+        var t=nrm(s||'');
+        return t && t.indexOf('mia rosa')<0 && t.indexOf('mia squadra')<0 && t!=='-' && t!=='—';
+      });
       if(d.mia)CFG.mia=d.mia;
       notes.push('<b>'+CFG.squadre.length+'</b> squadre · <b>'+CFG.crediti+'</b> crediti'); }
     else notes.push('squadre.json non caricato');
@@ -1129,6 +1133,13 @@ function loadPicks(){
       if(d.picks&&d.picks.length!==undefined) state.picks=d.picks;
       if(d.role&&ROLES.indexOf(d.role)>=0) state.role=d.role;
       if(d.club) clubData=d.club;
+      /* migrazione: aggiudicazioni salvate con "la mia rosa"/"la mia squadra" invece del nome vero */
+      var fixed=false;
+      state.picks.forEach(function(pk){
+        var t=nrm(pk.team||'');
+        if(CFG.mia&&(t.indexOf('mia rosa')>=0||t.indexOf('mia squadra')>=0)){ pk.team=CFG.mia; fixed=true; }
+      });
+      if(fixed) save();
     }catch(e){} }
   });
 }
@@ -1544,6 +1555,9 @@ function stats(){
   CFG.squadre.forEach(function(n){ m[nrm(n)]={team:n,spent:0,n:0,POR:0,DC:0,CC:0,ATT:0,list:[]}; });
   state.picks.forEach(function(p){
     var k=nrm(p.team);
+    if(k.indexOf('mia rosa')>=0||k.indexOf('mia squadra')>=0){
+      p=Object.assign({},p,{team:CFG.mia||p.team}); k=nrm(p.team);
+    }
     if(!m[k]) m[k]={team:p.team,spent:0,n:0,POR:0,DC:0,CC:0,ATT:0,list:[]};
     m[k].spent+=p.price; m[k].n++; m[k][p.role]++; m[k].list.push(p);
   });
