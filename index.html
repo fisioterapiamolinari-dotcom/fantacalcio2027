@@ -527,9 +527,12 @@ select option{background:#0A1730}
 .dgrid2 .dsec{border-bottom:1px solid rgba(255,255,255,.06)}
 .dgrid2 .dsec:first-child{border-right:1px solid rgba(255,255,255,.06)}
 .grid2{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
+.grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:5px}
+.grid6 .dlab2{grid-column:1/-1;font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:5px 0 0}
+.grid6 .dlab2:first-child{margin-top:0}
 .stat{background:rgba(255,255,255,.045);border-radius:7px;padding:5px 7px}
-.stat .k{font-size:8.5px;color:var(--mute)}
-.stat .v{font-family:var(--mono);font-size:14px;font-weight:600;margin-top:2px;line-height:1}
+.stat .k{font-size:8.5px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.stat .v{font-family:var(--mono);font-size:13px;font-weight:600;margin-top:2px;line-height:1.15}
 .v.na{color:var(--faint);font-size:11px}
 .rowline{display:flex;justify-content:space-between;align-items:baseline;padding:2.5px 0;font-size:11.5px;
   border-bottom:1px dotted rgba(255,255,255,.08);gap:10px}
@@ -1170,7 +1173,10 @@ function dossier(p){
      (p.fuorilista?'<span class="pill ghost" style="color:var(--neg);border-color:var(--neg)">fuori lista</span>':'')+
      (taken?'<span class="pill ghost" style="color:var(--neg);border-color:var(--neg)">già preso</span>':'')+
    '</div></div>'+
-   (function(){ var L=lst(p); if(!L) return '';
+   (function(){ var L=lst(p); if(!L) return '<div class="dsec"><div class="dlab">Stagione 2025/26</div><div class="grid2">'+
+        stat('Fantamedia',n2(p.fm))+stat('Media voto',n2(p.mv))+
+        stat('Presenze',p.pv==null?null:p.pv)+stat('Gol',p.gf==null?(p.g==null?null:p.g):p.gf)+
+      '</div></div>';
       function pz(k,v){ return '<div class="stat"><div class="k">'+k+'</div><div class="v '+(v==null?'na':'')+'">'+(v==null?'—':v)+'</div></div>'; }
       var car=[];
       if(L.tit===5) car.push('TITOLARISSIMO');
@@ -1188,7 +1194,8 @@ function dossier(p){
       }).join(' ');
       var cats=Object.keys(L.cat||{}).map(function(k){
         return '<div class="rowline"><span>'+esc(k)+'</span><b>'+esc(L.cat[k])+'</b></div>'; }).join('');
-      return '<div class="dsec"><div class="dlab">Nei listoni</div><div class="grid2">'+
+      return '<div class="dgrid2">'+
+      '<div class="dsec"><div class="dlab">Nei listoni</div><div class="grid2">'+
         pz('Profeta',L.pr)+pz('RECOSTA',L.re)+pz('Media',L.med)+pz('Mercato (6 fonti)',L.mkt)+
       '</div>'+
       (p.pagato25!=null
@@ -1197,31 +1204,30 @@ function dossier(p){
             '<span style="color:var(--ink)">'+p.pagato25+'</span></b></div>'
         : '<div class="rowline"><span>Asta 25/26</span><b class="na">non venduto in lega</b></div>')+
       (L.slot?'<div class="rowline"><span>Categoria</span><b style="color:var(--brass)">'+esc(L.slot)+'</b></div>':'')+
-      (pills?'<div style="margin-top:10px;display:flex;flex-wrap:wrap;gap:6px">'+pills+'</div>':'')+
-      (cats?'<details style="margin-top:10px"><summary style="cursor:pointer;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)">fascia per fonte</summary>'+cats+'</details>':'')+
+      (pills?'<div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:5px">'+pills+'</div>':'')+
+      (cats?'<details style="margin-top:8px"><summary style="cursor:pointer;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)">fascia per fonte</summary>'+cats+'</details>':'')+
+      '</div>'+
+      '<div class="dsec"><div class="dlab">Stagione 2025/26</div><div class="grid2">'+
+        stat('Fantamedia',n2(p.fm))+stat('Media voto',n2(p.mv))+
+        stat('Presenze',p.pv==null?null:p.pv)+stat('Gol',p.gf==null?(p.g==null?null:p.g):p.gf)+
+      '</div></div>'+
       '</div>'; })()+
-   '<div class="dsec"><div class="dlab">Stagione 2025/26</div><div class="grid2">'+
-     stat('Fantamedia',n2(p.fm))+stat('Media voto',n2(p.mv))+
-     stat('Presenze',p.pv==null?null:p.pv)+stat('Gol',p.gf==null?(p.g==null?null:p.g):p.gf)+
+   '<div class="dsec"><div class="grid6">'+
+     '<div class="dlab2">Qualità del gioco</div>'+
+     stat('Assist',p.ass_uff==null?(p.a==null?null:p.a):p.ass_uff)+
+     stat('xG',n2(p.xg))+stat('xA',n2(p.xa))+
+     stat('Scarto attesi',scH)+stat('Bonus/90',n2(per90))+
+     stat('Ammonizioni',p.amm==null?null:p.amm)+
+     stat('Rigori',p.rigorista?('<span style="color:var(--brass)">'+
+       (p.rigorista===1?'1° tiratore':p.rigorista===2?'2° scelta':'3° scelta')+'</span>'):'non tira')+
+     (p.mod_val!=null?stat('Peso modif.','<span style="color:'+(p.mod_val>0.15?'var(--pos)':p.mod_val<0?'var(--neg)':'var(--faint)')+'">'+(p.mod_val>0?'+':'')+n2(p.mod_val)+'</span>'):'')+
+     '<div class="dlab2">Prezzi</div>'+
+     stat('Quotazione',qH)+
+     stat('Fantavalore',p.fvm==null?null:(p.fvm+(p.fvm25!=null?' <span style="color:var(--faint);font-size:9px">era '+p.fvm25+'</span>':'')))+
+     stat('Pagato 25/26',p.pagato25==null?null:p.pagato25)+
+     stat('Se l\'era presa',p.presa25?esc(p.presa25):null)+
+     (taken?stat('Aggiudicato',taken.price+' → '+esc(taken.team)):'')+
    '</div></div>'+
-   '<div class="dgrid2">'+
-   '<div class="dsec"><div class="dlab">Qualità del gioco</div>'+
-     line('Assist',p.ass_uff==null?(p.a==null?null:p.a):p.ass_uff)+
-     line('Gol attesi (xG)',n2(p.xg))+line('Assist attesi (xA)',n2(p.xa))+
-     line('Scarto su attesi',scH)+line('Bonus per 90 minuti',n2(per90))+
-     line('Ammonizioni',p.amm==null?null:p.amm)+
-     line('Rigori',p.rigorista?('<span style="color:var(--brass)">'+
-       (p.rigorista===1?'primo tiratore':p.rigorista===2?'seconda scelta':'terza scelta')+'</span>'):'non tira')+
-     (p.mod_val!=null?line('Peso nel modificatore','<span style="color:'+(p.mod_val>0.15?'var(--pos)':p.mod_val<0?'var(--neg)':'var(--faint)')+'">'+(p.mod_val>0?'+':'')+n2(p.mod_val)+' MV</span>'):'')+
-   '</div>'+
-   '<div class="dsec"><div class="dlab">Prezzi</div>'+
-     line('Quotazione listone',qH)+
-     line('Fantavalore (FVM)',p.fvm==null?null:(p.fvm+(p.fvm25!=null?' <span style="color:var(--faint)">era '+p.fvm25+'</span>':'')))+
-     line('Pagato in lega 25/26',p.pagato25==null?null:p.pagato25)+
-     line('Se l\'era presa',p.presa25?esc(p.presa25):null)+
-     (taken?line('Aggiudicato ora',taken.price+' → '+esc(taken.team)):'')+
-   '</div>'+
-   '</div>'+
    (verdict?'<div class="verdict">'+verdict+'</div>':'')+
    (function(){ var c=consiglio(p); if(!c) return '';
       return '<div class="verdict" style="background:rgba(79,163,199,.10)">'+
