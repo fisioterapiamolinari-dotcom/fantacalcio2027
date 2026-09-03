@@ -375,6 +375,14 @@ nav button:focus-visible{outline:2px solid var(--brass);outline-offset:1px}
 
 /* avversari */
 .avv-panel{margin-top:10px}
+.avv-panel.avv-top{margin-top:0;padding:8px 10px}
+.avv-top h2{margin-bottom:6px}
+.avv-top .avvgrid{margin-top:0}
+.avv-top .avvcard{flex:0 0 132px;padding:6px 9px}
+.avv-top .avvcard .an{font-size:10px;margin-bottom:0}
+.avv-top .avvcard .ab{font-size:15px}
+.avv-top .avvcard .apips{margin:3px 0;font-size:9px;gap:4px}
+.avv-top .avvcard .asp{font-size:9px}
 .avvgrid{display:flex;gap:8px;margin-top:8px;overflow-x:auto;padding-bottom:2px}
 .avvcard{flex:0 0 150px;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:10px;padding:9px 11px}
 .avvcard .an{font-size:11.5px;color:var(--mute);margin-bottom:1px}
@@ -830,6 +838,11 @@ table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
 
 <!-- ============ ASTA LIVE ============ -->
 <section class="page on" id="p-asta">
+  <div class="panel avv-panel avv-top">
+    <h2>Avversari <em>il numero grande è l'offerta massima</em></h2>
+    <div class="avvgrid" id="avvGrid"></div>
+  </div>
+
   <div class="band" aria-label="Ruolo in chiamata">
     <div class="band-top">
       <div class="eyebrow">Ruolo in chiamata</div>
@@ -895,10 +908,6 @@ table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
     </aside>
   </div>
 
-  <div class="panel avv-panel">
-    <h2>Avversari <em>il numero grande è l'offerta massima</em></h2>
-    <div class="avvgrid" id="avvGrid"></div>
-  </div>
 </section>
 
 <!-- ============ ASSEGNAZIONE ============ -->
