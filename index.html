@@ -977,6 +977,11 @@ function nrm(s){return String(s).toLowerCase().normalize('NFD').replace(/[\u0300
    salvate prima di questa correzione, che non hanno ancora "key"). */
 function pkKey(pk){ return pk.key||nrm(pk.name); }
 function n2(v,d){ if(v==null) return null; d=(d==null?2:d); return Number(v).toFixed(d).replace('.',','); }
+/* prezzo "blindato": se un'aggiudicazione salvata ha un price non numerico (es. un vecchio
+   formato, un dato corrotto in memoria, un campo mancante), qui diventa 0 invece di rendere
+   NaN l'intera somma della squadra. Il valore originale resta intatto in state.picks: viene
+   solo segnalato (vedi checkBadPicks) cosi' che tu possa correggerlo dal Registro completo. */
+function num(v){ var n=Number(v); return isFinite(n)?n:0; }
 function totalSlots(){ return ROLES.reduce(function(s,r){return s+CFG.rosa[r];},0); }
 
 /* ---------- dati ---------- */
@@ -1454,7 +1459,7 @@ function stats(){
   state.picks.forEach(function(p){
     var k=nrm(p.team);
     if(!m[k]) m[k]={team:p.team,spent:0,n:0,POR:0,DC:0,CC:0,ATT:0,list:[]};
-    m[k].spent+=p.price; m[k].n++; m[k][p.role]++; m[k].list.push(p);
+    m[k].spent+=num(p.price); m[k].n++; m[k][p.role]++; m[k].list.push(p);
   });
   return Object.keys(m).map(function(k){return m[k];})
     .sort(function(a,b){return b.spent-a.spent||a.team.localeCompare(b.team);});
@@ -1599,7 +1604,8 @@ function rowsHtml(rows,q){
     rows.map(function(p,i){
       return '<tr class="clickable '+(i===0&&!q?'new':'')+'" data-n="'+esc(p.name)+'">'+
         '<td><span class="tag t-'+p.role+'">'+p.role+'</span></td><td>'+esc(p.name)+'</td>'+
-        '<td style="color:var(--mute)">'+esc(p.team)+'</td><td class="num">'+p.price+'</td>'+
+        '<td style="color:var(--mute)">'+esc(p.team)+'</td><td class="num">'+
+        (isFinite(Number(p.price))?p.price:'<span style="color:var(--neg)" title="prezzo salvato in modo non valido: cancella e reinserisci">⚠ da correggere</span>')+'</td>'+
         '<td style="width:26px"><button class="del" type="button" data-id="'+p.id+'" title="Elimina">×</button></td></tr>';
     }).join('')+'</tbody></table>';
 }
@@ -1640,7 +1646,7 @@ function render(){
   /* ultime aggiudicazioni */
   var last=state.picks.slice(0,8);
   $('lastCount').textContent=state.picks.length?state.picks.length+' giocatori · '+
-    state.picks.reduce(function(s,p){return s+p.price;},0)+' crediti mossi':'';
+    state.picks.reduce(function(s,p){return s+num(p.price);},0)+' crediti mossi':'';
   $('lastLog').innerHTML=last.length?rowsHtml(last,''):'<div class="empty"><b>Nessuna aggiudicazione</b>Compaiono qui appena chiudi la prima chiamata.</div>';
   wire($('lastLog'));
 
@@ -1674,7 +1680,7 @@ function render(){
     var rep=ROLES.map(function(r){
       var lab={POR:'Portieri',DC:'Difensori',CC:'Centrocampisti',ATT:'Attaccanti'}[r];
       var li=t.list.filter(function(p){return p.role===r;}).sort(function(a,b){return b.price-a.price;});
-      var sp=li.reduce(function(s,p){return s+p.price;},0);
+      var sp=li.reduce(function(s,p){return s+num(p.price);},0);
       return '<div class="treparto"><div class="rl"><span>'+lab+' '+li.length+'/'+CFG.rosa[r]+'</span><span>'+sp+' cr</span></div><ul>'+
         (li.length?li.map(function(p){return '<li><span>'+esc(p.name)+'</span><b>'+p.price+'</b></li>';}).join('')
                   :'<li class="vuoto">nessuno</li>')+'</ul></div>';
@@ -1776,8 +1782,15 @@ var tid;
 function toast(m){ var t=$('toast'); t.textContent=m; t.classList.add('show');
   clearTimeout(tid); tid=setTimeout(function(){t.classList.remove('show');},2200); }
 
+function checkBadPicks(){
+  var bad=state.picks.filter(function(p){return !isFinite(Number(p.price));});
+  if(!bad.length) return;
+  var nomi=bad.map(function(p){return p.name;}).join(', ');
+  toast((bad.length===1?'1 aggiudicazione ha':bad.length+' aggiudicazioni hanno')+' un prezzo non valido: '+nomi+'. Vai su Assegnazione, cancellale col × e reinseriscile.');
+}
 loadData().then(loadPicks).then(function(){
   setRole(state.role); select(null); renderStrat(); renderGrid(); renderListone(); $('name').focus();
+  checkBadPicks();
 });
 
 /* ---------- scheda dettaglio giocatore (listone) ---------- */
