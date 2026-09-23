@@ -343,9 +343,11 @@ nav button:focus-visible{outline:2px solid var(--brass);outline-offset:1px}
 .col-left .mk{padding:7px 8px}
 .col-left .mk .v{font-size:13px}
 .col-right{position:sticky;top:74px;display:flex;flex-direction:column;gap:12px;align-items:stretch}
+.col-right .fair{flex:0 0 auto;margin:0;align-self:flex-start;width:100%}
 @media(max-width:1280px){
   .deck{grid-template-columns:190px minmax(0,1fr)}
   .col-right{grid-column:1/-1;position:static;flex-direction:row;flex-wrap:wrap;align-items:flex-start}
+  .col-right .fair{flex:1 1 300px;width:auto}
   .col-right .dossier{flex:1 1 420px}
 }
 @media(max-width:900px){
@@ -408,6 +410,17 @@ select option{background:#0A1730}
 .bid:active{transform:translateY(1px)}
 .bid:focus-visible{outline:2px solid var(--brass);outline-offset:2px}
 .bid.minus{font-size:21px;color:var(--mute);background:rgba(255,255,255,.035)}
+
+/* ---- verdetto: la risposta, non i numeri da confrontare ---- */
+.fair{margin:0;padding:15px 17px;border-radius:14px;background:rgba(211,176,103,.09);
+  border:1px solid var(--line2);font-size:14px;line-height:1.6;align-self:stretch}
+.fair b{font-family:var(--mono);font-weight:600}
+.fair .big{display:inline-block;font-family:var(--mono);font-size:42px;font-weight:600;line-height:1;
+  color:var(--brass);letter-spacing:-.03em;vertical-align:-7px;margin:0 5px}
+.fair.over{background:rgba(227,112,88,.13);border-color:rgba(227,112,88,.55)}
+.fair.over .big{color:var(--neg)}
+.fair.under{background:rgba(119,194,149,.12);border-color:rgba(119,194,149,.5)}
+.fair.under .big{color:var(--pos)}
 
 .hint{font-family:var(--mono);font-size:13.5px;color:var(--mute);line-height:2;
   margin-top:14px;padding-top:13px;border-top:1px solid var(--line)}
@@ -489,6 +502,10 @@ select option{background:#0A1730}
 
 table{width:100%;border-collapse:collapse}
 th{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);text-align:left;padding:0 8px 9px;font-weight:500}
+th.sortable{cursor:pointer;user-select:none;white-space:nowrap}
+th.sortable:hover{color:var(--ink)}
+th.sortable .arr{display:inline-block;margin-left:3px;font-size:9px;opacity:.35}
+th.sortable.on .arr{opacity:1;color:var(--brass)}
 td{padding:9px 8px;border-top:1px solid rgba(255,255,255,.07);font-size:14px;vertical-align:middle}
 .num{font-family:var(--mono);font-size:14.5px;text-align:right;white-space:nowrap}
 .tag{display:inline-block;font-family:var(--mono);font-size:9px;letter-spacing:.1em;padding:3px 7px;border-radius:4px;color:#08152C;font-weight:600}
@@ -815,6 +832,7 @@ table.lst tr.clickable:hover td{background:rgba(211,176,103,.09)}
     </div>
 
     <aside class="col-right">
+      <div class="fair" id="fair" style="display:none"></div>
       <div class="dossier" id="dossier"></div>
     </aside>
   </div>
@@ -977,11 +995,6 @@ function nrm(s){return String(s).toLowerCase().normalize('NFD').replace(/[\u0300
    salvate prima di questa correzione, che non hanno ancora "key"). */
 function pkKey(pk){ return pk.key||nrm(pk.name); }
 function n2(v,d){ if(v==null) return null; d=(d==null?2:d); return Number(v).toFixed(d).replace('.',','); }
-/* prezzo "blindato": se un'aggiudicazione salvata ha un price non numerico (es. un vecchio
-   formato, un dato corrotto in memoria, un campo mancante), qui diventa 0 invece di rendere
-   NaN l'intera somma della squadra. Il valore originale resta intatto in state.picks: viene
-   solo segnalato (vedi checkBadPicks) cosi' che tu possa correggerlo dal Registro completo. */
-function num(v){ var n=Number(v); return isFinite(n)?n:0; }
 function totalSlots(){ return ROLES.reduce(function(s,r){return s+CFG.rosa[r];},0); }
 
 /* ---------- dati ---------- */
@@ -1459,7 +1472,7 @@ function stats(){
   state.picks.forEach(function(p){
     var k=nrm(p.team);
     if(!m[k]) m[k]={team:p.team,spent:0,n:0,POR:0,DC:0,CC:0,ATT:0,list:[]};
-    m[k].spent+=num(p.price); m[k].n++; m[k][p.role]++; m[k].list.push(p);
+    m[k].spent+=p.price; m[k].n++; m[k][p.role]++; m[k].list.push(p);
   });
   return Object.keys(m).map(function(k){return m[k];})
     .sort(function(a,b){return b.spent-a.spent||a.team.localeCompare(b.team);});
@@ -1510,12 +1523,48 @@ function renderMercato(){
   }).join('') +
   '<div class="mk"><div class="k">Tasso lega</div><div class="v">'+(m._glob==null?'—':n2(m._glob))+
   '</div><div class="s">'+m._crediti+' cr</div></div>';
+
+  var f=$('fair');
+  if(sel && sel.quotazione!=null){
+    var t=m[sel.ruolo]&&m[sel.ruolo].tasso ? m[sel.ruolo].tasso : m._glob;
+    if(t){
+      var equo=Math.round(sel.quotazione*t);
+      var pr=parseInt($('price').value,10)||0;
+      var diff=pr-equo;
+      var cls = diff>equo*0.15 ? 'over' : (diff<-equo*0.15 ? 'under' : '');
+      f.className='fair '+cls; f.style.display='';
+      f.innerHTML='Prezzo equo <span class="big">'+equo+'</span> crediti '+
+        '<span style="color:var(--faint);font-size:11.5px">(quotazione '+sel.quotazione+' × tasso '+n2(t)+')</span><br>'+
+        (pr>0 ? (diff===0?'Sei esattamente al prezzo equo.'
+              : diff>0?'Ora siamo <b style="color:var(--neg)">'+diff+' sopra</b>.'
+                      :'Ora siamo <b style="color:var(--pos)">'+(-diff)+' sotto</b>.') : '');
+      return;
+    }
+  }
+  f.style.display='none';
 }
 
 
 /* ---------- listone dai fantacreator ---------- */
 var LST_TABS=[['tito','Titolarissimi'],['POR','Portieri 30'],['DC','Difensori 80'],
               ['CC','Centrocampisti 80'],['ATT','Attaccanti 60'],['esca','Esche']];
+/* colonne ordinabili: chiave usata nell'header/dataset, etichetta, e getter del valore numerico da L (listoni.json) o g (giocatori.json) */
+var LST_COLS=[
+  {key:'fm',   lab:'FM 25/26', get:function(L,g){return L.fm;}},
+  {key:'mv',   lab:'MV',       get:function(L,g){return L.mv;}},
+  {key:'pv',   lab:'Pres',     get:function(L,g){return L.pv;}},
+  {key:'quot', lab:'Quot.',    get:function(L,g){return g.quotazione;}},
+  {key:'pr',   lab:'Profeta',  get:function(L,g){return L.pr;}},
+  {key:'re',   lab:'RECOSTA',  get:function(L,g){return L.re;}},
+  {key:'med',  lab:'Media',    get:function(L,g){return L.med;}},
+  {key:'mkt',  lab:'Prezzo',   get:function(L,g){return L.mkt;}},
+  {key:'pagato25', lab:'Asta 25/26', get:function(L,g){return g.pagato25;}}
+];
+var lstSort=null; /* {key,dir} — null = ordine originale del tab (fantamedia per Titolarissimi, prezzo atteso per ruolo) */
+function lstColVal(col,k){
+  var L=LST.giocatori[k]||{}; var g=BY[k]||{};
+  return col.get(L,g);
+}
 function lstRow(k,i){
   var L=LST.giocatori[k]; if(!L) return '';
   var g=BY[k]||{};
@@ -1525,21 +1574,22 @@ function lstRow(k,i){
   else if(g.rigorista===2) car.push('2° rig.');
   (L.tag||[]).forEach(function(t){ if(t!=='titolarissimo'&&t!=='rigorista'&&car.indexOf(t)<0) car.push(t); });
   var taken=state.picks.filter(function(x){return pkKey(x)===k;})[0];
+  var cells=LST_COLS.map(function(c){
+    var v=lstColVal(c,k);
+    if(c.key==='pagato25'){
+      return '<td class="num" style="white-space:nowrap">'+(v==null?'<span style="color:var(--faint)">—</span>':
+        ('<b>'+v+'</b><div style="font-size:10px;color:var(--faint);font-weight:400">'+esc(g.presa25||'')+'</div>'))+'</td>';
+    }
+    var disp=v==null?'—':(c.key==='fm'||c.key==='mv'?n2(v):v);
+    return '<td class="num"'+(c.key==='mkt'?' style="color:var(--brass)"':'')+'>'+(c.key==='mkt'&&v!=null?'<b>'+disp+'</b>':disp)+'</td>';
+  }).join('');
   return '<tr class="clickable'+(taken?' gone':'')+'" data-n="'+esc(L.nome)+'">'+
     '<td class="num" style="color:var(--faint)">'+(i+1)+'</td>'+
     '<td><b'+(taken?' class="nm-taken"':'')+'>'+esc(L.nome)+'</b>'+
       (taken?'<div style="font-size:10px;color:var(--faint)">preso da '+esc(taken.team)+' · '+taken.price+' cr</div>':'')+
       '<div style="font-size:11px;color:var(--faint)">'+esc(L.sq||'')+
       (L.slot?' · '+esc(L.slot):'')+'</div></td>'+
-    '<td class="num">'+(L.fm==null?'—':n2(L.fm))+'</td>'+
-    '<td class="num">'+(L.mv==null?'—':n2(L.mv))+'</td>'+
-    '<td class="num">'+(L.pv||'—')+'</td>'+
-    '<td class="num">'+(L.pr==null?'—':L.pr)+'</td>'+
-    '<td class="num">'+(L.re==null?'—':L.re)+'</td>'+
-    '<td class="num" style="color:var(--brass)"><b>'+(L.med==null?'—':L.med)+'</b></td>'+
-    '<td class="num">'+(L.mkt==null?'—':L.mkt)+'</td>'+
-    '<td class="num" style="white-space:nowrap">'+(g.pagato25==null?'<span style="color:var(--faint)">—</span>':
-       ('<b>'+g.pagato25+'</b><div style="font-size:10px;color:var(--faint);font-weight:400">'+esc(g.presa25||'')+'</div>'))+'</td>'+
+    cells+
     '<td style="font-size:11px;color:var(--mute)">'+esc(car.slice(0,3).join(', '))+'</td>'+
   '</tr>';
 }
@@ -1550,11 +1600,11 @@ function renderListone(){
     return '<button class="chip'+(t[0]===lstTab?' on':'')+'" type="button" data-l="'+t[0]+'">'+t[1]+'</button>';
   }).join('');
   $('lstNav').querySelectorAll('.chip').forEach(function(c){
-    c.addEventListener('click',function(){ lstTab=c.dataset.l; renderListone(); });
+    c.addEventListener('click',function(){ lstTab=c.dataset.l; lstSort=null; renderListone(); });
   });
   var keys=[], intro='';
   if(lstTab==='tito'){
-    intro='Almeno 30 presenze nel 2025/26 e titolarita 4 o 5 per il 2026/27. Ordinati per fantamedia dentro ogni reparto.';
+    intro='Almeno 30 presenze nel 2025/26 e titolarita 4 o 5 per il 2026/27. Ordinati per fantamedia dentro ogni reparto, oppure tocca una colonna per riordinare (es. Quot. o Prezzo).';
     var html='';
     ROLES.forEach(function(r){
       var ks=(LST.titolarissimi[r]||[]);
@@ -1570,7 +1620,7 @@ function renderListone(){
     keys=LST.esche||[];
   } else {
     keys=LST.liste[lstTab]||[];
-    intro='I '+keys.length+' che verranno venduti in una lega a 10 squadre, in ordine di prezzo atteso.';
+    intro='I '+keys.length+' che verranno venduti in una lega a 10 squadre, in ordine di prezzo atteso. Tocca una colonna (es. Quot. o Prezzo) per riordinare.';
   }
   $('lstBody').innerHTML='<p class="lstintro">'+intro+'</p>'+lstTable(keys);
   wireLst();
@@ -1582,13 +1632,36 @@ function lstTable(keys){
     return nrm(L.nome).indexOf(q)>=0 || nrm(L.sq||'').indexOf(q)>=0;
   });
   if(!rows.length) return '<div class="empty"><b>Nessun risultato</b></div>';
+  if(lstSort){
+    var col=LST_COLS.filter(function(c){return c.key===lstSort.key;})[0];
+    if(col){
+      rows=rows.slice().sort(function(ka,kb){
+        var va=lstColVal(col,ka), vb=lstColVal(col,kb);
+        if(va==null&&vb==null) return 0;
+        if(va==null) return 1;   /* i mancanti sempre in fondo, qualunque verso */
+        if(vb==null) return -1;
+        return lstSort.dir==='asc' ? va-vb : vb-va;
+      });
+    }
+  }
+  var headCells=LST_COLS.map(function(c){
+    var on=lstSort&&lstSort.key===c.key;
+    var arr=on?(lstSort.dir==='asc'?'▲':'▼'):'▲';
+    return '<th class="num sortable'+(on?' on':'')+'" data-col="'+c.key+'">'+c.lab+' <span class="arr">'+arr+'</span></th>';
+  }).join('');
   return '<div style="overflow-x:auto"><table class="lst"><thead><tr>'+
-    '<th></th><th>Giocatore</th><th class="num">FM 25/26</th><th class="num">MV</th><th class="num">Pres</th>'+
-    '<th class="num">Profeta</th><th class="num">RECOSTA</th><th class="num">Media</th><th class="num">Mercato</th>'+
-    '<th class="num">Asta 25/26</th><th>Caratteristiche</th></tr></thead><tbody>'+
+    '<th></th><th>Giocatore</th>'+headCells+'<th>Caratteristiche</th></tr></thead><tbody>'+
     rows.map(function(k,i){return lstRow(k,i);}).join('')+'</tbody></table></div>';
 }
 function wireLst(){
+  $('lstBody').querySelectorAll('th.sortable').forEach(function(th){
+    th.addEventListener('click',function(){
+      var key=th.dataset.col;
+      if(lstSort&&lstSort.key===key){ lstSort.dir=lstSort.dir==='asc'?'desc':'asc'; }
+      else { lstSort={key:key,dir:'desc'}; }
+      renderListone();
+    });
+  });
   $('lstBody').querySelectorAll('tr.clickable').forEach(function(tr){
     tr.addEventListener('click',function(){
       var p=BY[nrm(tr.dataset.n)]; if(!p) return;
@@ -1604,8 +1677,7 @@ function rowsHtml(rows,q){
     rows.map(function(p,i){
       return '<tr class="clickable '+(i===0&&!q?'new':'')+'" data-n="'+esc(p.name)+'">'+
         '<td><span class="tag t-'+p.role+'">'+p.role+'</span></td><td>'+esc(p.name)+'</td>'+
-        '<td style="color:var(--mute)">'+esc(p.team)+'</td><td class="num">'+
-        (isFinite(Number(p.price))?p.price:'<span style="color:var(--neg)" title="prezzo salvato in modo non valido: cancella e reinserisci">⚠ da correggere</span>')+'</td>'+
+        '<td style="color:var(--mute)">'+esc(p.team)+'</td><td class="num">'+p.price+'</td>'+
         '<td style="width:26px"><button class="del" type="button" data-id="'+p.id+'" title="Elimina">×</button></td></tr>';
     }).join('')+'</tbody></table>';
 }
@@ -1646,7 +1718,7 @@ function render(){
   /* ultime aggiudicazioni */
   var last=state.picks.slice(0,8);
   $('lastCount').textContent=state.picks.length?state.picks.length+' giocatori · '+
-    state.picks.reduce(function(s,p){return s+num(p.price);},0)+' crediti mossi':'';
+    state.picks.reduce(function(s,p){return s+p.price;},0)+' crediti mossi':'';
   $('lastLog').innerHTML=last.length?rowsHtml(last,''):'<div class="empty"><b>Nessuna aggiudicazione</b>Compaiono qui appena chiudi la prima chiamata.</div>';
   wire($('lastLog'));
 
@@ -1680,7 +1752,7 @@ function render(){
     var rep=ROLES.map(function(r){
       var lab={POR:'Portieri',DC:'Difensori',CC:'Centrocampisti',ATT:'Attaccanti'}[r];
       var li=t.list.filter(function(p){return p.role===r;}).sort(function(a,b){return b.price-a.price;});
-      var sp=li.reduce(function(s,p){return s+num(p.price);},0);
+      var sp=li.reduce(function(s,p){return s+p.price;},0);
       return '<div class="treparto"><div class="rl"><span>'+lab+' '+li.length+'/'+CFG.rosa[r]+'</span><span>'+sp+' cr</span></div><ul>'+
         (li.length?li.map(function(p){return '<li><span>'+esc(p.name)+'</span><b>'+p.price+'</b></li>';}).join('')
                   :'<li class="vuoto">nessuno</li>')+'</ul></div>';
@@ -1782,15 +1854,8 @@ var tid;
 function toast(m){ var t=$('toast'); t.textContent=m; t.classList.add('show');
   clearTimeout(tid); tid=setTimeout(function(){t.classList.remove('show');},2200); }
 
-function checkBadPicks(){
-  var bad=state.picks.filter(function(p){return !isFinite(Number(p.price));});
-  if(!bad.length) return;
-  var nomi=bad.map(function(p){return p.name;}).join(', ');
-  toast((bad.length===1?'1 aggiudicazione ha':bad.length+' aggiudicazioni hanno')+' un prezzo non valido: '+nomi+'. Vai su Assegnazione, cancellale col × e reinseriscile.');
-}
 loadData().then(loadPicks).then(function(){
   setRole(state.role); select(null); renderStrat(); renderGrid(); renderListone(); $('name').focus();
-  checkBadPicks();
 });
 
 /* ---------- scheda dettaglio giocatore (listone) ---------- */
